@@ -1,1 +1,5 @@
-console.log('This would be the main JS file.');
+!function ($) {
+    $(function(){
+        window.prettyPrint && prettyPrint();
+    });
+}(window.jQuery);
