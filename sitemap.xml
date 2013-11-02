@@ -2,7 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://bobchennan.github.io/2013/11/01/life-is-an-onion-and-one-cries-while-peeling-it/</loc>
-    <lastmod>2013-11-02T01:42:31.000Z</lastmod>
+    <lastmod>2013-11-02T05:35:31.000Z</lastmod>
+  </url>
+  <url>
+    <loc>http://bobchennan.github.io/2013/10/16/never-give-advice-a-wise-man-won't-need-it-and-a-fool-won't-heed-it/</loc>
+    <lastmod>2013-11-02T05:33:44.000Z</lastmod>
+  </url>
+  <url>
+    <loc>http://bobchennan.github.io/2013/10/11/hello-world/</loc>
+    <lastmod>2013-11-02T05:32:14.000Z</lastmod>
   </url>
   <url>
     <loc>http://bobchennan.github.io/About/index.html</loc>
@@ -15,13 +23,5 @@
   <url>
     <loc>http://bobchennan.github.io/2013/10/17/automatic-speech-recognition/</loc>
     <lastmod>2013-10-17T10:32:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>http://bobchennan.github.io/2013/10/16/never-give-advice-a-wise-man-won't-need-it-and-a-fool-won't-heed-it/</loc>
-    <lastmod>2013-10-16T09:26:03.000Z</lastmod>
-  </url>
-  <url>
-    <loc>http://bobchennan.github.io/2013/10/11/hello-world/</loc>
-    <lastmod>2013-10-11T13:34:10.000Z</lastmod>
   </url>
 </urlset>
