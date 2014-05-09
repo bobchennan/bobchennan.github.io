@@ -36,6 +36,48 @@
   <header>
     
   
+    <h1 class="title"><a href="/2014/05/08/linux-file-descriptor-usage/">linux file descriptor usage</a></h1>
+  
+
+    <time datetime="2014-05-09T00:59:47.000Z">
+  <span class="day">8</span><span class="month">5月</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+      <p>On Linux you can print info about file descriptor (ls -l /proc//fd), and file position reader (cat /proc//fdinfo). So:</p>
+<p>Find mysqld pid (in this example: 1234):</p>
+<p>$ ps -ef | grep mysqld</p>
+<p>mysql    1234     1  0 feb12 ?        00:00:55 /usr/sbin/mysqld</p>
+<p>Find file descriptor number of your loaded file (in this example: 45):</p>
+<p>$ sudo ls -l /proc/1234/fd</p>
+<p>lr-x——— 1 root root 64 Feb 13 10:56 45 -&gt; /var/lib/mysql/db/Loaded_file.txt</p>
+<p>Print info about that file descriptor and check number of bytes already read (in this example: 494927872):</p>
+<p>$ cat /proc/1234/fdinfo/45</p>
+<p>pos:   494927872</p>
+<p>flags: 0100000</p>
+<p>You can compare this progress indicator (in bytes) to the actual file size being loaded.</p>
+
+    
+    
+    <footer class="meta">
+      
+      
+  <div class="tags">
+<a href="/tags/linux, mysql/">linux, mysql</a></div>
+
+      
+    </footer>
+    
+  </div>
+  
+</article>
+
+  <article class="post">
+  
+  <header>
+    
+  
     <h1 class="title"><a href="/2014/02/22/数据收集网站/">数据收集网站</a></h1>
   
 
@@ -328,36 +370,6 @@
       
   <div class="tags">
 <a href="/tags/Deep Learning/">Deep Learning</a><a href="/tags/software/">software</a><a href="/tags/library/">library</a><a href="/tags/转载/">转载</a></div>
-
-      
-    </footer>
-    
-  </div>
-  
-</article>
-
-  <article class="post">
-  
-  <header>
-    
-  
-    <h1 class="title"><a href="/2013/11/01/life-is-an-onion-and-one-cries-while-peeling-it/">life is an onion and one cries while peeling it.</a></h1>
-  
-
-    <time datetime="2013-11-02T01:42:31.000Z">
-  <span class="day">1</span><span class="month">11月</span>
-</time>
-  </header>
-  <div class="entry-content">
-    
-      
-    
-    
-    <footer class="meta">
-      
-      
-  <div class="tags">
-<a href="/tags/aphorism , motto not epitaph/">aphorism , motto not epitaph</a></div>
 
       
     </footer>
