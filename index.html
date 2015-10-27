@@ -1,9 +1,629 @@
-<%- partial('_partial/head') %>
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>bobchennan&#39;s blog</title>
+  <meta name="author" content="Nanxin Chen">
+
+  
+  <meta name="description" content="bobchennan&#39;s blog">
+  
+  
+
+  <meta name="google-site-verification" content="H1c4p99NFafvRoWdDYNuxxlLBq3oc45I2GgQnVQx6vM" />
+  <link href="/ico.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="bobchennan&#39;s blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  
+</head>
 
 <body>
-  <header id="header" class="inner"><%- partial('_partial/header') %></header>
-  <div id="content" class="inner"><%- body %></div>
-  <footer id="footer" class="inner"><%- partial('_partial/footer') %></footer>
-  <%- partial('_partial/after_footer') %>
+  <header id="header" class="inner"><nav>
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/About">About</a></li>
+    
+  </ul>
+</nav></header>
+  <div id="content" class="inner">
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <header>
+    
+  
+    <h1 class="title"><a href="/2014/05/08/linux-file-descriptor-usage/">linux file descriptor usage</a></h1>
+  
+
+    <time datetime="2014-05-08T20:59:47.000Z">
+  <span class="day">8</span><span class="month">May</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+      <p>On Linux you can print info about file descriptor (ls -l /proc//fd), and file position reader (cat /proc//fdinfo). So:</p>
+<p>Find mysqld pid (in this example: 1234):</p>
+<p>$ ps -ef | grep mysqld</p>
+<p>mysql    1234     1  0 feb12 ?        00:00:55 /usr/sbin/mysqld</p>
+<p>Find file descriptor number of your loaded file (in this example: 45):</p>
+<p>$ sudo ls -l /proc/1234/fd</p>
+<p>lr-x—— 1 root root 64 Feb 13 10:56 45 -&gt; /var/lib/mysql/db/Loaded_file.txt</p>
+<p>Print info about that file descriptor and check number of bytes already read (in this example: 494927872):</p>
+<p>$ cat /proc/1234/fdinfo/45</p>
+<p>pos:   494927872</p>
+<p>flags: 0100000</p>
+<p>You can compare this progress indicator (in bytes) to the actual file size being loaded.</p>
+
+    
+    
+    <footer class="meta">
+      
+      
+  <div class="tags">
+<a href="/tags/linux-mysql/">linux, mysql</a></div>
+
+      
+    </footer>
+    
+  </div>
+  
+</article>
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <header>
+    
+  
+    <h1 class="title"><a href="/2014/02/22/数据收集网站/">数据收集网站</a></h1>
+  
+
+    <time datetime="2014-02-22T08:35:20.000Z">
+  <span class="day">22</span><span class="month">Feb</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+      <p>chenqin，数据帝<br>田晓春、马蕾、甄嫒楠 等人赞同<br>数据网站很多，我平时使用的各个指标的数据集可能有几十种，但其中绝大部分数据集都只包括经济社会中的一个较小方面，或只有一个国家，或者要付费。以下列出的都是适用于跨国比较的、数据指标比较综合的、并且下载不需要付费的网站。</p>
+<p>宏观数据网站，数据到国家或者地区：<br>Monthly Bulletin of Statistics Online，（<a href="http://unstats.un.org/unsd/mbs/app/DataSearchTable.aspx），数据来源顾名思义，来自各个国家统计局和组织。包括近十年来各国的人口、生产指数和价格指数、就业与收入、能源矿产和燃料、工业、交通和建筑、国际贸易、金融、零售业和国民账户的网站。但每个指标都有不少缺失的数据，且一次只能导出一个指标。" target="_blank" rel="external">http://unstats.un.org/unsd/mbs/app/DataSearchTable.aspx），数据来源顾名思义，来自各个国家统计局和组织。包括近十年来各国的人口、生产指数和价格指数、就业与收入、能源矿产和燃料、工业、交通和建筑、国际贸易、金融、零售业和国民账户的网站。但每个指标都有不少缺失的数据，且一次只能导出一个指标。</a><br>World Development Indicators，（<a href="http://data.worldbank.org/indicator），世界银行的数据，一般来说最权威，除了一般统计局数据外，还包括农业、气候、贫穷、健康方面的数据。" target="_blank" rel="external">http://data.worldbank.org/indicator），世界银行的数据，一般来说最权威，除了一般统计局数据外，还包括农业、气候、贫穷、健康方面的数据。</a><br>CIA world factbook，（<a href="https://www.cia.gov/library/publications/the-world-factbook/），中央情报局收集的数据，包括地理、人口、社会、交通、军力等信息。" target="_blank" rel="external">https://www.cia.gov/library/publications/the-world-factbook/），中央情报局收集的数据，包括地理、人口、社会、交通、军力等信息。</a></p>
+<p>一般人使用宏观数据就已经足够，专业研究工作者则需要到个人的微观数据，这包括：<br>IPUMS，（<a href="http://www.ipums.org/），普查数据的集成网站，包括人口、地理、居民生活、收入和消费信息。" target="_blank" rel="external">http://www.ipums.org/），普查数据的集成网站，包括人口、地理、居民生活、收入和消费信息。</a><br>ICPSR，（<a href="http://www.icpsr.umich.edu/icpsrweb/ICPSR/），Umich的数据中心收集的数据集，社会科学常用的大部分微观数据都能在这里找到，但在做跨国比较时工作量较大。" target="_blank" rel="external">http://www.icpsr.umich.edu/icpsrweb/ICPSR/），Umich的数据中心收集的数据集，社会科学常用的大部分微观数据都能在这里找到，但在做跨国比较时工作量较大。</a><br>2012-01-30 5 条评论       </p>
+<p>赞同<br>33<br>反对，不会显示你的姓名<br>exult，我在努力。<br>卢琰琰、杨帆、Qiu Malinna 等人赞同</p>
+<h2 id="转载的">转载的</h2><p>按日数据<br>1.公开市场业务中央行票据，央行正回购业务的发行金额，发行利率－－中国人民银行网站中的公开市场业务栏<a href="http://www.pbc.gov.cn/huobizhengce/huobizhengcegongju/gongkaishichangcaozuo/（这里的数据时效性最强）" target="_blank" rel="external">http://www.pbc.gov.cn/huobizhengce/huobizhengcegongju/gongkaishichangcaozuo/（这里的数据时效性最强）</a><br>2.同业拆借市场行情可以在凤凰财经的宏观数据中找到<a href="http://app.finance.ifeng.com/data/mac/jmxf.php（时效性是隔一天）" target="_blank" rel="external">http://app.finance.ifeng.com/data/mac/jmxf.php（时效性是隔一天）</a><br>3.人民币汇率，美元指数，国际黄金期货，国际原油期货，恒指指数，道琼斯指数，可以在新浪网中的行情中心栏目中找到<a href="http://vip.http://stock.finance.sina.com.cn/mkt/（实时或实时延迟）" target="_blank" rel="external">http://vip.http://stock.finance.sina.com.cn/mkt/（实时或实时延迟）</a><br>4.与国债发行有关的即时数据都可以在国家财政局国库司的国债管理中找到<a href="http://gks.mof.gov.cn/redianzhuanti/guozaiguanli/（实时）" target="_blank" rel="external">http://gks.mof.gov.cn/redianzhuanti/guozaiguanli/（实时）</a></p>
+<ol>
+<li>中证全债指数、中证基金指数可以在中证指数有限公司中的指数最新行情中找到<a href="http://www.csindex.com.cn/sseportal/csiportal/zs/zshq.do（实时）" target="_blank" rel="external">http://www.csindex.com.cn/sseportal/csiportal/zs/zshq.do（实时）</a><br>6.上海银行同业拆借市场利率，银行间质押式回购的利率和成交金额可以在中国货币网的行情日评中找到<a href="http://app.chinamoney.com.cn/newRmb/marketStat/index.jsp（有按日数据和统计数据）" target="_blank" rel="external">http://app.chinamoney.com.cn/newRmb/marketStat/index.jsp（有按日数据和统计数据）</a><br>7.融资融券的数据当日数据可以在上海证券交易所<a href="http://www.sse.com.cn/sseportal/webapp/rzrq/sumdatainfo深圳证券交易所http://www.szse.cn/main/disclosure/rzrqxx/rzrqjy/找到" target="_blank" rel="external">http://www.sse.com.cn/sseportal/webapp/rzrq/sumdatainfo深圳证券交易所http://www.szse.cn/main/disclosure/rzrqxx/rzrqjy/找到</a><br>8.股指期货的数据可以在中金所的主页中找到<a href="http://www.cffex.com.cn/" target="_blank" rel="external">http://www.cffex.com.cn/</a><br>9.波罗的海指数<a href="http://www.balticexchange.com/" target="_blank" rel="external">http://www.balticexchange.com/</a> </li>
+<li>各公司的公告可以在上海证券交易所、深圳证券交易所的网站看到每天的上市公司公告: 上海证券交易所网站首页顶部的“公告与提示”栏中点击“上市公司公告”可以看到每天的公告，也可以查询公司上市以来的所有报告。每天晚上10点左右公布第二天的报告。<a href="http://www.sse.com.cn/sseportal/ps/zhs/home.html" target="_blank" rel="external">http://www.sse.com.cn/sseportal/ps/zhs/home.html</a>;<br>深圳证券交易所 网站首页中间位置的“上市公司公告”。每天晚上8点左右公布第二天的报告。<a href="http://disclosure.szse.cn/m/drgg.htm" target="_blank" rel="external">http://disclosure.szse.cn/m/drgg.htm</a><br>按周数据<br>1.公开市场业务造成的市场货币回笼情况在网站上没有公布，但是我找到了另外一种补充的方法，按周来计算的资金回笼情况－－中国债券信息网中有一列分析报告，可以通过查找招商证券的《宏观经济及债券市场周报》来获取这些数据，同时，如果觉得麻烦，不想经常看央行公开市场业务栏来获取央行票据，央行正回购业务的发行金额，发行利率信息的话，也可以在这个周报中找到，但是时效性会差一点<a href="http://www.chinabond.com.cn/Channel/5108029" target="_blank" rel="external">http://www.chinabond.com.cn/Channel/5108029</a><br>2.交易所账户的开户数据，基金的开户数据，可以中国证券登记结算有限责任公司的市场信息栏目中找到<a href="http://www.chinaclear.cn/（按周为最小周期进行统计）" target="_blank" rel="external">http://www.chinaclear.cn/（按周为最小周期进行统计）</a><br>3.关于上面所提的第5点，A股市场上股市新增供给方面的数据，除了可以在两个交易所中按月来查找之外，还可以通过在中国证券登记结算有限公司市场信息栏目中的每周快报中找到<a href="http://www.chinaclear.cn/main/03/0303/030302/030302_1.html（按周来统计）" target="_blank" rel="external">http://www.chinaclear.cn/main/03/0303/030302/030302_1.html（按周来统计）</a><br>按月数据<br>1.A股市场上股市新增供给方面的数据可以在上海证券交易所和深圳证券交易所的统计月报中获得<a href="http://www.sse.com.cn/sseportal/ps/zhs/yjcb/sztjyb.shtml；http://www.szse.cn/main/marketdata/tjyb_front/（按月为周期进行统计）" target="_blank" rel="external">http://www.sse.com.cn/sseportal/ps/zhs/yjcb/sztjyb.shtml；http://www.szse.cn/main/marketdata/tjyb_front/（按月为周期进行统计）</a><br>2.中国宏观经济运行的数据在凤凰财经的宏观数据<a href="http://app.finance.ifeng.com/data/mac/jmxf.php（月度数据）和和讯的宏观数据中都可以找到http://mac.hexun.com/（月度数据）" target="_blank" rel="external">http://app.finance.ifeng.com/data/mac/jmxf.php（月度数据）和和讯的宏观数据中都可以找到http://mac.hexun.com/（月度数据）</a><br>3.中国进出口商品的月度数据可以在中国海关中找到<a href="http://www.customs.gov.cn/tabid/5461/MoreModuleID/15677/MoreTabID/400/Default.aspx（月度）" target="_blank" rel="external">http://www.customs.gov.cn/tabid/5461/MoreModuleID/15677/MoreTabID/400/Default.aspx（月度）</a><br>4.中国财政收支情况可以在中国财政部的统计数据中找到<a href="http://gks.mof.gov.cn/zhengfuxinxi/tongjishuju/(月度" target="_blank" rel="external">http://gks.mof.gov.cn/zhengfuxinxi/tongjishuju/(月度</a>)<br>5.国家统计局公布的月度宏观经济数据可以在统计局的统计分析中找到<a href="http://www.stats.gov.cn/tjfx/" target="_blank" rel="external">http://www.stats.gov.cn/tjfx/</a><br>6.中央银行的月度金融运行情况可以在央行的新闻栏目中找到<a href="http://www.pbc.gov.cn/xinwen/" target="_blank" rel="external">http://www.pbc.gov.cn/xinwen/</a><br>7.外商直接投资(FDI)可以在商务部的统计信息中找到<a href="http://www.mofcom.gov.cn/tongjiziliao/tongjiziliao.html" target="_blank" rel="external">http://www.mofcom.gov.cn/tongjiziliao/tongjiziliao.html</a><br>8.上海市场市盈率的数值可以在上海交易所的《上证统计月报》中找到<a href="http://www.sse.com.cn/sseportal/ps/zhs/yjcb/sztjyb.shtml" target="_blank" rel="external">http://www.sse.com.cn/sseportal/ps/zhs/yjcb/sztjyb.shtml</a><br>9.深圳市场市盈率的数值可以在深圳交易所的统计月报中找到<a href="http://www.szse.cn/main/marketdata/tjyb_front/" target="_blank" rel="external">http://www.szse.cn/main/marketdata/tjyb_front/</a><br>10.全国发电量的统计可以在中国电力企业联合会中找到<a href="http://tj.cec.org.cn/" target="_blank" rel="external">http://tj.cec.org.cn/</a><br>券商报告 </li>
+<li>券商报告基本上可以在这里找到 迈博汇金 <a href="http://www.microbell.com/" target="_blank" rel="external">http://www.microbell.com/</a><br>2.投资类的报纸可以选择《中国证券报》、《上海证券报》、《经济观察报》和《21世纪经济报道》;除了《经济观察报》，这些报纸的基本内容都是偏向资本市场投资的，《21世纪经济报道》偏行业深度调查。<br>3.中证网 顶部“今日报纸” 点击进入《中国证券报》电子版<a href="http://www.cs.com.cn/;中国证券网" target="_blank" rel="external">http://www.cs.com.cn/;中国证券网</a> 顶部“上海证券报”点击进入《上海证券报》电子版<a href="http://www.cnstock.com/;以下两个网站的电子报纸不是免费的，但是各栏目的内容基本包含了当天报纸的报道。" target="_blank" rel="external">http://www.cnstock.com/;以下两个网站的电子报纸不是免费的，但是各栏目的内容基本包含了当天报纸的报道。</a><br>4.《经济观察报》周一出版，《21世纪经济报道》周一至周五出版。<br>5.经济观察网<a href="http://www.eeo.com.cn/;21世纪经济报道http://www.21cbh.com/" target="_blank" rel="external">http://www.eeo.com.cn/;21世纪经济报道http://www.21cbh.com/</a><br>6.更多的宏观数据可以在这个网站找到，不定时更新银瀚投资服务网<a href="http://www.datagraph.com.cn/index.asp" target="_blank" rel="external">http://www.datagraph.com.cn/index.asp</a><br>2012-01-30 2 条评论       </li>
+</ol>
+<p>赞同<br>24<br>反对，不会显示你的姓名<br>冯定星，权威的统计数据，获得渠道，数据结构<br>陈宇乾、吴双锋、卢琰琰 等人赞同<br>我的答案是从好友那边转过来的</p>
+<p><strong><strong><strong><strong>___</strong></strong></strong></strong>HLL的分割线<strong><strong><strong><strong><strong>__</strong></strong></strong></strong></strong></p>
+<p>我们可以通过几个渠道获得中国的数据<br>查找《中国统计年鉴》等是一个选择，特别是在几年前，几乎是唯一的选择。好多图书馆里都收藏《中国统计年鉴》等，翻出有你所需数据的那一页，复印是一个不错的选择，当然你也可以选择拿出纸和笔，把所需要的数据都抄写下来。为了便于对这些数据做进一步的处理，接下来的工作可能有点枯燥：把你找的数据一个一个地输入到电脑。当然，现在情况改善好多了，比如要查找2004年的《中国统计年鉴》，中华人民共和国国家统计局网站提供免费下载，网址是<a href="http://www.stats.gov.cn/。" target="_blank" rel="external">http://www.stats.gov.cn/。</a><br>如果你需要一应俱全的最新宏观经济数据，一个宝贵的来源是国家统计局提供的《进度统计数据》，网址是<a href="http://www.stats.gov.cn/tjsj/。" target="_blank" rel="external">http://www.stats.gov.cn/tjsj/。</a><br>如果想要从数据收集之日起的完整国民经济核算资料，权威的来源是国家统计局国民经济核算司出版的《中国国内生产总值核算历史资料》（1952-1995）和《中国国内生产总值核算历史资料》（1996-2002）。在这两本年鉴里，提供了核算中国GDP的详实数据。特别是《中国国内生产总值核算历史资料》（1996-2002）提供了电子版，电子版数据不仅提供1996-2002年的详实数据，还大致回溯了1952-1995年间的数据，非常好用。<br>如果你想要从数据收集之日起的较为完整的宏观经济数据，《新中国五十年统计资料汇编》和《新中国55年统计资料汇编》是一个不错的选择。遗憾的是，它们都没有提供电子版，但后者可以在中国资讯行下载。<br>另外，还有许多收费网站提供较为详实的中国宏观经济数据，比如中国资讯行数据库<a href="http://www.bjinfobank.com/、中国经济信息网" target="_blank" rel="external">http://www.bjinfobank.com/、中国经济信息网</a> <a href="http://www.cei.gov.cn等。这些数据库很方便，但如果你没有登陆权限，也只能够“望梅止渴”了。" target="_blank" rel="external">http://www.cei.gov.cn等。这些数据库很方便，但如果你没有登陆权限，也只能够“望梅止渴”了。</a><br>如果你还没有找到你想要的数据，下面的一个网站也许有用。人大经济论坛 <a href="http://www.pinggu.org/bbs/?fromuser=snow000123提供大量的可供下载的经济学资源，而且还有许多有用的连接。当然，这是一个免费的网站，但下载某些资源时，说不定要求一定的所谓积分限制。" target="_blank" rel="external">http://www.pinggu.org/bbs/?fromuser=snow000123提供大量的可供下载的经济学资源，而且还有许多有用的连接。当然，这是一个免费的网站，但下载某些资源时，说不定要求一定的所谓积分限制。</a> 这个强力推荐~~</p>
+<p>补充1：如何找美国的数据<br>由位于华盛顿的美国政府印刷办公室出版、经济顾问委员会撰写的《总统经济报告》（Economic Report of President），提供了有关美国当前经济形势的描述和主要宏观经济变量数据。相当多的数据都可以追溯到1959年，甚至个别的可追溯到1929年。可能你已经留意到了，好多有关美国的图形，都是采用《总统经济报告》（2005）所附数据生成的。这些数据可以免费下载，网址是<a href="http://www.access.gpo.gov/eop/。" target="_blank" rel="external">http://www.access.gpo.gov/eop/。</a><br>如果需要一应俱全安的数据，一个宝贵的权威来源是，美国商务部统计局出版的《美国统计概要》（Statistical Abstract of the United States），相当一部分数据可以免费下载，网址是<a href="http://www.census.gov/statab/www/。" target="_blank" rel="external">http://www.census.gov/statab/www/。</a><br>如果想获得最近数据的详细资料，一个不错的选择是，美国商务经济分析局每月出版的《当代商业纵览》（Survey of Current Business）。网址是，<a href="http://www.bea.doc.gov。" target="_blank" rel="external">http://www.bea.doc.gov。</a> </p>
+<p>补:2：如何找国外其它经济体的数据<br>对富裕国家来说，最有用的资料来源于经济合作与发展组织（简称OECD）。经济合作与发展组织的成员包括：奥地利、澳大利亚、比利时、加拿大、捷克共和国、丹麦、芬兰、法国、德国、希腊、匈牙利、冰岛、意大利、日本、卢森堡、墨西哥、荷兰、新西兰、挪威、波兰、葡萄牙、韩国、西班牙、瑞典、瑞士、土耳其、英国和美国。看来，世界上的富裕国家大都属于该组织，其产出占世界产出的70%左右。OECD的网址是<a href="http://www.oecd.org，提供三种极为有用的数据：" target="_blank" rel="external">http://www.oecd.org，提供三种极为有用的数据：</a><br>（1）《OECD经济展望》（OECD Economic Outlook），每年出版两次，提供许多跨国宏观经济数据。这些数据一般都上溯到20世纪70年代，而且具有很好的一致性。<br>（2）《OECD就业展望》（OECD Employment Outlook），每年出版一次，专门提供劳动力市场的数据。<br>（3）《OECD历史统计》（OECD Historical Statistics），不定期出版，将当期数据和过去数据放在一起。<br>对于不是OECD成员的国家和地区，可以从其它国际组织那里获得相关数据，比如国际货币基金组织（简称IMF），其网址是<a href="http://www.imf.org。IMF提供《国际金融统计年鉴》（International" target="_blank" rel="external">http://www.imf.org。IMF提供《国际金融统计年鉴》（International</a> Financial Statistics Yearbook），它主要提供成员国的金融数据，但也包括一些总体数据，比如GDP、失业和通货膨胀等。<br>另外，世界银行提供的《世界经济发展指标》，是世界银行最大众化的统计类读物，提供光盘版。<br>至于若干国家长期的统计数据，两个不可多得的数据来源是，Heston-Summers数据库和Madison数据库。Heston-Summers数据库提供168经济体在1950-2000年间的跨国可比数据，在宾夕法尼亚大学国际比较中心（Center for International Comparisons at the University of Pennsylvania）网站上可以下载，<a href="http://pwt.econ.upenn.edu/。Madison数据库提供了自1820年以来56个经济体的数据。" target="_blank" rel="external">http://pwt.econ.upenn.edu/。Madison数据库提供了自1820年以来56个经济体的数据。</a><br>最后，如果还没有找到你要的数据，不妨登陆下面的两个网站，也许是根稻草。哈佛商学院的宏观经济学资源网站www.hbs.edu./units/bgie/internet/，提供了大量连接。由密西西比大学Bill Goffe维护的一个网站<a href="http://rfe.wustl.edu，不仅列出了数据来源，而且还列出了有关经济的其他信息来源。" target="_blank" rel="external">http://rfe.wustl.edu，不仅列出了数据来源，而且还列出了有关经济的其他信息来源。</a> </p>
+<p>我手头还有些资料，或许有帮助，包括UHS、CHIP、Census、CHNS 、RHS 、中国老年健康调查项目、CHARLS等国内微观数据库的资料。<br>私信吧~~<br>2012-11-29 7 条评论       </p>
+<p>赞同<br>6<br>反对，不会显示你的姓名<br>屈艺，经济学研究生<br>Noah、逆风飞翔、Angel 等人赞同<br>世界经济和国际贸易常用的免费数据库：<br>Penn World Table：189个国家和地区从1950年到2009年的主要宏观数据 <a href="http://pwt.econ.upenn.edu/" target="_blank" rel="external">http://pwt.econ.upenn.edu/</a><br>The World Bank Data：世界银行的统计数据，内容非常丰富，包括每年的世界发展报告，提供 API <a href="http://data.worldbank.org/" target="_blank" rel="external">http://data.worldbank.org/</a><br>WITS：世界银行、WTO和联合国贸发会议等机构提供的关于贸易和关税等方面的数据和建模工具 <a href="https://wits.worldbank.org/" target="_blank" rel="external">https://wits.worldbank.org/</a><br>OECD.Stat Extracts ：经合组织的数据库，涵盖成员国和其他主要国家 <a href="http://stats.oecd.org/" target="_blank" rel="external">http://stats.oecd.org/</a><br>2012-01-30 1 条评论       </p>
+<p>赞同<br>2<br>反对，不会显示你的姓名<br>刘疏非，装作不知道我不知道<br>Angel、Raymond Wang 赞同<br>澳大利亚经济相关的统计数据。<br>Australian Bureau of Statistics(ABS) <a href="http://www.abs.gov.au/" target="_blank" rel="external">http://www.abs.gov.au/</a><br>Reserve Bank of Australia(RBA) <a href="http://www.rba.gov.au/" target="_blank" rel="external">http://www.rba.gov.au/</a><br>2012-01-30 添加评论       </p>
+<p>赞同<br>4<br>反对，不会显示你的姓名<br>高楠，学无止境。over<br>Noah、Angel、BigWong 等人赞同<br>我知道的就几个</p>
+<p>营养调查，北卡罗来纳州立大学的CHNS，1989-2009，免费的<br>微观家庭金融，西财的CHFS，截面，今年3月发布，也将是免费的。<br>统计年鉴，CNKI上有收集的各个类型的统计年鉴，品种很全。<br>很多权威的数据收费很贵，但有些在人大经济论坛有免费的或者收费很低，一般去那里下载。<br>2012-01-30 2 条评论       </p>
+<p>赞同<br>4<br>反对，不会显示你的姓名<br>丁利，中文互联网数据中心–微信号：i199it<br>边广超、信德维拉、Roger 等人赞同<br><a href="http://www.199it.com" target="_blank" rel="external">http://www.199it.com</a><br>2014-01-15 添加评论       </p>
+<p>赞同<br>4<br>反对，不会显示你的姓名<br>蔡士龙<br>江正、信德维拉、岳国庆 等人赞同<br>上面回答已经包含我所知道的大部分网站了。这里推荐一个关于房地产的–CRIC。工作一年以来几乎所有的PPT都有引用过这里的数据。<br>2013-01-10 添加评论       </p>
+<p>赞同<br>1<br>反对，不会显示你的姓名<br>陈乐群，NOI铜牌退役/努力准备高考/idea会在睡觉…<br>岳国庆 赞同<br>来一个不是很对题的<br>Wolfram|Alpha (<a href="http://wolframalpha.com" target="_blank" rel="external">http://wolframalpha.com</a>)<br>可能不是很符合题主的要求，但是它 庞大的知识体系 和 自然语言搜索 以及 相关内容的提示，还是可以给你另一番体验的<br>2013-12-30 添加评论       </p>
+<p>赞同<br>1<br>反对，不会显示你的姓名<br>李明，电商 产品分析 数据分析<br>贺腾 赞同<br>数据堂<a href="http://www.datatang.com" target="_blank" rel="external">http://www.datatang.com</a><br>也有一些，不过需要一些money<br>2012-06-25 1 条评论       </p>
+<p>赞同<br>0<br>反对，不会显示你的姓名<br>孙永霞，知足的小人生<br>法国的， INSEE - National Institute of Statistics and Economic Studies<br>2013-05-24 添加评论       </p>
+<p>赞同<br>0<br>反对，不会显示你的姓名<br>曾志伯<br>Quandl - Find, Use and Share Numerical Data<br>2013-07-13 添加评论       </p>
+<p>赞同<br>0<br>反对，不会显示你的姓名<br>周鑫，数据产品经理<br>推荐一个：<a href="http://www.cnidp.cn" target="_blank" rel="external">http://www.cnidp.cn</a><br>这个网站免费提供了一些网站的统计数据，pv、uv、时长之类的<br>2013-10-21 添加评论       </p>
+<p>赞同<br>0<br>反对，不会显示你的姓名<br>陈文兄，发展经济学<br>UNU-WIDER : Download，这个用来研究不平等的时候很广泛使用<br>2013-11-20 添加评论       </p>
+<p>赞同<br>0<br>反对，不会显示你的姓名<br>林夕，互联网呀，互联网！<br>CNZZ可以一试<br>2014-02-01 添加评论       </p>
+<p>赞同<br>0<br>反对，不会显示你的姓名<br>脱缰野狗，待毕业<br>关注健康经济学方面可以找一下 CHNS（中国营养健康调查）是北卡和北大合作搞的，还有CHARLS<br>2013-12-30 添加评论       </p>
+<p>赞同<br>0<br>反对，不会显示你的姓名<br>Ervin<br>这几天上课老师刚好有讲相关的信息。主要集中于国外的经济数据等。<br>1.传统的能够有权限获得的数据库：<br>a. WRDS “Wharton Research Data Service”<br>可以说是一个很全面的数据库了，也集中了很多别的 数据库的资料等等。下载下来有各种格式可以适应，txt，xlsx，csv等等.感觉有了这个差不多就足够了，真的是综合了很多内容。适用于的地区很广。<br>b. Federal Reserve (Data on US interest rates, bond yields and foreign exchange rates)<br>这个很多人都知道了吧，美国的基本数据似乎都在上面。各种统计数据。<br>c. NBER (National Bureau of Economic Research) 没有过多了解。<br>d. Bureau of Economic Analysis 没有过多了解<br>e. Ken. French’s Data Library<br>好像是这个叫French 的人和才获得诺贝尔经济学奖法马合作建立的一个数据库，然后里面有提供一些分类的经济学信息。例如它有按工业分了49个不同工业的portfolio的回报。<br>f. Journal of Applied Econometrics (archive for papers accepted from 1994) 没有过多了解<br>g. Financial Data Finder<br>以上是传统的的数据获得渠道<br>现在去讨论case 晚上把它补充完整。</p>
+
+    
+    
+    <footer class="meta">
+      
+      
+  <div class="tags">
+<a href="/tags/转载，知乎/">转载，知乎</a></div>
+
+      
+    </footer>
+    
+  </div>
+  
+</article>
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <header>
+    
+  
+    <h1 class="title"><a href="/2014/01/20/deep-learning-resource/">Deep Learning Resource</a></h1>
+  
+
+    <time datetime="2014-01-20T02:26:06.000Z">
+  <span class="day">20</span><span class="month">Jan</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+      <a id="more"></a>
+<div id="cnblogs_post_body"><br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"><strong>Deep Learning（深度学习）：</strong></span><br><br><a href="http://deeplearning.stanford.edu/wiki/index.php/UFLDL_Tutorial" target="_blank" rel="external">ufldl的2个教程(这个没得说，入门绝对的好教程，Ng的，逻辑清晰有练习)：一</a><br><br><a href="http://ufldl.stanford.edu/tutorial/index.php/UFLDL_Tutorial" target="_blank" rel="external">ufldl的2个教程(这个没得说，入门绝对的好教程，Ng的，逻辑清晰有练习)：二</a><br><br><a href="http://nlp.stanford.edu/courses/NAACL2013/" target="_blank" rel="external">Bengio团队的deep learning教程，用的theano库，主要是rbm系列，搞python的可以参考，很不错。</a><br><br><a href="http://deeplearning.net/" target="_blank" rel="external">deeplearning.net主页，里面包含的信息量非常多，有software, reading list, research lab, dataset, demo等，强烈推荐，自己去发现好资料。</a><br><br><a href="https://github.com/rasmusbergpalm/DeepLearnToolbox" target="_blank" rel="external">Deep learning的toolbox，matlab实现的，对应源码来学习一些常见的DL模型很有帮助，这个库我主要是用来学习算法实现过程的。</a><br><br><a href="http://pan.baidu.com/share/link?shareid=3220401770&amp;uk=723014463" target="_blank" rel="external">2013年龙星计划深度学习教程，邓力大牛主讲，虽然老师准备得不充分，不过还是很有收获的。</a><br><br><a href="https://www.coursera.org/course/neuralnets" target="_blank" rel="external">Hinton大牛在coursera上开的神经网络课程，DL部分有不少，非常赞，没有废话，课件每句话都包含了很多信息，有一定DL基础后去听收获更大。</a><br><br><span><a href="http://info.usherbrooke.ca/hlarochelle/cours/ift725_A2013/contenu.html" target="_blank" rel="external">Larochelle关于DL的课件，逻辑清晰，覆盖面广,包含了rbm系列，autoencoder系列，sparse coding系列，还有crf，cnn，rnn等</a>。</span><a href="http://info.usherbrooke.ca/hlarochelle/cours/ift725_A2013/contenu.html" target="_blank" rel="external">虽然网页是法文，但是课件是英文。</a><br><br><a href="http://deeplearning.cs.cmu.edu/" target="_blank" rel="external">CMU大学2013年的deep learning课程，有不少reading paper可以参考。</a><br><br><a href="http://www.cs.dartmouth.edu/~lorenzo/teaching/cs189/readinglist.html" target="_blank" rel="external">达慕思大学Lorenzo Torresani的2013Deep learning课程reading list.</a><br><br><a href="http://cs.nyu.edu/~fergus/tutorials/deep_learning_cvpr12/" target="_blank" rel="external">Deep Learning Methods for Vision(余凯等在cvpr2012上组织一个workshop，关于DL在视觉上的应用)。</a><br><br><a href="http://cs.stanford.edu/people/ang/?page_id=20" target="_blank" rel="external">斯坦福Ng团队成员链接主页，可以进入团队成员的主页，比较熟悉的有Richard Socher,&nbsp;Honglak Lee,&nbsp;Quoc Le等。</a><br><br><a href="http://learning.cs.toronto.edu/index.shtml?section=people" target="_blank" rel="external">多伦多ML团队成员链接主页，可以进入团队成员主页，包括DL鼻祖hinton，还有Ruslan Salakhutdinov ,&nbsp;Alex Krizhevsky等。</a><br><br><a href="https://www.iro.umontreal.ca/article.php3?id_article=60&amp;lang=env" target="_blank" rel="external">蒙特利尔大学机器学习团队成员链接主页，包括大牛Bengio，还有Ian Goodfellow<span>&nbsp;等。</span></a><br><br><a href="http://www.cs.nyu.edu/~yann/people.html" target="_blank" rel="external">纽约大学的机器学习团队成员链接主页，包括大牛Lecun，还有<span>Rob Fergus等。</span></a><br><br><a href="http://www.douban.com/event/19029525/" target="_blank" rel="external">豆瓣上的脑与deep learning读书会，有讲义和部分视频，主要介绍了一些于deep learning相关的生物神经网络。</a><br><br><a href="http://cilvr.cs.nyu.edu/doku.php?id=courses:bigdata:slides:start" target="_blank" rel="external">Large Scale ML的课程，由Lecun和Langford讲的，能不推荐么。</a><br><br><a href="http://blog.csdn.net/zouxy09/article/details/11910527" target="_blank" rel="external">一些常见的DL code列表，csdn博主zouxy09的博文，Deep Learning源代码收集-持续更新…</a><br><br><span style="font-size: 15px; font-family: 宋体;"><a href="http://nlp.stanford.edu/courses/NAACL2013/" target="_blank" rel="external">Deep Learning for NLP (without Magic)，由DL界5大高手之一的Richard Socher小组搞的，他主要是NLP的。</a></span><br><br><a href="https://www.ipam.ucla.edu/schedule.aspx?pc=gss2012" target="_blank" rel="external">2012 Graduate Summer School: Deep Learning, Feature Learning，高手云集，深度学习盛宴，几乎所有的DL大牛都有参加。</a><br><br>&nbsp;<br><br><span style="background-color: #ffffff; color: #0000ff; font-size: 18pt;"><strong>Machine Learning（机器学习）：</strong></span><br><br><a href="http://wenku.baidu.com/view/f32a35d2240c844769eaee55.html" target="_blank" rel="external">介绍图模型的一个ppt，非常的赞，ppt作者总结得很给力，里面还包括了HMM，MEM, CRF等其它图模型。反正看完挺有收获的。</a><br><br><a href="http://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA" target="_blank" rel="external">机器学习一个视频教程，youtube上的，翻吧，内容很全面，偏概率统计模型，每一小集只有几分钟。&nbsp;</a><br><br><a href="http://bigeye.au.tsinghua.edu.cn/DragonStar2012/index.html" target="_blank" rel="external">龙星计划2012机器学习，由余凯和张潼主讲。</a><br><br><span><a href="http://remonstrate.wordpress.com/2012/05/23/pgm-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E8%8A%82%E9%80%89%EF%BC%88%E4%B8%80%EF%BC%89/" target="_blank" rel="external">demonstrate 的 blog :关于PGM(概率图模型)系列，主要按照<span>Daphne Koller的经典PGM教程介绍的</span>，大家依次google之</a>。<br></span><br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"><strong>Computer Vision（计算机视觉）：</strong></span><br><br><a href="http://6.869.csail.mit.edu/fa13/schedule.html" target="_blank" rel="external">MIT2013年秋季课程：<span>Advances in Computer Vision，有练习题，有些有code.</span></a><br><br>&nbsp;<br><br><span style="font-size: 18pt; color: #0000ff;"><strong>OpenCV**</strong>相关：<strong></strong></span><br><br><a href="http://opencv.org/" target="_blank" rel="external">http://opencv.org/</a><br><br>2012年7月4日随着opencv2.4.2版本的发布，opencv更改了其最新的官方网站地址。<br><br><a href="http://www.opencvchina.com/" target="_blank" rel="external">http://www.opencvchina.com/</a><br><br>好像12年才有这个论坛的，比较新。里面有针对《learning opencv》这本书的视频讲解，不过视频教学还没出完，正在更新中。对刚入门学习opencv的人来说很不错。<br><br><a href="http://www.opencv.org.cn/forum/" target="_blank" rel="external">http://www.opencv.org.cn/forum/</a><br><br>opencv中文论坛，对于初次接触opencv的学者来说比较不错，入门资料多，opencv的各种英文文档也翻译成中文了。不足是感觉这个论坛上发帖提问很少人回答，也就是说讨论不够激烈。<br><br><a href="http://opencv.jp/" target="_blank" rel="external">http://opencv.jp/</a><br><br>opencv的日文网站，里面有不少例子代码，看不懂日文可以用网站自带的翻译，能看个大概。<br><br><a href="http://code.opencv.org/projects/opencv" target="_blank" rel="external">http://code.opencv.org/projects/opencv</a><br><br>opencv版本bug修补，版本更新，以及各种相关大型活动安排,还包含了opencv最近几个月内的活动路线，即未来将增加的功能等，可以掌握各种关于opencv进展情况的最新进展。<br><br><a href="http://tech.groups.yahoo.com/group/OpenCV/" target="_blank" rel="external">http://tech.groups.yahoo.com/group/OpenCV/</a><br><br>opencv雅虎邮件列表，据说是最好的opencv论坛，信息更新最新的地方。不过个人认为要查找相关主题的内容，在邮件列表中非常不方便。<br><br><a href="http://www.cmlab.csie.ntu.edu.tw/~jsyeh/wiki/doku.php" target="_blank" rel="external">http://www.cmlab.csie.ntu.edu.tw/~jsyeh/wiki/doku.php</a><br><br>台湾大学暑假集训网站，内有链接到与opencv集训相关的网页。感觉这种教育形式还蛮不错的。<br><br><a href="http://sourceforge.net/projects/opencvlibrary/" target="_blank" rel="external">http://sourceforge.net/projects/opencvlibrary/</a><br><br>opencv版本发布地方。<br><br><a href="http://code.opencv.org/projects/opencv/wiki/ChangeLog#241" target="_blank" rel="external">http://code.opencv.org/projects/opencv/wiki/ChangeLog#241</a>&nbsp; &nbsp;&nbsp;<a href="http://opencv.willowgarage.com/wiki/OpenCV%20Change%20Logs" target="_blank" rel="external">http://opencv.willowgarage.com/wiki/OpenCV%20Change%20Logs</a><br><br>opencv版本内容更改日志网页,前面那个网页更新最快。<br><br><a href="http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html" target="_blank" rel="external">http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html</a><br><br>opencv中文教程网页，分几个模块讲解，有代码有过程。内容是网友翻译opencv自带的doc文件里的。<br><br><a href="https://netfiles.uiuc.edu/jbhuang1/www/resources/vision/index.html" target="_blank" rel="external">https://netfiles.uiuc.edu/jbhuang1/www/resources/vision/index.html</a><br><br>网友总结的常用带有cvpr领域常见算法code链接的网址，感觉非常的不错。<br><br><a href="http://fossies.org/dox/OpenCV-2.4.2/" target="_blank" rel="external">http://fossies.org/dox/OpenCV-2.4.2/</a><br><br>该网站可以查看opencv中一些函数的变量接口，还会列出函数之间的结构图。<br><br><a href="http://opencv.itseez.com/" target="_blank" rel="external">http://opencv.itseez.com/</a><br><br>opencv的函数、类等查找网页，有导航，查起来感觉不错。<br><br>&nbsp;<br><br><span style="font-size: 18pt; color: #0000ff;">优化：<strong></strong></span><br><br><a href="http://submodularity.org/" target="_blank" rel="external">http://submodularity.org/</a><br><br>submodual优化。<br><br>&nbsp;<br><br><span style="font-size: 18pt; color: #0000ff;">数学：<strong></strong></span><br><br><a href="http://www.youku.com/playlist_show/id_19465801.html" target="_blank" rel="external">http://www.youku.com/playlist_show/id_19465801.html</a><br><br><span>《计算机中的数学》系列视频，<span>8位老师10讲内容，生动介绍微积分和线性代数基本概念在计算机学科中的各种有趣应用！</span></span><br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;">Linux学习资料：<strong></strong></span><br><br><a href="http://itercast.com/library/1" target="_blank" rel="external">http://itercast.com/library/1</a><br><br>linux入门的基础视频教程，对于新手可选择看第一部分，视频来源于<span>LinuxCast.net网站，还不错。</span><br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;">OpenNI+Kinect相关：<strong></strong></span><br><br><a href="http://1.yuhuazou.sinaapp.com/" target="_blank" rel="external">http://1.yuhuazou.sinaapp.com/</a><br><br>网友晨宇思远的博客，主攻cvpr，ai等。<br><br><a href="http://blog.csdn.net/chenli2010/article/details/6887646" target="_blank" rel="external">http://blog.csdn.net/chenli2010/article/details/6887646</a><br><br>kinect和openni学习资料汇总。<br><br><a href="http://blog.csdn.net/moc062066/article/category/871261" target="_blank" rel="external">http://blog.csdn.net/moc062066/article/category/871261</a><br><br>OpenCV 计算机视觉 kinect的博客:<br><br><a href="http://kheresy.wordpress.com/index_of_openni_and_kinect/comment-page-5/" target="_blank" rel="external">http://kheresy.wordpress.com/index_of_openni_and_kinect/comment-page-5/</a><br><br>网友Heresy的博客，里面有不少kinect的文章，写的比较详细。<br><br><a href="http://www.cnkinect.com/" target="_blank" rel="external">http://www.cnkinect.com/</a><br><br>体感游戏中文网，有不少新的kinect资讯。<br><br><a href="http://www.kinectutorial.com/" target="_blank" rel="external">http://www.kinectutorial.com/</a><br><br>Kinect体感开发网。<br><br><a href="http://code.google.com/p/openni-hand-tracker" target="_blank" rel="external">http://code.google.com/p/openni-hand-tracker</a><br><br>openni_hand_tracking google code项目。<br><br><a href="http://blog.candescent.ch/" target="_blank" rel="external">http://blog.candescent.ch/</a><br><br>网友的kinect博客，里面有很多手势识别方面的文章介绍，还有源码，不过貌似是基于c#的。<br><br><a href="https://sites.google.com/site/colordepthfusion/" target="_blank" rel="external">https://sites.google.com/site/colordepthfusion/</a><br><br>一些关于深度信息和颜色信息融合（fusion）的文章。<br><br><a href="http://projects.ict.usc.edu/mxr/faast/" target="_blank" rel="external">http://projects.ict.usc.edu/mxr/faast/</a><br><br>kinect新的库，可以结合OpenNI使用。<br><br><a href="https://sites.google.com/a/chalearn.org/gesturechallenge/" target="_blank" rel="external">https://sites.google.com/a/chalearn.org/gesturechallenge/</a><br><br>kinect手势识别网站。<br><br><a href="http://www.ros.org/wiki/mit-ros-pkg" target="_blank" rel="external">http://www.ros.org/wiki/mit-ros-pkg</a><br><br>mit的kinect项目，有code。主要是与手势识别相关。<br><br><a href="http://www.thoughtden.co.uk/blog/2012/08/kinecting-people-our-top-6-kinect-projects/" target="_blank" rel="external">http://www.thoughtden.co.uk/blog/2012/08/kinecting-people-our-top-6-kinect-projects/</a><br><br>kinect 2012年度最具创新的6个项目，有视频，确实够创新的！<br><br><a href="http://www.cnblogs.com/yangyangcv/archive/2011/01/07/1930349.html" target="_blank" rel="external">http://www.cnblogs.com/yangyangcv/archive/2011/01/07/1930349.html</a><br><br>kinect多点触控的一篇博文。<br><br><a href="http://sourceforge.net/projects/kinect-mex/" target="_blank" rel="external">http://sourceforge.net/projects/kinect-mex/</a><br><br><a href="http://www.mathworks.com/matlabcentral/fileexchange/30242-kinect-matlab" target="_blank" rel="external">http://www.mathworks.com/matlabcentral/fileexchange/30242-kinect-matlab</a><br><br>有关matlab for kinect的一些接口。<br><br><a href="http://news.9ria.com/2012/1212/25609.html" target="_blank" rel="external">http://news.9ria.com/2012/1212/25609.html</a><br><br>AIR和Kinect的结合，有一些手指跟踪的code。<br><br><a href="http://eeeweba.ntu.edu.sg/computervision/people/home/renzhou/index.htm" target="_blank" rel="external">http://eeeweba.ntu.edu.sg/computervision/people/home/renzhou/index.htm</a><br><br>研究kinect手势识别的，任洲。刚毕业不久。<br><br>&nbsp;<br><br><span style="font-size: 18pt; color: #0000ff;">其他网友<strong><strong>cvpr</strong></strong>领域的链接总结：<strong></strong></span><br><br><a href="http://www.cnblogs.com/kshenf/" target="_blank" rel="external">http://www.cnblogs.com/kshenf/</a><br><br>网友整理常用牛人链接总结，非常多。不过个人没有没有每个网站都去试过。所以本文也是我自己总结自己曾经用过的或体会过的。<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;">OpenGL有关:<strong></strong></span><br><br><a href="http://nehe.gamedev.net/" target="_blank" rel="external">http://nehe.gamedev.net/</a><br><br>NeHe的OpenGL教程英文版。<br><br><a href="http://www.owlei.com/DancingWind/" target="_blank" rel="external">http://www.owlei.com/DancingWind/</a><br><br>NeHe的OpenGL教程对应的中文版，由网友周玮翻译的。<br><br><a href="http://www.qiliang.net/old/nehe_qt/" target="_blank" rel="external">http://www.qiliang.net/old/nehe_qt/</a><br><br>NeHe的OpengGL对应的Qt版中文教程。<br><br><a href="http://blog.csdn.net/qp120291570" target="_blank" rel="external">http://blog.csdn.net/qp120291570</a><br><br>网友”左脑设计，右脑编程”的Qt_OpenGL博客,写得还不错。<br><br><a href="http://guiliblearning.blogspot.com/" target="_blank" rel="external">http://guiliblearning.blogspot.com/</a><br><br>这个博客对opengl的机制有所剖析，貌似要翻墙才能进去。<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;">cvpr综合网站论坛博客等：<strong></strong></span><br><br><a href="http://www.cvchina.net/" target="_blank" rel="external">http://www.cvchina.net/</a><br><br>中国计算机视觉论坛<br><br><a href="http://www.cvchina.info/" target="_blank" rel="external">http://www.cvchina.info/</a><br><br>这个博客很不错，每次看完都能让人兴奋，因为有很多关于cv领域的科技新闻，还时不时有视频显示。另外这个博客里面的资源也整理得相当不错。中文的。<br><br><a href="http://www.bfcat.com/" target="_blank" rel="external">http://www.bfcat.com/</a><br><br>一位网友的个人计算机视觉博客，有很多关于计算机视觉前沿的东西介绍，与上面的博客一样，看了也能让人兴奋。<br><br><a href="http://blog.csdn.net/v_JULY_v/" target="_blank" rel="external">http://blog.csdn.net/v_JULY_v/</a><br><br>牛人博客，主攻数据结构，机器学习数据挖掘算法等。<br><br><a href="http://blog.youtueye.com/" target="_blank" rel="external">http://blog.youtueye.com/</a><br><br>该网友上面有一些计算机视觉方向的博客,博客中附有一些实验的测试代码.<br><br><a href="http://blog.sciencenet.cn/u/jingyanwang" target="_blank" rel="external">http://blog.sciencenet.cn/u/jingyanwang</a><br><br>多看pami才扯谈的博客，其中有不少pami文章的中文介绍。<br><br><a href="http://chentingpc.me/" target="_blank" rel="external">http://chentingpc.me/</a><br><br>做网络和自然语言处理的，有不少机器学习方面的介绍。<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;">ML常用博客资料等：<strong></strong></span><br><br><a href="http://freemind.pluskid.org/" target="_blank" rel="external">http://freemind.pluskid.org/</a><br><br><span>由 pluskid 所维护的 blog，<span>主要记录一些机器学习、程序设计以及各种技术和非技术的相关内容，写得很不错。</span></span><br><br><a href="http://datasciencemasters.org/" target="_blank" rel="external">http://datasciencemasters.org/</a><br><br>里面包含学ML/DM所需要的一些知识链接，且有些给出了视频教程，网页资料，电子书，开源code等，推荐！<br><br><a href="http://cs.nju.edu.cn/zhouzh/index.htm" target="_blank" rel="external">http://cs.nju.edu.cn/zhouzh/index.htm</a><br><br>周志华主页，不用介绍了，机器学习大牛，更可贵的是他的很多文章都有源码公布。<br><br><a href="http://www.eecs.berkeley.edu/~jpaisley/Papers.htm" target="_blank" rel="external">http://www.eecs.berkeley.edu/~jpaisley/Papers.htm</a><br><br>John Paisley的个人主页，主要研究机器学习领域，有些文章有代码提供。<br><br><a href="http://foreveralbum.yo2.cn/" target="_blank" rel="external">http://foreveralbum.yo2.cn/</a><br><br>里面有一些常见机器学习算法的详细推导过程。<br><br><a href="http://blog.csdn.net/abcjennifer" target="_blank" rel="external">http://blog.csdn.net/abcjennifer</a><br><br>浙江大学CS硕士在读，关注计算机视觉，机器学习，算法研究，博弈， 人工智能， 移动互联网等学科和产业。该博客中有很多机器学习算法方面的介绍。<br><br><a href="http://www.wytk2008.net/" target="_blank" rel="external">http://www.wytk2008.net/</a><br><br>无垠天空的机器学习博客。<br><br><a href="http://www.chalearn.org/index.html" target="_blank" rel="external">http://www.chalearn.org/index.html</a><br><br>机器学习挑战赛。<br><br><a href="http://licstar.net/" target="_blank" rel="external">http://licstar.net/</a><br><br><span>licstar的技术博客，偏自然语言处理方向。</span><br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;">国内科研团队和牛人网页：<strong></strong></span><br><br><a href="http://vision.ia.ac.cn/zh/index_cn.html" target="_blank" rel="external">http://vision.ia.ac.cn/zh/index_cn.html</a><br><br>中科院自动化所机器视觉课题小组，有相关数据库、论文、课件等下载。<br><br><a href="http://www.cbsr.ia.ac.cn/users/szli/" target="_blank" rel="external">http://www.cbsr.ia.ac.cn/users/szli/</a><br><br>李子青教授个人主页，中科院自动化所cvpr领域牛叉人！<br><br><a href="http://www4.comp.polyu.edu.hk/~cslzhang/" target="_blank" rel="external">http://www4.comp.polyu.edu.hk/~cslzhang/</a><br><br>香港理工大学教授lei zhang个人主页，也是cvpr领域一大牛人啊，cvpr，iccv各种发表。更重要的是他所以牛叉论文的code全部公开，非常难得！<br><br><a href="http://liama.ia.ac.cn/wiki/start" target="_blank" rel="external">http://liama.ia.ac.cn/wiki/start</a><br><br>中法信息、自动化与应用联合实验室，里面很多内容不仅限而cvpr，还有ai领域一些其他的研究。<br><br><a href="http://www.cogsci.xmu.edu.cn/cvl/english/" target="_blank" rel="external">http://www.cogsci.xmu.edu.cn/cvl/english/</a><br><br>厦门大学特聘教授，cv领域一位牛人。研究方向主要为目标检测，目标跟踪，运动估计，三维重建，鲁棒统计学，光流计算等。<br><br><a href="http://idm.pku.edu.cn/index.aspx" target="_blank" rel="external">http://idm.pku.edu.cn/index.aspx</a><br><br>北京大学数字视频编码技术国家实验室。&nbsp;<strong>
+
+</strong><a href="http://www.csie.ntu.edu.tw/~cjlin/libsvm/" target="_blank" rel="external">http://www.csie.ntu.edu.tw/~cjlin/libsvm/</a><strong><br><br>libsvm项目网址，台湾大学的，很火！<br><br><a href="http://www.jdl.ac.cn/user/sgshan/index.htm" target="_blank" rel="external">http://www.jdl.ac.cn/user/sgshan/index.htm</a><br><br>山世光，人脸识别研究比较牛。在中国科学院智能信息处理重点实验室<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"></span></strong>国外科研团队和牛人网页：<strong><br><br><a href="https://netfiles.uiuc.edu/jbhuang1/www/resources/vision/index.html" target="_blank" rel="external">https://netfiles.uiuc.edu/jbhuang1/www/resources/vision/index.html</a><br><br>常见计算机视觉资源整理索引，国外学者整理，全是出名的算法，并且带有代码的，这个非常有帮助，其链接都是相关领域很火的代码。
+
+</strong><a href="http://www.cs.cmu.edu/afs/cs/project/cil/ftp/html/txtv-groups.html" target="_blank" rel="external">http://www.cs.cmu.edu/afs/cs/project/cil/ftp/html/txtv-groups.html</a><strong><br><br>国外学者整理的各高校研究所团队网站<br><br><a href="http://research.microsoft.com/en-us/groups/vision/" target="_blank" rel="external">http://research.microsoft.com/en-us/groups/vision/</a><br><br>微软视觉研究小组，不解释，大家懂的，牛！<br><br><a href="http://lear.inrialpes.fr/index.php" target="_blank" rel="external">http://lear.inrialpes.fr/index.php</a><br><br>法国国家信息与自动化研究所，有对应牛人的链接，论文项目网页链接，且一些code对应链接等。<br><br><a href="http://www.cs.ubc.ca/~pcarbo/objrecls/" target="_blank" rel="external">http://www.cs.ubc.ca/~pcarbo/objrecls/</a><br><br>Learning to recognize objects with little supervision该篇论文的项目网页，有对应的code下载，另附有详细说明。<br><br><a href="http://www.eecs.berkeley.edu/~lbourdev/poselets/" target="_blank" rel="external">http://www.eecs.berkeley.edu/~lbourdev/poselets/</a><br><br>poselets相关研究界面，关于poselets的第一手资料。<br><br><a href="http://www.cse.oulu.fi/CMV/Research" target="_blank" rel="external">http://www.cse.oulu.fi/CMV/Research</a><br><br>芬兰奥卢大学计算机科学与工程学院网页，里面有很多cv领域相关的研究，比如说人脸，脸部表情，人体行为识别，跟踪，人机交互等cv基本都涉及有。<br><br><a href="http://www.cs.cmu.edu/~cil/vision.html" target="_blank" rel="external">http://www.cs.cmu.edu/~cil/vision.html</a><br><br>卡耐基梅隆大学计算机视觉主页，内容非常多。可惜的是该网站内容只更新到了2004年。<br><br><a href="http://vision.stanford.edu/index.html" target="_blank" rel="external">http://vision.stanford.edu/index.html</a><br><br>斯坦福大学计算机视觉主页，里面有非常非常多的牛人，比如说大家熟悉的lifeifei.<br><br><a href="http://www.wavelet.org/index.php" target="_blank" rel="external">http://www.wavelet.org/index.php</a><br><br>关于wavelet研究的网页。<br><br><a href="http://civs.ucla.edu/" target="_blank" rel="external">http://civs.ucla.edu/</a><br><br>加州大学洛杉矶分校统计学院，关于统计学习方面各种资料，且有相应的网上公开课。<br><br><a href="http://www.cs.cmu.edu/~efros/" target="_blank" rel="external">http://www.cs.cmu.edu/~efros/</a><br><br>卡耐基梅隆大学Alexei(Alyosha)Efros教授个人网站，计算机图形学高手。<br><br><a href="http://web.mit.edu/torralba/www//" target="_blank" rel="external">http://web.mit.edu/torralba/www//</a><br><br>mit牛人Associate教授个人网址，主要研究计算机视觉人体视觉感知，目标识别和场景理解等。<br><br><a href="http://people.csail.mit.edu/billf/" target="_blank" rel="external">http://people.csail.mit.edu/billf/</a><br><br>mit牛人William T. Freeman教授，主要研究计算机视觉和图像学<br><br><a href="http://www.research.ibm.com/peoplevision/" target="_blank" rel="external">http://www.research.ibm.com/peoplevision/</a><br><br>IBM人体视觉研究中心，里面除了有其研究小组的最新成果外，还有很多测试数据(特别是视频）供下载。<br><br><a href="http://www.vlfeat.org/" target="_blank" rel="external">http://www.vlfeat.org/</a><br><br>vlfeat主页，vlfeat也是一个开源组织，主要定位在一些最流行的视觉算法开源上，Ｃ编写，其很多算法效果比opencv要好,不过数量不全，但是非常有用。<br><br><a href="http://www.robots.ox.ac.uk/~az/" target="_blank" rel="external">http://www.robots.ox.ac.uk/~az/</a><br><br>Andrew Zisserman的个人主页，这人大家应该熟悉，《计算机视觉中的多视几何》这本神书的作者之一。<br><br><a href="http://www.cs.utexas.edu/~grauman/" target="_blank" rel="external">http://www.cs.utexas.edu/~grauman/</a><br><br>KristenGrauman教授的个人主页，是个大美女，且是2011年“马尔奖”获得者，”马尔奖“大家都懂的，计算机视觉领域的最高奖项，目前无一个国内学者获得过。她的主要研究方法是视觉识别。<br><br><a href="http://groups.csail.mit.edu/vision/welcome/" target="_blank" rel="external">http://groups.csail.mit.edu/vision/welcome/</a><br><br>mit视觉实验室主页。<br><br><a href="http://code.google.com/p/sixthsense/" target="_blank" rel="external">http://code.google.com/p/sixthsense/</a><br><br>曾经在网络上非常出名一个视频，一个作者研究的第六感装置，现在这个就是其开源的主页。<br><br><a href="http://vision.ucsd.edu/~pdollar/research.html#BehaviorRecognitionAnimalBehavior" target="_blank" rel="external">http://vision.ucsd.edu/~pdollar/research.html#BehaviorRecognitionAnimalBehavior</a><br><br>Piotr Dollar的个人主要，主要研究方向是人体行为识别。<br><br><a href="http://www.mmp.rwth-aachen.de/" target="_blank" rel="external">http://www.mmp.rwth-aachen.de/</a><br><br>移动多媒体处理，将移动设备，计算机图像学，视觉，图像处理等结合的领域。<br><br><a href="http://www.di.ens.fr/~laptev/index.html" target="_blank" rel="external">http://www.di.ens.fr/~laptev/index.html</a><br><br>Ivan Laptev牛人主页，主要研究人体行为识别。有很多数据库可以下载。<br><br><a href="http://blogs.oregonstate.edu/hess/" target="_blank" rel="external">http://blogs.oregonstate.edu/hess/</a><br><br>Rob Hess的个人主要，里面有源码下载，比如说粒子滤波，他写的粒子滤波在网上很火。<br><br><a href="http://morethantechnical.googlecode.com/svn/trunk/" target="_blank" rel="external">http://morethantechnical.googlecode.com/svn/trunk/</a><br><br>cvpr领域一些小型的开源代码。<br><br><a href="http://iica.de/pd/index.py" target="_blank" rel="external">http://iica.de/pd/index.py</a><br><br>做行人检测的一个团队，内部有一些行人检测的代码下载。<br><br><a href="http://www.cs.utexas.edu/~grauman/research/pubs.html" target="_blank" rel="external">http://www.cs.utexas.edu/~grauman/research/pubs.html</a><br><br>UT-Austin计算机视觉小组，包含的视觉研究方向比较广，且有的文章有源码，你只需要填一个邮箱地址，系统会自动发跟源码相关的信息过来。<br><br><a href="http://www.robots.ox.ac.uk/~vgg/index.html" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/index.html</a><br><br>visual geometry group<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"></span></strong>图像:<strong><br><br><a href="http://blog.sina.com.cn/s/blog_4cccd8d301012pw5.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_4cccd8d301012pw5.html</a><br><br>交互式图像分割代码。<br><br><a href="http://vision.csd.uwo.ca/code/" target="_blank" rel="external">http://vision.csd.uwo.ca/code/</a><br><br>graphcut优化代码。<br><br>&nbsp;<br><br><span style="font-size: 18pt; color: #0000ff;"></span></strong>语音：<strong><br><br><a href="http://danielpovey.com/kaldi-lectures.html" target="_blank" rel="external">http://danielpovey.com/kaldi-lectures.html</a><br><br>语音处理中的kaldi学习。<br><br>&nbsp;
+
+</strong><span style="color: #0000ff; font-size: 18pt;">算法分析与设计（计算机领域的基础算法）：</span><strong><br><br><a href="http://www.51nod.com/focus.html" target="_blank" rel="external">http://www.51nod.com/focus.html</a><br><br>该网站主要是讨论一些算法题。里面的<a href="http://www.51nod.com/user/index.html#!userId=1" target="_blank" rel="external">李陶冶</a>是个大牛，回答了很多算法题。<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"></span></strong>一些综合topic列表：<strong><br><br><a href="http://www.cs.cornell.edu/courses/CS7670/2011fa/" target="_blank" rel="external">http://www.cs.cornell.edu/courses/CS7670/2011fa/</a><br><br>计算机视觉中的些topic（Special Topics in Computer Vision），截止到2011年为止，其引用的文章都是非常顶级的topic。<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"></span></strong>书籍相关网页：<strong><br><br><a href="http://www.imageprocessingplace.com/index.htm" target="_blank" rel="external">http://www.imageprocessingplace.com/index.htm</a><br><br>冈萨雷斯的《数字图像处理》一书网站，包含课程材料，matlab图像处理工具包，课件ppt等相关素材。<br><br><em>Consumer Depth Cameras for Computer Vision</em><br><br>很优秀的一本书，不过很贵，买不起啊！做深度信息的使用这本书还不错，google图中可以预览一部分。<br><br><em>Making.Things.See</em><br><br>针对Kinect写的，主要关注深度信息，较为基础。书籍中有不少例子，貌似是java写的。<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"></span></strong>国内一些AI相关的研讨会：<strong><br><br><a href="http://www.iipl.fudan.edu.cn/MLA13/index.htm" target="_blank" rel="external">http://www.iipl.fudan.edu.cn/MLA13/index.htm</a><br><br>中国机器学习及应用研讨会(这个是2013年的)<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"></span></strong>期刊会议论文下载：<strong><br><br><a href="http://cvpapers.com/" target="_blank" rel="external">http://cvpapers.com/</a><br><br>几个顶级会议论文公开下载界面，比如说ICCV,CVPR,ECCV,ACCV,ICPR,SIGGRAPH等。<br><br><a href="http://www.cvpr2011.org/" target="_blank" rel="external">http://www.cvpr2012.org/</a><br><br>cvpr2012的官方地址，里面有各种资料和信息，其他年份的地址类似推理更改即可。<br><br><a href="http://www.sciencedirect.com/science/journal/02628856" target="_blank" rel="external">http://www.sciencedirect.com/science/journal/02628856</a><br><br>ICV期刊下载<br><br><a href="http://www.computer.org/portal/web/tpami" target="_blank" rel="external">http://www.computer.org/portal/web/tpami</a><br><br>TPAMI期刊，AI领域中可以算得上是最顶级的期刊了，里面有不少cvpr方面的内容。<br><br><a href="http://www.springerlink.com/content/100272/" target="_blank" rel="external">http://www.springerlink.com/content/100272/</a><br><br>IJCV的网址。<br><br><a href="http://books.nips.cc/" target="_blank" rel="external">http://books.nips.cc/</a><br><br>NIPS官网，有论文下载列表。<br><br><a href="http://graphlab.org/lsrs2013/program/" target="_blank" rel="external">http://graphlab.org/lsrs2013/program/</a><br><br>LSRS （会议）地址，大规模推荐系统，其它年份依次类推。<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"></span></strong>会议期刊相关信息：<strong><br><br><a href="http://conferences.visionbib.com/Iris-Conferences.html" target="_blank" rel="external">http://conferences.visionbib.com/Iris-Conferences.html</a><br><br>该网页列出了图像处理，计算机视觉领域相关几乎所有比较出名的会议时间表。<br><br><a href="http://conferences.visionbib.com/Browse-conf.php" target="_blank" rel="external">http://conferences.visionbib.com/Browse-conf.php</a><br><br>上面网页的一个子网页，列出了最近的CV领域提交paper的deadline。<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"></span></strong>cvpr相关数据库下载：<strong><br><br><a href="http://research.microsoft.com/en-us/um/people/jckrumm/WallFlower/TestImages.htm" target="_blank" rel="external">http://research.microsoft.com/en-us/um/people/jckrumm/WallFlower/TestImages.htm</a><br><br>微软研究院牛人Wallflower Paper的论文中用到的目标检测等测试图片<br><br><a href="http://archive.ics.uci.edu/ml/" target="_blank" rel="external">http://archive.ics.uci.edu/ml/</a><br><br>UCI数据库列表下载，最常用的机器学习数据库列表。<br><br><a href="http://www.cs.rochester.edu/~rmessing/uradl/" target="_blank" rel="external">http://www.cs.rochester.edu/~rmessing/uradl/</a><br><br>人体行为识别通过关键点的跟踪视频数据库，Rochester university的<br><br><a href="http://www.research.ibm.com/peoplevision/performanceevaluation.html" target="_blank" rel="external">http://www.research.ibm.com/peoplevision/performanceevaluation.html</a><br><br>IBM人体视觉研究中心，有视频监控等非常多的测试视频。<br><br><a href="http://www.cvpapers.com/datasets.html" target="_blank" rel="external">http://www.cvpapers.com/datasets.html</a><br><br>该网站上列出了常见的cvpr研究的数据库。<br><br><a href="http://www.cs.washington.edu/rgbd-dataset/index.html" target="_blank" rel="external">http://www.cs.washington.edu/rgbd-dataset/index.html</a><a href="http://www.cs.washington.edu/rgbd-dataset/software.html" target="_blank" rel="external">
+</a><br><br>RGB-D Object Dataset.做目标识别的。<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"></span></strong>AI<strong>**相关娱乐网页：</strong><br><br><a href="http://en.akinator.com/" target="_blank" rel="external">http://en.akinator.com/</a><br><br>该网站很好玩，可以测试你心里想出的一个人名(当然前提是这个人必须有一定的知名度)，然后该网站会提出一系列的问题，你可以选择yes or no,or I don’t know等等，最后系统会显示你心中所想的那个人。<br><br><a href="http://www.doggelganger.co.nz/" target="_blank" rel="external">http://www.doggelganger.co.nz/</a><br><br>人与狗的匹配游戏，摄像头采集人脸，呵呵…<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"><strong>Android相关：</strong></span><br><br><a href="https://code.google.com/p/android-ui-utils/" target="_blank" rel="external">https://code.google.com/p/android-ui-utils/</a><br><br>该网站上有一些android图标,菜单等跟界面有关的设计工具,可以用来做一些简单的UI设计.<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"><strong>工具和code下载：</strong></span><br><br><a href="http://lear.inrialpes.fr/people/dorko/downloads.html" target="_blank" rel="external">http://lear.inrialpes.fr/people/dorko/downloads.html</a><br><br>6种常见的图像特征点检测子，linux下环境运行。不过只提供了二进制文件，不提供源码。<br><br><a href="http://www.cs.ubc.ca/~pcarbo/objrecls/index.html#code" target="_blank" rel="external">http://www.cs.ubc.ca/~pcarbo/objrecls/index.html#code</a><br><br>ssmcmc的matlab代码,是Learning to recognize objects with little supervision这一系列文章用的源码，属于目标识别方面的研究。<br><br><a href="http://www.robots.ox.ac.uk/~timork/" target="_blank" rel="external">http://www.robots.ox.ac.uk/~timork/</a><br><br>仿射无关尺度特征点检测算子源码，还有些其它算子的源码或二进制文件。<br><br><a href="http://www.vision.ee.ethz.ch/~bleibe/code/ism.html" target="_blank" rel="external">http://www.vision.ee.ethz.ch/~bleibe/code/ism.html</a><br><br>隐式形状模型(ISM)项目主页，作者Bastian Leibe提供了linux下运行的二进制文件。<br><br><a href="http://www.di.ens.fr/~laptev/download.html#stip" target="_blank" rel="external">http://www.di.ens.fr/~laptev/download.html#stip</a><br><br>Ivan Laptev牛人主页中的STIP特征点检测code，但是也只是有二进制文件，无源码。该特征点在行为识别中该特征点非常有名。<br><br><a href="http://ai.stanford.edu/~quocle/" target="_blank" rel="external">http://ai.stanford.edu/~quocle/</a><br><br>斯坦福大学Quoc V.Le主页，上有它2011年行为识别文章的代码。<br><br>&nbsp;<br><br><span style="font-size: 18pt;"><strong><span style="color: #0000ff;">开源软件：</span></strong></span><br><br><a href="http://mloss.org/software/" target="_blank" rel="external">http://mloss.org/software/</a><br><br>一些ML开源软件在这里基本都可以搜到，有上百个。<br><br><a href="https://github.com/myui/hivemall" target="_blank" rel="external">https://github.com/myui/hivemall</a><br><br><span>Scalable machine learning library for Hive/Hadoop.</span><br><br><span><a href="http://scikit-learn.org/stable/" target="_blank" rel="external">http://scikit-learn.org/stable/</a></span><br><br>&nbsp;<br><br>基于python的机器学习开源软件，文档写得不错。<br><br>&nbsp;<br><br><span style="background-color: #ffffff; font-size: 18pt; color: #0000ff;"><strong>挑战赛：</strong></span><br><br><span><a href="http://www.chioka.in/kaggle-competition-solutions/" target="_blank" rel="external">http://www.chioka.in/kaggle-competition-solutions/</a></span><br><br>kaggle一些挑战赛的code.&nbsp;<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"><strong>公开课：</strong></span><br><br><a href="http://open.163.com/" target="_blank" rel="external">网易公开课，国内做得很不错的公开课，翻译了一些国外出名的公开课教程，与国外公开课平台coursera有合作。</a><br><br><a href="https://www.coursera.org/" target="_blank" rel="external">coursera在线教育网上公开课，很新，有个邮箱注册即可学习，有不少课程，且有对应的练习，特别是编程练习，超赞。</a><br><br><a href="https://class.stanford.edu/dashboard" target="_blank" rel="external">斯坦福网上公开课链接，有统计学习，凸优化等课程。</a><br><br><a href="https://www.udacity.com/wiki/downloads" target="_blank" rel="external">udacity公开课程下载链接，其实速度还可以。里面有不少好教程。</a><br><br><a href="http://bi.snu.ac.kr/Courses/" target="_blank" rel="external">机器学习公开课的连接，有不少课。</a><br><br>&nbsp;<br><br>&nbsp;<br><br>&nbsp;<br><br>&nbsp;<br></div>
+    
+    
+    <footer class="meta">
+      
+      
+  <div class="tags">
+<a href="/tags/Deep-Learning/">Deep Learning</a><a href="/tags/software/">software</a><a href="/tags/转载/">转载</a></div>
+
+      
+    </footer>
+    
+  </div>
+  
+</article>
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <header>
+    
+  
+    <h1 class="title"><a href="/2014/01/13/值得人生细细品位的50句话/">值得人生细细品位的50句话</a></h1>
+  
+
+    <time datetime="2014-01-13T11:21:16.000Z">
+  <span class="day">13</span><span class="month">Jan</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+      <p>人的一生中除了遇到开心快乐的事，也会遇到伤心难过的事。其实不妨换一种思想，也许就能找回最简单的快乐。以下50句人生箴言，值得我们静下心来，细细品味。</p>
+    
+    
+    <footer class="meta">
+      
+      
+  <div class="tags">
+<a href="/tags/aphorism-motto-not-epitaph/">aphorism , motto not epitaph</a></div>
+
+      
+    </footer>
+    
+  </div>
+  
+</article>
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <header>
+    
+  
+    <h1 class="title"><a href="/2013/12/29/people-are-lonely-because-they-build-walls-instead-of-bridges/">People are lonely because they build walls instead of bridges</a></h1>
+  
+
+    <time datetime="2013-12-29T06:58:03.000Z">
+  <span class="day">29</span><span class="month">Dec</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+      <a id="more"></a>
+<p>人们感到孤独是因为他们给自己修了围墙，而不是桥。</p>
+
+    
+    
+    <footer class="meta">
+      
+      
+  <div class="tags">
+<a href="/tags/aphorism-motto-not-epitaph/">aphorism , motto not epitaph</a></div>
+
+      
+    </footer>
+    
+  </div>
+  
+</article>
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <header>
+    
+  
+    <h1 class="title"><a href="/2013/12/11/english-vocabulary/">English Vocabulary</a></h1>
+  
+
+    <time datetime="2013-12-11T04:42:44.000Z">
+  <span class="day">11</span><span class="month">Dec</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+      <p>英语词根词缀记忆大全<br>
+    
+    
+    <footer class="meta">
+      
+      
+      
+    </footer>
+    
+  </div>
+  
+</article>
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <header>
+    
+  
+    <h1 class="title"><a href="/2013/12/06/mandela/">I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear。</a></h1>
+  
+
+    <time datetime="2013-12-06T00:21:31.000Z">
+  <span class="day">6</span><span class="month">Dec</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+      <a id="more"></a>
+<pre><code>When I walked out <span class="operator">of</span> <span class="operator">the</span> prison cell towards <span class="operator">the</span> door leading <span class="built_in">to</span> freedom, I have made <span class="keyword">it</span> <span class="built_in">clear</span> his own pain <span class="operator">and</span> resentment <span class="keyword">if</span> <span class="operator">not</span> able <span class="built_in">to</span> stay behind, so <span class="operator">in</span> fact I still <span class="operator">in</span> prison。
+</code></pre><p>　　当我走出囚室迈向通往自由的大门时，我已经清楚，自己若不能把痛苦与怨恨留在身后，那么其实我人在狱中。</p>
+<p>　　A good head and a good heart are always a formidable combination。</p>
+<p>　　精明的头脑和善良的心灵往往是个不可思议的组合。</p>
+<p>　　For to be free is not merely to cast off one’s chains, but to live in a way that respects and enhances the freedom of others。</p>
+<p>　　自由不仅仅意味着摆脱自身的枷锁，还意味着以一种尊重并增加他人自由的方式生活。</p>
+<p>　　Education is the most powerful weapon which you can use to change the world。</p>
+<p>　　教育是最强有力的武器，你能用它来改变世界。</p>
+<p>　　After climbing a great hill, one only finds that there are many more hills to climb。</p>
+<p>　　登上高峰后，你会发现还有更多的山峰要翻越。</p>
+<p>　　I detestracialism, because I regard it as a barbaric thing, whether it comes from a black man or a white man。</p>
+<p>　　我痛恨种族主义，不管是来自黑人或是来自白人的种族主义，在我看来，都是野蛮未开化的。</p>
+<p>　　I dream of an Africa which is in peace with itself。</p>
+<p>　　我向往一个内部和平的非洲。</p>
+<p>　　I dream of the realization of the unity of Africa, whereby its leaders combine in their efforts to solve the problems of this continent. I dream of our vast deserts, of our forests, of all our great wildernesses。</p>
+<p>　　我梦见，通过非洲各国领导人齐心协力共同解决非洲的种种问题，非洲实现了统一。我梦见那广袤的沙漠、茂密的森林，还有那无际的荒野。</p>
+<p>　　If there are dreams about a beautiful South Africa, there are also roads that lead to their goal. Two of these roads could be named Goodness and Forgiveness。</p>
+<p>　　有建设美好南非的梦想，就有通向梦想的道路。善良和宽恕就是其中的两条大道。</p>
+<p>　　I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear。</p>
+<p>　　我懂得了，勇气不是没有恐惧，而是战胜恐惧。勇者不是感觉不到害怕的人，而是克服自身恐惧的人。</p>
+<p>　　If you talk to a man in a language he understands, that goes to his head. If you talk to him in his language, that goes to his heart。</p>
+<p>　　如果你用一个人听得懂的语言与他交流，他会记在脑子里；如果你用他自己的语言与他交流，他会记在心里。</p>
+<p>　　If you want to make peace with your enemy, you have to work with your enemy. Then he becomes your partner。</p>
+<p>　　若想与敌和平共处，就要与敌并肩作战。敌亦将为友。</p>
+<p>　　In my country we go to prison first and then become President。</p>
+<p>　　在我的祖国，我们先当囚徒，后当总统。</p>
+<p>　　It always seems impossible until its done。</p>
+<p>　　在事情未成功之前，一切总看似不可能。</p>
+<p>　　It is better to lead from behind and to put others in front, especially when you celebrate victory when nice things occur. You take the front line when there is danger. Then people will appreciate your leadership。</p>
+<p>　　作为领袖，最好是在后方领导，让其他人站在前线，尤其是在庆祝胜利或好事时；但在危险时，你要站在前线。这样，人们会欣赏你的领导力。</p>
+<p>　　Let there be work, bread, water and salt for all。</p>
+<p>　　让所有人都拥有工作、面包、水和盐吧。</p>
+<p>　　Let freedom reign. The sun never set on so glorious a human achievement。</p>
+<p>　　让自由来主宰一切吧。对于如此辉煌的人类成就，太阳永远不会停止照耀。</p>
+<p>　　Money won’t create success, the freedom to make it will。</p>
+<p>　　创造成功，靠的不是金钱，而是拥有创造成功的自由。</p>
+<p>　　Never, never and never again shall it be that this beautiful land will again experience the oppression of one by another。</p>
+<p>　　这片美丽的土地将永远、永远、永远不会再经历人对人的压迫。</p>
+<p>　　Only free men can negotiate; prisoners cannot enter into contracts. Your freedom and mine cannot be separated。</p>
+<p>　　只有自由的人才能谈判，身陷牢笼的人没有谈判的资格。你们的自由和我的自由是不可分割的。</p>
+<p>　　There can be no keener revelation of a society’s soul than the way in which it treats its children。</p>
+<p>　　知晓一个社会的灵魂，就看这个社会对待小孩的方式，除此以外，没有更好的办法。</p>
+<p>　　There is no easy walk to freedom anywhere, and many of us will have to pass through the valley of the shadow of death again and again before we reach the mountaintop of our desires。</p>
+<p>　　自由之路从不平坦，我们中的许多人都不得不一次又一次地穿过死神笼罩的山谷，才能抵达愿望的顶峰。</p>
+<p>　　There is no passion to be found playing small - in settling for a life that is less than the one you are capable of living。</p>
+<p>　　本来能过得更精彩的生活，却勉强接受现状，满足于个人的生活，这毫无激情可言。</p>
+<p>　　There is no such thing as part freedom。</p>
+<p>　　不存在部分自由之说。</p>
+<p>　　There is nothing like returning to a place that remains unchanged to find the ways in which you yourself have altered。</p>
+<p>　　回到一个未曾改变的地方，却发现自己已经改变，没有什么这更美妙。</p>
+<p>　　When the water starts boiling it is foolish to turn off the heat。</p>
+<p>　　水刚煮沸就关火，这很愚蠢。</p>
+<p>　　Our greatest fear is not from our lack of, but because we have extraordinary strength. Let us often threatened not our weaknesses, but our strengths。</p>
+<p>　　我们最大的恐惧不是来自于我们的不足，而是因为我们超常的强大。通常让我们受到威胁的不是我们的弱点，而是我们的长处。</p>
+<p>　　The greatest brilliance in life lies not in never falling, but fall can always rises again。</p>
+<p>　　生命中最伟大的光辉不在于永不坠落，而是坠落后总能再度升起。</p>
+<p>　　Let black and white as brothers, South Africa to the prosperityand development。</p>
+<p>　　让黑人和白人成为兄弟，让南非繁荣发展。</p>
+<p>　　I have finished my role play, now need unknown life. I want to go back home, the village in childhood frolicking hillside walk。</p>
+
+    
+    
+    <footer class="meta">
+      
+      
+  <div class="tags">
+<a href="/tags/aphorism-motto-not-epitaph/">aphorism , motto not epitaph</a></div>
+
+      
+    </footer>
+    
+  </div>
+  
+</article>
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <header>
+    
+  
+    <h1 class="title"><a href="/2013/11/23/faults-are-thick-where-love-is-thin/">Faults are thick where love is thin.</a></h1>
+  
+
+    <time datetime="2013-11-23T21:51:00.000Z">
+  <span class="day">23</span><span class="month">Nov</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+      <a id="more"></a>
+<p>一朝情意淡，样样不顺眼。</p>
+
+    
+    
+    <footer class="meta">
+      
+      
+  <div class="tags">
+<a href="/tags/aphorism-motto-not-epitaph/">aphorism , motto not epitaph</a></div>
+
+      
+    </footer>
+    
+  </div>
+  
+</article>
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <header>
+    
+  
+    <h1 class="title"><a href="/2013/11/16/love-of-beauty-is-taste-the-creation-of-beauty-is-art/">Love of beauty is taste. The creation of beauty is Art.</a></h1>
+  
+
+    <time datetime="2013-11-16T07:43:28.000Z">
+  <span class="day">16</span><span class="month">Nov</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+      <a id="more"></a>
+<p>爱美是一种品味；创造美则是一种艺术。</p>
+
+    
+    
+    <footer class="meta">
+      
+      
+  <div class="tags">
+<a href="/tags/aphorism-motto-not-epitaph/">aphorism , motto not epitaph</a></div>
+
+      
+    </footer>
+    
+  </div>
+  
+</article>
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <header>
+    
+  
+    <h1 class="title"><a href="/2013/11/13/deep-learning-library/">深度学习软件资源列表</a></h1>
+  
+
+    <time datetime="2013-11-13T12:34:12.000Z">
+  <span class="day">13</span><span class="month">Nov</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+      <p>深度学习( Deep Learning )软件资源列表</p>
+    
+    
+    <footer class="meta">
+      
+      
+  <div class="tags">
+<a href="/tags/Deep-Learning/">Deep Learning</a><a href="/tags/library/">library</a><a href="/tags/software/">software</a><a href="/tags/转载/">转载</a></div>
+
+      
+    </footer>
+    
+  </div>
+  
+</article>
+
+
+<nav id="pagenavi">
+  
+  
+    <a href="/page/2/" class="alignright next">下一頁</a>
+  
+  <div class="clearfix"></div>
+</nav></div>
+  <footer id="footer" class="inner"><div class="social alignright">
+  
+    <a class="facebook" href="http://www.facebook.com/bobchennan" title="Facebook">Facebook</a>
+  
+  
+  
+    <a class="twitter" href="http://twitter.com/cnx" title="Twitter">Twitter</a>
+  
+  
+    <a class="github" href="https://github.com/bobchennan" title="GitHub">GitHub</a>
+  
+  <a class="rss" href="/atom.xml" title="RSS">RSS</a>
+</div>
+<p>
+  
+  &copy; 2015 Nanxin Chen
+  
+</p>
+<div class="clearfix"></div></footer>
+  <script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'bobchennan';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id="phasebeam">
+  <canvas></canvas>
+  <canvas></canvas>
+  <canvas></canvas>
+</div>
+<script src="/js/phasebeam.js"></script>
 </body>
 </html>
