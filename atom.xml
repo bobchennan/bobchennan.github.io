@@ -4,7 +4,7 @@
   <subtitle><![CDATA[record my life]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://bobchennan.github.io/"/>
-  <updated>2014-05-09T01:03:23.000Z</updated>
+  <updated>2015-10-27T07:01:28.000Z</updated>
   <id>http://bobchennan.github.io/</id>
   
   <author>
@@ -15,12 +15,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[Interspeech 2015]]></title>
+    <link href="http://bobchennan.github.io/2015/10/27/Interspeech-2015/"/>
+    <id>http://bobchennan.github.io/2015/10/27/Interspeech-2015/</id>
+    <published>2015-10-27T06:58:00.000Z</published>
+    <updated>2015-10-27T07:01:28.000Z</updated>
+    <content type="html"><![CDATA[<p>Interspeech 2015 was held in ICD, Dresden, Germany. I took part in this conference because I had two papers published here. This is the first time to attend an international conference for me. It may take sometime to finish this post.<br><a id="more"></a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Interspeech 2015 was held in ICD, Dresden, Germany. I took part in this conference because I had two papers published here. This is the first time to attend an international conference for me. It may take sometime to finish this post.<br>]]>
+    
+    </summary>
+    
+      <category term="Interspeech" scheme="http://bobchennan.github.io/tags/Interspeech/"/>
+    
+      <category term="Speech" scheme="http://bobchennan.github.io/tags/Speech/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[linux file descriptor usage]]></title>
     <link href="http://bobchennan.github.io/2014/05/08/linux-file-descriptor-usage/"/>
     <id>http://bobchennan.github.io/2014/05/08/linux-file-descriptor-usage/</id>
-    <published>2014-05-08T20:59:47.000Z</published>
-    <updated>2014-05-09T01:03:23.000Z</updated>
-    <content type="html"><![CDATA[<p>On Linux you can print info about file descriptor (ls -l /proc//fd), and file position reader (cat /proc//fdinfo). So:</p>
+    <published>2014-05-08T20:59:00.000Z</published>
+    <updated>2015-10-27T07:06:17.000Z</updated>
+    <content type="html"><![CDATA[<p>On Linux you can print info about file descriptor (ls -l /proc//fd), and file position reader (cat /proc//fdinfo).<br><a id="more"></a><br>So:</p>
 <p>Find mysqld pid (in this example: 1234):</p>
 <p>$ ps -ef | grep mysqld</p>
 <p>mysql    1234     1  0 feb12 ?        00:00:55 /usr/sbin/mysqld</p>
@@ -34,11 +53,11 @@
 <p>You can compare this progress indicator (in bytes) to the actual file size being loaded.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>On Linux you can print info about file descriptor (ls -l /proc//fd), and file position reader (cat /proc//fdinfo). So:</p>
-<p>Find mysqld]]>
+    <![CDATA[<p>On Linux you can print info about file descriptor (ls -l /proc//fd), and file position reader (cat /proc//fdinfo).<br>]]>
+    
     </summary>
     
-      <category term="linux, mysql" scheme="http://bobchennan.github.io/tags/linux-mysql/"/>
+      <category term="mysql" scheme="http://bobchennan.github.io/tags/mysql/"/>
     
   </entry>
   
@@ -47,9 +66,8 @@
     <link href="http://bobchennan.github.io/2014/02/22/%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86%E7%BD%91%E7%AB%99/"/>
     <id>http://bobchennan.github.io/2014/02/22/数据收集网站/</id>
     <published>2014-02-22T08:35:20.000Z</published>
-    <updated>2014-02-22T13:35:48.000Z</updated>
-    <content type="html"><![CDATA[<p>chenqin，数据帝<br>田晓春、马蕾、甄嫒楠 等人赞同<br>数据网站很多，我平时使用的各个指标的数据集可能有几十种，但其中绝大部分数据集都只包括经济社会中的一个较小方面，或只有一个国家，或者要付费。以下列出的都是适用于跨国比较的、数据指标比较综合的、并且下载不需要付费的网站。</p>
-<p>宏观数据网站，数据到国家或者地区：<br>Monthly Bulletin of Statistics Online，（<a href="http://unstats.un.org/unsd/mbs/app/DataSearchTable.aspx），数据来源顾名思义，来自各个国家统计局和组织。包括近十年来各国的人口、生产指数和价格指数、就业与收入、能源矿产和燃料、工业、交通和建筑、国际贸易、金融、零售业和国民账户的网站。但每个指标都有不少缺失的数据，且一次只能导出一个指标。" target="_blank" rel="external">http://unstats.un.org/unsd/mbs/app/DataSearchTable.aspx），数据来源顾名思义，来自各个国家统计局和组织。包括近十年来各国的人口、生产指数和价格指数、就业与收入、能源矿产和燃料、工业、交通和建筑、国际贸易、金融、零售业和国民账户的网站。但每个指标都有不少缺失的数据，且一次只能导出一个指标。</a><br>World Development Indicators，（<a href="http://data.worldbank.org/indicator），世界银行的数据，一般来说最权威，除了一般统计局数据外，还包括农业、气候、贫穷、健康方面的数据。" target="_blank" rel="external">http://data.worldbank.org/indicator），世界银行的数据，一般来说最权威，除了一般统计局数据外，还包括农业、气候、贫穷、健康方面的数据。</a><br>CIA world factbook，（<a href="https://www.cia.gov/library/publications/the-world-factbook/），中央情报局收集的数据，包括地理、人口、社会、交通、军力等信息。" target="_blank" rel="external">https://www.cia.gov/library/publications/the-world-factbook/），中央情报局收集的数据，包括地理、人口、社会、交通、军力等信息。</a></p>
+    <updated>2015-10-27T07:07:22.000Z</updated>
+    <content type="html"><![CDATA[<p>chenqin，数据帝<br>田晓春、马蕾、甄嫒楠 等人赞同<br>数据网站很多，我平时使用的各个指标的数据集可能有几十种，但其中绝大部分数据集都只包括经济社会中的一个较小方面，或只有一个国家，或者要付费。以下列出的都是适用于跨国比较的、数据指标比较综合的、并且下载不需要付费的网站。<br><a id="more"></a><br>宏观数据网站，数据到国家或者地区：<br>Monthly Bulletin of Statistics Online，（<a href="http://unstats.un.org/unsd/mbs/app/DataSearchTable.aspx），数据来源顾名思义，来自各个国家统计局和组织。包括近十年来各国的人口、生产指数和价格指数、就业与收入、能源矿产和燃料、工业、交通和建筑、国际贸易、金融、零售业和国民账户的网站。但每个指标都有不少缺失的数据，且一次只能导出一个指标。" target="_blank" rel="external">http://unstats.un.org/unsd/mbs/app/DataSearchTable.aspx），数据来源顾名思义，来自各个国家统计局和组织。包括近十年来各国的人口、生产指数和价格指数、就业与收入、能源矿产和燃料、工业、交通和建筑、国际贸易、金融、零售业和国民账户的网站。但每个指标都有不少缺失的数据，且一次只能导出一个指标。</a><br>World Development Indicators，（<a href="http://data.worldbank.org/indicator），世界银行的数据，一般来说最权威，除了一般统计局数据外，还包括农业、气候、贫穷、健康方面的数据。" target="_blank" rel="external">http://data.worldbank.org/indicator），世界银行的数据，一般来说最权威，除了一般统计局数据外，还包括农业、气候、贫穷、健康方面的数据。</a><br>CIA world factbook，（<a href="https://www.cia.gov/library/publications/the-world-factbook/），中央情报局收集的数据，包括地理、人口、社会、交通、军力等信息。" target="_blank" rel="external">https://www.cia.gov/library/publications/the-world-factbook/），中央情报局收集的数据，包括地理、人口、社会、交通、军力等信息。</a></p>
 <p>一般人使用宏观数据就已经足够，专业研究工作者则需要到个人的微观数据，这包括：<br>IPUMS，（<a href="http://www.ipums.org/），普查数据的集成网站，包括人口、地理、居民生活、收入和消费信息。" target="_blank" rel="external">http://www.ipums.org/），普查数据的集成网站，包括人口、地理、居民生活、收入和消费信息。</a><br>ICPSR，（<a href="http://www.icpsr.umich.edu/icpsrweb/ICPSR/），Umich的数据中心收集的数据集，社会科学常用的大部分微观数据都能在这里找到，但在做跨国比较时工作量较大。" target="_blank" rel="external">http://www.icpsr.umich.edu/icpsrweb/ICPSR/），Umich的数据中心收集的数据集，社会科学常用的大部分微观数据都能在这里找到，但在做跨国比较时工作量较大。</a><br>2012-01-30 5 条评论       </p>
 <p>赞同<br>33<br>反对，不会显示你的姓名<br>exult，我在努力。<br>卢琰琰、杨帆、Qiu Malinna 等人赞同</p>
 <h2 id="转载的">转载的</h2><p>按日数据<br>1.公开市场业务中央行票据，央行正回购业务的发行金额，发行利率－－中国人民银行网站中的公开市场业务栏<a href="http://www.pbc.gov.cn/huobizhengce/huobizhengcegongju/gongkaishichangcaozuo/（这里的数据时效性最强）" target="_blank" rel="external">http://www.pbc.gov.cn/huobizhengce/huobizhengcegongju/gongkaishichangcaozuo/（这里的数据时效性最强）</a><br>2.同业拆借市场行情可以在凤凰财经的宏观数据中找到<a href="http://app.finance.ifeng.com/data/mac/jmxf.php（时效性是隔一天）" target="_blank" rel="external">http://app.finance.ifeng.com/data/mac/jmxf.php（时效性是隔一天）</a><br>3.人民币汇率，美元指数，国际黄金期货，国际原油期货，恒指指数，道琼斯指数，可以在新浪网中的行情中心栏目中找到<a href="http://vip.http://stock.finance.sina.com.cn/mkt/（实时或实时延迟）" target="_blank" rel="external">http://vip.http://stock.finance.sina.com.cn/mkt/（实时或实时延迟）</a><br>4.与国债发行有关的即时数据都可以在国家财政局国库司的国债管理中找到<a href="http://gks.mof.gov.cn/redianzhuanti/guozaiguanli/（实时）" target="_blank" rel="external">http://gks.mof.gov.cn/redianzhuanti/guozaiguanli/（实时）</a></p>
@@ -81,7 +99,8 @@
 <p>赞同<br>0<br>反对，不会显示你的姓名<br>Ervin<br>这几天上课老师刚好有讲相关的信息。主要集中于国外的经济数据等。<br>1.传统的能够有权限获得的数据库：<br>a. WRDS “Wharton Research Data Service”<br>可以说是一个很全面的数据库了，也集中了很多别的 数据库的资料等等。下载下来有各种格式可以适应，txt，xlsx，csv等等.感觉有了这个差不多就足够了，真的是综合了很多内容。适用于的地区很广。<br>b. Federal Reserve (Data on US interest rates, bond yields and foreign exchange rates)<br>这个很多人都知道了吧，美国的基本数据似乎都在上面。各种统计数据。<br>c. NBER (National Bureau of Economic Research) 没有过多了解。<br>d. Bureau of Economic Analysis 没有过多了解<br>e. Ken. French’s Data Library<br>好像是这个叫French 的人和才获得诺贝尔经济学奖法马合作建立的一个数据库，然后里面有提供一些分类的经济学信息。例如它有按工业分了49个不同工业的portfolio的回报。<br>f. Journal of Applied Econometrics (archive for papers accepted from 1994) 没有过多了解<br>g. Financial Data Finder<br>以上是传统的的数据获得渠道<br>现在去讨论case 晚上把它补充完整。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>chenqin，数据帝<br>田晓春、马蕾、甄嫒楠 等人赞同<br>数据网站很多，我平时使用的各个指标的数据集可能有几十种，但其中绝大部分数据集都只包括经济社会中的一个较小方面，或只有一个国家，或者要付费。以下列出的都是适用于跨国比较的、数据指标比较综合的、并且下载不需要付]]>
+    <![CDATA[<p>chenqin，数据帝<br>田晓春、马蕾、甄嫒楠 等人赞同<br>数据网站很多，我平时使用的各个指标的数据集可能有几十种，但其中绝大部分数据集都只包括经济社会中的一个较小方面，或只有一个国家，或者要付费。以下列出的都是适用于跨国比较的、数据指标比较综合的、并且下载不需要付费的网站。<br>]]>
+    
     </summary>
     
       <category term="转载，知乎" scheme="http://bobchennan.github.io/tags/%E8%BD%AC%E8%BD%BD%EF%BC%8C%E7%9F%A5%E4%B9%8E/"/>
