@@ -111,20 +111,365 @@
     <title><![CDATA[Deep Learning Resource]]></title>
     <link href="http://bobchennan.github.io/2014/01/20/deep-learning-resource/"/>
     <id>http://bobchennan.github.io/2014/01/20/deep-learning-resource/</id>
-    <published>2014-01-20T02:26:06.000Z</published>
-    <updated>2014-01-20T07:27:12.000Z</updated>
-    <content type="html"><![CDATA[<a id="more"></a>
-<div id="cnblogs_post_body"><br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"><strong>Deep Learning（深度学习）：</strong></span><br><br><a href="http://deeplearning.stanford.edu/wiki/index.php/UFLDL_Tutorial" target="_blank" rel="external">ufldl的2个教程(这个没得说，入门绝对的好教程，Ng的，逻辑清晰有练习)：一</a><br><br><a href="http://ufldl.stanford.edu/tutorial/index.php/UFLDL_Tutorial" target="_blank" rel="external">ufldl的2个教程(这个没得说，入门绝对的好教程，Ng的，逻辑清晰有练习)：二</a><br><br><a href="http://nlp.stanford.edu/courses/NAACL2013/" target="_blank" rel="external">Bengio团队的deep learning教程，用的theano库，主要是rbm系列，搞python的可以参考，很不错。</a><br><br><a href="http://deeplearning.net/" target="_blank" rel="external">deeplearning.net主页，里面包含的信息量非常多，有software, reading list, research lab, dataset, demo等，强烈推荐，自己去发现好资料。</a><br><br><a href="https://github.com/rasmusbergpalm/DeepLearnToolbox" target="_blank" rel="external">Deep learning的toolbox，matlab实现的，对应源码来学习一些常见的DL模型很有帮助，这个库我主要是用来学习算法实现过程的。</a><br><br><a href="http://pan.baidu.com/share/link?shareid=3220401770&amp;uk=723014463" target="_blank" rel="external">2013年龙星计划深度学习教程，邓力大牛主讲，虽然老师准备得不充分，不过还是很有收获的。</a><br><br><a href="https://www.coursera.org/course/neuralnets" target="_blank" rel="external">Hinton大牛在coursera上开的神经网络课程，DL部分有不少，非常赞，没有废话，课件每句话都包含了很多信息，有一定DL基础后去听收获更大。</a><br><br><span><a href="http://info.usherbrooke.ca/hlarochelle/cours/ift725_A2013/contenu.html" target="_blank" rel="external">Larochelle关于DL的课件，逻辑清晰，覆盖面广,包含了rbm系列，autoencoder系列，sparse coding系列，还有crf，cnn，rnn等</a>。</span><a href="http://info.usherbrooke.ca/hlarochelle/cours/ift725_A2013/contenu.html" target="_blank" rel="external">虽然网页是法文，但是课件是英文。</a><br><br><a href="http://deeplearning.cs.cmu.edu/" target="_blank" rel="external">CMU大学2013年的deep learning课程，有不少reading paper可以参考。</a><br><br><a href="http://www.cs.dartmouth.edu/~lorenzo/teaching/cs189/readinglist.html" target="_blank" rel="external">达慕思大学Lorenzo Torresani的2013Deep learning课程reading list.</a><br><br><a href="http://cs.nyu.edu/~fergus/tutorials/deep_learning_cvpr12/" target="_blank" rel="external">Deep Learning Methods for Vision(余凯等在cvpr2012上组织一个workshop，关于DL在视觉上的应用)。</a><br><br><a href="http://cs.stanford.edu/people/ang/?page_id=20" target="_blank" rel="external">斯坦福Ng团队成员链接主页，可以进入团队成员的主页，比较熟悉的有Richard Socher,&nbsp;Honglak Lee,&nbsp;Quoc Le等。</a><br><br><a href="http://learning.cs.toronto.edu/index.shtml?section=people" target="_blank" rel="external">多伦多ML团队成员链接主页，可以进入团队成员主页，包括DL鼻祖hinton，还有Ruslan Salakhutdinov ,&nbsp;Alex Krizhevsky等。</a><br><br><a href="https://www.iro.umontreal.ca/article.php3?id_article=60&amp;lang=env" target="_blank" rel="external">蒙特利尔大学机器学习团队成员链接主页，包括大牛Bengio，还有Ian Goodfellow<span>&nbsp;等。</span></a><br><br><a href="http://www.cs.nyu.edu/~yann/people.html" target="_blank" rel="external">纽约大学的机器学习团队成员链接主页，包括大牛Lecun，还有<span>Rob Fergus等。</span></a><br><br><a href="http://www.douban.com/event/19029525/" target="_blank" rel="external">豆瓣上的脑与deep learning读书会，有讲义和部分视频，主要介绍了一些于deep learning相关的生物神经网络。</a><br><br><a href="http://cilvr.cs.nyu.edu/doku.php?id=courses:bigdata:slides:start" target="_blank" rel="external">Large Scale ML的课程，由Lecun和Langford讲的，能不推荐么。</a><br><br><a href="http://blog.csdn.net/zouxy09/article/details/11910527" target="_blank" rel="external">一些常见的DL code列表，csdn博主zouxy09的博文，Deep Learning源代码收集-持续更新…</a><br><br><span style="font-size: 15px; font-family: 宋体;"><a href="http://nlp.stanford.edu/courses/NAACL2013/" target="_blank" rel="external">Deep Learning for NLP (without Magic)，由DL界5大高手之一的Richard Socher小组搞的，他主要是NLP的。</a></span><br><br><a href="https://www.ipam.ucla.edu/schedule.aspx?pc=gss2012" target="_blank" rel="external">2012 Graduate Summer School: Deep Learning, Feature Learning，高手云集，深度学习盛宴，几乎所有的DL大牛都有参加。</a><br><br>&nbsp;<br><br><span style="background-color: #ffffff; color: #0000ff; font-size: 18pt;"><strong>Machine Learning（机器学习）：</strong></span><br><br><a href="http://wenku.baidu.com/view/f32a35d2240c844769eaee55.html" target="_blank" rel="external">介绍图模型的一个ppt，非常的赞，ppt作者总结得很给力，里面还包括了HMM，MEM, CRF等其它图模型。反正看完挺有收获的。</a><br><br><a href="http://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA" target="_blank" rel="external">机器学习一个视频教程，youtube上的，翻吧，内容很全面，偏概率统计模型，每一小集只有几分钟。&nbsp;</a><br><br><a href="http://bigeye.au.tsinghua.edu.cn/DragonStar2012/index.html" target="_blank" rel="external">龙星计划2012机器学习，由余凯和张潼主讲。</a><br><br><span><a href="http://remonstrate.wordpress.com/2012/05/23/pgm-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E8%8A%82%E9%80%89%EF%BC%88%E4%B8%80%EF%BC%89/" target="_blank" rel="external">demonstrate 的 blog :关于PGM(概率图模型)系列，主要按照<span>Daphne Koller的经典PGM教程介绍的</span>，大家依次google之</a>。<br></span><br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"><strong>Computer Vision（计算机视觉）：</strong></span><br><br><a href="http://6.869.csail.mit.edu/fa13/schedule.html" target="_blank" rel="external">MIT2013年秋季课程：<span>Advances in Computer Vision，有练习题，有些有code.</span></a><br><br>&nbsp;<br><br><span style="font-size: 18pt; color: #0000ff;"><strong>OpenCV**</strong>相关：<strong></strong></span><br><br><a href="http://opencv.org/" target="_blank" rel="external">http://opencv.org/</a><br><br>2012年7月4日随着opencv2.4.2版本的发布，opencv更改了其最新的官方网站地址。<br><br><a href="http://www.opencvchina.com/" target="_blank" rel="external">http://www.opencvchina.com/</a><br><br>好像12年才有这个论坛的，比较新。里面有针对《learning opencv》这本书的视频讲解，不过视频教学还没出完，正在更新中。对刚入门学习opencv的人来说很不错。<br><br><a href="http://www.opencv.org.cn/forum/" target="_blank" rel="external">http://www.opencv.org.cn/forum/</a><br><br>opencv中文论坛，对于初次接触opencv的学者来说比较不错，入门资料多，opencv的各种英文文档也翻译成中文了。不足是感觉这个论坛上发帖提问很少人回答，也就是说讨论不够激烈。<br><br><a href="http://opencv.jp/" target="_blank" rel="external">http://opencv.jp/</a><br><br>opencv的日文网站，里面有不少例子代码，看不懂日文可以用网站自带的翻译，能看个大概。<br><br><a href="http://code.opencv.org/projects/opencv" target="_blank" rel="external">http://code.opencv.org/projects/opencv</a><br><br>opencv版本bug修补，版本更新，以及各种相关大型活动安排,还包含了opencv最近几个月内的活动路线，即未来将增加的功能等，可以掌握各种关于opencv进展情况的最新进展。<br><br><a href="http://tech.groups.yahoo.com/group/OpenCV/" target="_blank" rel="external">http://tech.groups.yahoo.com/group/OpenCV/</a><br><br>opencv雅虎邮件列表，据说是最好的opencv论坛，信息更新最新的地方。不过个人认为要查找相关主题的内容，在邮件列表中非常不方便。<br><br><a href="http://www.cmlab.csie.ntu.edu.tw/~jsyeh/wiki/doku.php" target="_blank" rel="external">http://www.cmlab.csie.ntu.edu.tw/~jsyeh/wiki/doku.php</a><br><br>台湾大学暑假集训网站，内有链接到与opencv集训相关的网页。感觉这种教育形式还蛮不错的。<br><br><a href="http://sourceforge.net/projects/opencvlibrary/" target="_blank" rel="external">http://sourceforge.net/projects/opencvlibrary/</a><br><br>opencv版本发布地方。<br><br><a href="http://code.opencv.org/projects/opencv/wiki/ChangeLog#241" target="_blank" rel="external">http://code.opencv.org/projects/opencv/wiki/ChangeLog#241</a>&nbsp; &nbsp;&nbsp;<a href="http://opencv.willowgarage.com/wiki/OpenCV%20Change%20Logs" target="_blank" rel="external">http://opencv.willowgarage.com/wiki/OpenCV%20Change%20Logs</a><br><br>opencv版本内容更改日志网页,前面那个网页更新最快。<br><br><a href="http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html" target="_blank" rel="external">http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html</a><br><br>opencv中文教程网页，分几个模块讲解，有代码有过程。内容是网友翻译opencv自带的doc文件里的。<br><br><a href="https://netfiles.uiuc.edu/jbhuang1/www/resources/vision/index.html" target="_blank" rel="external">https://netfiles.uiuc.edu/jbhuang1/www/resources/vision/index.html</a><br><br>网友总结的常用带有cvpr领域常见算法code链接的网址，感觉非常的不错。<br><br><a href="http://fossies.org/dox/OpenCV-2.4.2/" target="_blank" rel="external">http://fossies.org/dox/OpenCV-2.4.2/</a><br><br>该网站可以查看opencv中一些函数的变量接口，还会列出函数之间的结构图。<br><br><a href="http://opencv.itseez.com/" target="_blank" rel="external">http://opencv.itseez.com/</a><br><br>opencv的函数、类等查找网页，有导航，查起来感觉不错。<br><br>&nbsp;<br><br><span style="font-size: 18pt; color: #0000ff;">优化：<strong></strong></span><br><br><a href="http://submodularity.org/" target="_blank" rel="external">http://submodularity.org/</a><br><br>submodual优化。<br><br>&nbsp;<br><br><span style="font-size: 18pt; color: #0000ff;">数学：<strong></strong></span><br><br><a href="http://www.youku.com/playlist_show/id_19465801.html" target="_blank" rel="external">http://www.youku.com/playlist_show/id_19465801.html</a><br><br><span>《计算机中的数学》系列视频，<span>8位老师10讲内容，生动介绍微积分和线性代数基本概念在计算机学科中的各种有趣应用！</span></span><br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;">Linux学习资料：<strong></strong></span><br><br><a href="http://itercast.com/library/1" target="_blank" rel="external">http://itercast.com/library/1</a><br><br>linux入门的基础视频教程，对于新手可选择看第一部分，视频来源于<span>LinuxCast.net网站，还不错。</span><br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;">OpenNI+Kinect相关：<strong></strong></span><br><br><a href="http://1.yuhuazou.sinaapp.com/" target="_blank" rel="external">http://1.yuhuazou.sinaapp.com/</a><br><br>网友晨宇思远的博客，主攻cvpr，ai等。<br><br><a href="http://blog.csdn.net/chenli2010/article/details/6887646" target="_blank" rel="external">http://blog.csdn.net/chenli2010/article/details/6887646</a><br><br>kinect和openni学习资料汇总。<br><br><a href="http://blog.csdn.net/moc062066/article/category/871261" target="_blank" rel="external">http://blog.csdn.net/moc062066/article/category/871261</a><br><br>OpenCV 计算机视觉 kinect的博客:<br><br><a href="http://kheresy.wordpress.com/index_of_openni_and_kinect/comment-page-5/" target="_blank" rel="external">http://kheresy.wordpress.com/index_of_openni_and_kinect/comment-page-5/</a><br><br>网友Heresy的博客，里面有不少kinect的文章，写的比较详细。<br><br><a href="http://www.cnkinect.com/" target="_blank" rel="external">http://www.cnkinect.com/</a><br><br>体感游戏中文网，有不少新的kinect资讯。<br><br><a href="http://www.kinectutorial.com/" target="_blank" rel="external">http://www.kinectutorial.com/</a><br><br>Kinect体感开发网。<br><br><a href="http://code.google.com/p/openni-hand-tracker" target="_blank" rel="external">http://code.google.com/p/openni-hand-tracker</a><br><br>openni_hand_tracking google code项目。<br><br><a href="http://blog.candescent.ch/" target="_blank" rel="external">http://blog.candescent.ch/</a><br><br>网友的kinect博客，里面有很多手势识别方面的文章介绍，还有源码，不过貌似是基于c#的。<br><br><a href="https://sites.google.com/site/colordepthfusion/" target="_blank" rel="external">https://sites.google.com/site/colordepthfusion/</a><br><br>一些关于深度信息和颜色信息融合（fusion）的文章。<br><br><a href="http://projects.ict.usc.edu/mxr/faast/" target="_blank" rel="external">http://projects.ict.usc.edu/mxr/faast/</a><br><br>kinect新的库，可以结合OpenNI使用。<br><br><a href="https://sites.google.com/a/chalearn.org/gesturechallenge/" target="_blank" rel="external">https://sites.google.com/a/chalearn.org/gesturechallenge/</a><br><br>kinect手势识别网站。<br><br><a href="http://www.ros.org/wiki/mit-ros-pkg" target="_blank" rel="external">http://www.ros.org/wiki/mit-ros-pkg</a><br><br>mit的kinect项目，有code。主要是与手势识别相关。<br><br><a href="http://www.thoughtden.co.uk/blog/2012/08/kinecting-people-our-top-6-kinect-projects/" target="_blank" rel="external">http://www.thoughtden.co.uk/blog/2012/08/kinecting-people-our-top-6-kinect-projects/</a><br><br>kinect 2012年度最具创新的6个项目，有视频，确实够创新的！<br><br><a href="http://www.cnblogs.com/yangyangcv/archive/2011/01/07/1930349.html" target="_blank" rel="external">http://www.cnblogs.com/yangyangcv/archive/2011/01/07/1930349.html</a><br><br>kinect多点触控的一篇博文。<br><br><a href="http://sourceforge.net/projects/kinect-mex/" target="_blank" rel="external">http://sourceforge.net/projects/kinect-mex/</a><br><br><a href="http://www.mathworks.com/matlabcentral/fileexchange/30242-kinect-matlab" target="_blank" rel="external">http://www.mathworks.com/matlabcentral/fileexchange/30242-kinect-matlab</a><br><br>有关matlab for kinect的一些接口。<br><br><a href="http://news.9ria.com/2012/1212/25609.html" target="_blank" rel="external">http://news.9ria.com/2012/1212/25609.html</a><br><br>AIR和Kinect的结合，有一些手指跟踪的code。<br><br><a href="http://eeeweba.ntu.edu.sg/computervision/people/home/renzhou/index.htm" target="_blank" rel="external">http://eeeweba.ntu.edu.sg/computervision/people/home/renzhou/index.htm</a><br><br>研究kinect手势识别的，任洲。刚毕业不久。<br><br>&nbsp;<br><br><span style="font-size: 18pt; color: #0000ff;">其他网友<strong><strong>cvpr</strong></strong>领域的链接总结：<strong></strong></span><br><br><a href="http://www.cnblogs.com/kshenf/" target="_blank" rel="external">http://www.cnblogs.com/kshenf/</a><br><br>网友整理常用牛人链接总结，非常多。不过个人没有没有每个网站都去试过。所以本文也是我自己总结自己曾经用过的或体会过的。<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;">OpenGL有关:<strong></strong></span><br><br><a href="http://nehe.gamedev.net/" target="_blank" rel="external">http://nehe.gamedev.net/</a><br><br>NeHe的OpenGL教程英文版。<br><br><a href="http://www.owlei.com/DancingWind/" target="_blank" rel="external">http://www.owlei.com/DancingWind/</a><br><br>NeHe的OpenGL教程对应的中文版，由网友周玮翻译的。<br><br><a href="http://www.qiliang.net/old/nehe_qt/" target="_blank" rel="external">http://www.qiliang.net/old/nehe_qt/</a><br><br>NeHe的OpengGL对应的Qt版中文教程。<br><br><a href="http://blog.csdn.net/qp120291570" target="_blank" rel="external">http://blog.csdn.net/qp120291570</a><br><br>网友”左脑设计，右脑编程”的Qt_OpenGL博客,写得还不错。<br><br><a href="http://guiliblearning.blogspot.com/" target="_blank" rel="external">http://guiliblearning.blogspot.com/</a><br><br>这个博客对opengl的机制有所剖析，貌似要翻墙才能进去。<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;">cvpr综合网站论坛博客等：<strong></strong></span><br><br><a href="http://www.cvchina.net/" target="_blank" rel="external">http://www.cvchina.net/</a><br><br>中国计算机视觉论坛<br><br><a href="http://www.cvchina.info/" target="_blank" rel="external">http://www.cvchina.info/</a><br><br>这个博客很不错，每次看完都能让人兴奋，因为有很多关于cv领域的科技新闻，还时不时有视频显示。另外这个博客里面的资源也整理得相当不错。中文的。<br><br><a href="http://www.bfcat.com/" target="_blank" rel="external">http://www.bfcat.com/</a><br><br>一位网友的个人计算机视觉博客，有很多关于计算机视觉前沿的东西介绍，与上面的博客一样，看了也能让人兴奋。<br><br><a href="http://blog.csdn.net/v_JULY_v/" target="_blank" rel="external">http://blog.csdn.net/v_JULY_v/</a><br><br>牛人博客，主攻数据结构，机器学习数据挖掘算法等。<br><br><a href="http://blog.youtueye.com/" target="_blank" rel="external">http://blog.youtueye.com/</a><br><br>该网友上面有一些计算机视觉方向的博客,博客中附有一些实验的测试代码.<br><br><a href="http://blog.sciencenet.cn/u/jingyanwang" target="_blank" rel="external">http://blog.sciencenet.cn/u/jingyanwang</a><br><br>多看pami才扯谈的博客，其中有不少pami文章的中文介绍。<br><br><a href="http://chentingpc.me/" target="_blank" rel="external">http://chentingpc.me/</a><br><br>做网络和自然语言处理的，有不少机器学习方面的介绍。<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;">ML常用博客资料等：<strong></strong></span><br><br><a href="http://freemind.pluskid.org/" target="_blank" rel="external">http://freemind.pluskid.org/</a><br><br><span>由 pluskid 所维护的 blog，<span>主要记录一些机器学习、程序设计以及各种技术和非技术的相关内容，写得很不错。</span></span><br><br><a href="http://datasciencemasters.org/" target="_blank" rel="external">http://datasciencemasters.org/</a><br><br>里面包含学ML/DM所需要的一些知识链接，且有些给出了视频教程，网页资料，电子书，开源code等，推荐！<br><br><a href="http://cs.nju.edu.cn/zhouzh/index.htm" target="_blank" rel="external">http://cs.nju.edu.cn/zhouzh/index.htm</a><br><br>周志华主页，不用介绍了，机器学习大牛，更可贵的是他的很多文章都有源码公布。<br><br><a href="http://www.eecs.berkeley.edu/~jpaisley/Papers.htm" target="_blank" rel="external">http://www.eecs.berkeley.edu/~jpaisley/Papers.htm</a><br><br>John Paisley的个人主页，主要研究机器学习领域，有些文章有代码提供。<br><br><a href="http://foreveralbum.yo2.cn/" target="_blank" rel="external">http://foreveralbum.yo2.cn/</a><br><br>里面有一些常见机器学习算法的详细推导过程。<br><br><a href="http://blog.csdn.net/abcjennifer" target="_blank" rel="external">http://blog.csdn.net/abcjennifer</a><br><br>浙江大学CS硕士在读，关注计算机视觉，机器学习，算法研究，博弈， 人工智能， 移动互联网等学科和产业。该博客中有很多机器学习算法方面的介绍。<br><br><a href="http://www.wytk2008.net/" target="_blank" rel="external">http://www.wytk2008.net/</a><br><br>无垠天空的机器学习博客。<br><br><a href="http://www.chalearn.org/index.html" target="_blank" rel="external">http://www.chalearn.org/index.html</a><br><br>机器学习挑战赛。<br><br><a href="http://licstar.net/" target="_blank" rel="external">http://licstar.net/</a><br><br><span>licstar的技术博客，偏自然语言处理方向。</span><br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;">国内科研团队和牛人网页：<strong></strong></span><br><br><a href="http://vision.ia.ac.cn/zh/index_cn.html" target="_blank" rel="external">http://vision.ia.ac.cn/zh/index_cn.html</a><br><br>中科院自动化所机器视觉课题小组，有相关数据库、论文、课件等下载。<br><br><a href="http://www.cbsr.ia.ac.cn/users/szli/" target="_blank" rel="external">http://www.cbsr.ia.ac.cn/users/szli/</a><br><br>李子青教授个人主页，中科院自动化所cvpr领域牛叉人！<br><br><a href="http://www4.comp.polyu.edu.hk/~cslzhang/" target="_blank" rel="external">http://www4.comp.polyu.edu.hk/~cslzhang/</a><br><br>香港理工大学教授lei zhang个人主页，也是cvpr领域一大牛人啊，cvpr，iccv各种发表。更重要的是他所以牛叉论文的code全部公开，非常难得！<br><br><a href="http://liama.ia.ac.cn/wiki/start" target="_blank" rel="external">http://liama.ia.ac.cn/wiki/start</a><br><br>中法信息、自动化与应用联合实验室，里面很多内容不仅限而cvpr，还有ai领域一些其他的研究。<br><br><a href="http://www.cogsci.xmu.edu.cn/cvl/english/" target="_blank" rel="external">http://www.cogsci.xmu.edu.cn/cvl/english/</a><br><br>厦门大学特聘教授，cv领域一位牛人。研究方向主要为目标检测，目标跟踪，运动估计，三维重建，鲁棒统计学，光流计算等。<br><br><a href="http://idm.pku.edu.cn/index.aspx" target="_blank" rel="external">http://idm.pku.edu.cn/index.aspx</a><br><br>北京大学数字视频编码技术国家实验室。&nbsp;<strong>
-
-</strong><a href="http://www.csie.ntu.edu.tw/~cjlin/libsvm/" target="_blank" rel="external">http://www.csie.ntu.edu.tw/~cjlin/libsvm/</a><strong><br><br>libsvm项目网址，台湾大学的，很火！<br><br><a href="http://www.jdl.ac.cn/user/sgshan/index.htm" target="_blank" rel="external">http://www.jdl.ac.cn/user/sgshan/index.htm</a><br><br>山世光，人脸识别研究比较牛。在中国科学院智能信息处理重点实验室<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"></span></strong>国外科研团队和牛人网页：<strong><br><br><a href="https://netfiles.uiuc.edu/jbhuang1/www/resources/vision/index.html" target="_blank" rel="external">https://netfiles.uiuc.edu/jbhuang1/www/resources/vision/index.html</a><br><br>常见计算机视觉资源整理索引，国外学者整理，全是出名的算法，并且带有代码的，这个非常有帮助，其链接都是相关领域很火的代码。
-
-</strong><a href="http://www.cs.cmu.edu/afs/cs/project/cil/ftp/html/txtv-groups.html" target="_blank" rel="external">http://www.cs.cmu.edu/afs/cs/project/cil/ftp/html/txtv-groups.html</a><strong><br><br>国外学者整理的各高校研究所团队网站<br><br><a href="http://research.microsoft.com/en-us/groups/vision/" target="_blank" rel="external">http://research.microsoft.com/en-us/groups/vision/</a><br><br>微软视觉研究小组，不解释，大家懂的，牛！<br><br><a href="http://lear.inrialpes.fr/index.php" target="_blank" rel="external">http://lear.inrialpes.fr/index.php</a><br><br>法国国家信息与自动化研究所，有对应牛人的链接，论文项目网页链接，且一些code对应链接等。<br><br><a href="http://www.cs.ubc.ca/~pcarbo/objrecls/" target="_blank" rel="external">http://www.cs.ubc.ca/~pcarbo/objrecls/</a><br><br>Learning to recognize objects with little supervision该篇论文的项目网页，有对应的code下载，另附有详细说明。<br><br><a href="http://www.eecs.berkeley.edu/~lbourdev/poselets/" target="_blank" rel="external">http://www.eecs.berkeley.edu/~lbourdev/poselets/</a><br><br>poselets相关研究界面，关于poselets的第一手资料。<br><br><a href="http://www.cse.oulu.fi/CMV/Research" target="_blank" rel="external">http://www.cse.oulu.fi/CMV/Research</a><br><br>芬兰奥卢大学计算机科学与工程学院网页，里面有很多cv领域相关的研究，比如说人脸，脸部表情，人体行为识别，跟踪，人机交互等cv基本都涉及有。<br><br><a href="http://www.cs.cmu.edu/~cil/vision.html" target="_blank" rel="external">http://www.cs.cmu.edu/~cil/vision.html</a><br><br>卡耐基梅隆大学计算机视觉主页，内容非常多。可惜的是该网站内容只更新到了2004年。<br><br><a href="http://vision.stanford.edu/index.html" target="_blank" rel="external">http://vision.stanford.edu/index.html</a><br><br>斯坦福大学计算机视觉主页，里面有非常非常多的牛人，比如说大家熟悉的lifeifei.<br><br><a href="http://www.wavelet.org/index.php" target="_blank" rel="external">http://www.wavelet.org/index.php</a><br><br>关于wavelet研究的网页。<br><br><a href="http://civs.ucla.edu/" target="_blank" rel="external">http://civs.ucla.edu/</a><br><br>加州大学洛杉矶分校统计学院，关于统计学习方面各种资料，且有相应的网上公开课。<br><br><a href="http://www.cs.cmu.edu/~efros/" target="_blank" rel="external">http://www.cs.cmu.edu/~efros/</a><br><br>卡耐基梅隆大学Alexei(Alyosha)Efros教授个人网站，计算机图形学高手。<br><br><a href="http://web.mit.edu/torralba/www//" target="_blank" rel="external">http://web.mit.edu/torralba/www//</a><br><br>mit牛人Associate教授个人网址，主要研究计算机视觉人体视觉感知，目标识别和场景理解等。<br><br><a href="http://people.csail.mit.edu/billf/" target="_blank" rel="external">http://people.csail.mit.edu/billf/</a><br><br>mit牛人William T. Freeman教授，主要研究计算机视觉和图像学<br><br><a href="http://www.research.ibm.com/peoplevision/" target="_blank" rel="external">http://www.research.ibm.com/peoplevision/</a><br><br>IBM人体视觉研究中心，里面除了有其研究小组的最新成果外，还有很多测试数据(特别是视频）供下载。<br><br><a href="http://www.vlfeat.org/" target="_blank" rel="external">http://www.vlfeat.org/</a><br><br>vlfeat主页，vlfeat也是一个开源组织，主要定位在一些最流行的视觉算法开源上，Ｃ编写，其很多算法效果比opencv要好,不过数量不全，但是非常有用。<br><br><a href="http://www.robots.ox.ac.uk/~az/" target="_blank" rel="external">http://www.robots.ox.ac.uk/~az/</a><br><br>Andrew Zisserman的个人主页，这人大家应该熟悉，《计算机视觉中的多视几何》这本神书的作者之一。<br><br><a href="http://www.cs.utexas.edu/~grauman/" target="_blank" rel="external">http://www.cs.utexas.edu/~grauman/</a><br><br>KristenGrauman教授的个人主页，是个大美女，且是2011年“马尔奖”获得者，”马尔奖“大家都懂的，计算机视觉领域的最高奖项，目前无一个国内学者获得过。她的主要研究方法是视觉识别。<br><br><a href="http://groups.csail.mit.edu/vision/welcome/" target="_blank" rel="external">http://groups.csail.mit.edu/vision/welcome/</a><br><br>mit视觉实验室主页。<br><br><a href="http://code.google.com/p/sixthsense/" target="_blank" rel="external">http://code.google.com/p/sixthsense/</a><br><br>曾经在网络上非常出名一个视频，一个作者研究的第六感装置，现在这个就是其开源的主页。<br><br><a href="http://vision.ucsd.edu/~pdollar/research.html#BehaviorRecognitionAnimalBehavior" target="_blank" rel="external">http://vision.ucsd.edu/~pdollar/research.html#BehaviorRecognitionAnimalBehavior</a><br><br>Piotr Dollar的个人主要，主要研究方向是人体行为识别。<br><br><a href="http://www.mmp.rwth-aachen.de/" target="_blank" rel="external">http://www.mmp.rwth-aachen.de/</a><br><br>移动多媒体处理，将移动设备，计算机图像学，视觉，图像处理等结合的领域。<br><br><a href="http://www.di.ens.fr/~laptev/index.html" target="_blank" rel="external">http://www.di.ens.fr/~laptev/index.html</a><br><br>Ivan Laptev牛人主页，主要研究人体行为识别。有很多数据库可以下载。<br><br><a href="http://blogs.oregonstate.edu/hess/" target="_blank" rel="external">http://blogs.oregonstate.edu/hess/</a><br><br>Rob Hess的个人主要，里面有源码下载，比如说粒子滤波，他写的粒子滤波在网上很火。<br><br><a href="http://morethantechnical.googlecode.com/svn/trunk/" target="_blank" rel="external">http://morethantechnical.googlecode.com/svn/trunk/</a><br><br>cvpr领域一些小型的开源代码。<br><br><a href="http://iica.de/pd/index.py" target="_blank" rel="external">http://iica.de/pd/index.py</a><br><br>做行人检测的一个团队，内部有一些行人检测的代码下载。<br><br><a href="http://www.cs.utexas.edu/~grauman/research/pubs.html" target="_blank" rel="external">http://www.cs.utexas.edu/~grauman/research/pubs.html</a><br><br>UT-Austin计算机视觉小组，包含的视觉研究方向比较广，且有的文章有源码，你只需要填一个邮箱地址，系统会自动发跟源码相关的信息过来。<br><br><a href="http://www.robots.ox.ac.uk/~vgg/index.html" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/index.html</a><br><br>visual geometry group<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"></span></strong>图像:<strong><br><br><a href="http://blog.sina.com.cn/s/blog_4cccd8d301012pw5.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_4cccd8d301012pw5.html</a><br><br>交互式图像分割代码。<br><br><a href="http://vision.csd.uwo.ca/code/" target="_blank" rel="external">http://vision.csd.uwo.ca/code/</a><br><br>graphcut优化代码。<br><br>&nbsp;<br><br><span style="font-size: 18pt; color: #0000ff;"></span></strong>语音：<strong><br><br><a href="http://danielpovey.com/kaldi-lectures.html" target="_blank" rel="external">http://danielpovey.com/kaldi-lectures.html</a><br><br>语音处理中的kaldi学习。<br><br>&nbsp;
-
-</strong><span style="color: #0000ff; font-size: 18pt;">算法分析与设计（计算机领域的基础算法）：</span><strong><br><br><a href="http://www.51nod.com/focus.html" target="_blank" rel="external">http://www.51nod.com/focus.html</a><br><br>该网站主要是讨论一些算法题。里面的<a href="http://www.51nod.com/user/index.html#!userId=1" target="_blank" rel="external">李陶冶</a>是个大牛，回答了很多算法题。<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"></span></strong>一些综合topic列表：<strong><br><br><a href="http://www.cs.cornell.edu/courses/CS7670/2011fa/" target="_blank" rel="external">http://www.cs.cornell.edu/courses/CS7670/2011fa/</a><br><br>计算机视觉中的些topic（Special Topics in Computer Vision），截止到2011年为止，其引用的文章都是非常顶级的topic。<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"></span></strong>书籍相关网页：<strong><br><br><a href="http://www.imageprocessingplace.com/index.htm" target="_blank" rel="external">http://www.imageprocessingplace.com/index.htm</a><br><br>冈萨雷斯的《数字图像处理》一书网站，包含课程材料，matlab图像处理工具包，课件ppt等相关素材。<br><br><em>Consumer Depth Cameras for Computer Vision</em><br><br>很优秀的一本书，不过很贵，买不起啊！做深度信息的使用这本书还不错，google图中可以预览一部分。<br><br><em>Making.Things.See</em><br><br>针对Kinect写的，主要关注深度信息，较为基础。书籍中有不少例子，貌似是java写的。<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"></span></strong>国内一些AI相关的研讨会：<strong><br><br><a href="http://www.iipl.fudan.edu.cn/MLA13/index.htm" target="_blank" rel="external">http://www.iipl.fudan.edu.cn/MLA13/index.htm</a><br><br>中国机器学习及应用研讨会(这个是2013年的)<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"></span></strong>期刊会议论文下载：<strong><br><br><a href="http://cvpapers.com/" target="_blank" rel="external">http://cvpapers.com/</a><br><br>几个顶级会议论文公开下载界面，比如说ICCV,CVPR,ECCV,ACCV,ICPR,SIGGRAPH等。<br><br><a href="http://www.cvpr2011.org/" target="_blank" rel="external">http://www.cvpr2012.org/</a><br><br>cvpr2012的官方地址，里面有各种资料和信息，其他年份的地址类似推理更改即可。<br><br><a href="http://www.sciencedirect.com/science/journal/02628856" target="_blank" rel="external">http://www.sciencedirect.com/science/journal/02628856</a><br><br>ICV期刊下载<br><br><a href="http://www.computer.org/portal/web/tpami" target="_blank" rel="external">http://www.computer.org/portal/web/tpami</a><br><br>TPAMI期刊，AI领域中可以算得上是最顶级的期刊了，里面有不少cvpr方面的内容。<br><br><a href="http://www.springerlink.com/content/100272/" target="_blank" rel="external">http://www.springerlink.com/content/100272/</a><br><br>IJCV的网址。<br><br><a href="http://books.nips.cc/" target="_blank" rel="external">http://books.nips.cc/</a><br><br>NIPS官网，有论文下载列表。<br><br><a href="http://graphlab.org/lsrs2013/program/" target="_blank" rel="external">http://graphlab.org/lsrs2013/program/</a><br><br>LSRS （会议）地址，大规模推荐系统，其它年份依次类推。<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"></span></strong>会议期刊相关信息：<strong><br><br><a href="http://conferences.visionbib.com/Iris-Conferences.html" target="_blank" rel="external">http://conferences.visionbib.com/Iris-Conferences.html</a><br><br>该网页列出了图像处理，计算机视觉领域相关几乎所有比较出名的会议时间表。<br><br><a href="http://conferences.visionbib.com/Browse-conf.php" target="_blank" rel="external">http://conferences.visionbib.com/Browse-conf.php</a><br><br>上面网页的一个子网页，列出了最近的CV领域提交paper的deadline。<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"></span></strong>cvpr相关数据库下载：<strong><br><br><a href="http://research.microsoft.com/en-us/um/people/jckrumm/WallFlower/TestImages.htm" target="_blank" rel="external">http://research.microsoft.com/en-us/um/people/jckrumm/WallFlower/TestImages.htm</a><br><br>微软研究院牛人Wallflower Paper的论文中用到的目标检测等测试图片<br><br><a href="http://archive.ics.uci.edu/ml/" target="_blank" rel="external">http://archive.ics.uci.edu/ml/</a><br><br>UCI数据库列表下载，最常用的机器学习数据库列表。<br><br><a href="http://www.cs.rochester.edu/~rmessing/uradl/" target="_blank" rel="external">http://www.cs.rochester.edu/~rmessing/uradl/</a><br><br>人体行为识别通过关键点的跟踪视频数据库，Rochester university的<br><br><a href="http://www.research.ibm.com/peoplevision/performanceevaluation.html" target="_blank" rel="external">http://www.research.ibm.com/peoplevision/performanceevaluation.html</a><br><br>IBM人体视觉研究中心，有视频监控等非常多的测试视频。<br><br><a href="http://www.cvpapers.com/datasets.html" target="_blank" rel="external">http://www.cvpapers.com/datasets.html</a><br><br>该网站上列出了常见的cvpr研究的数据库。<br><br><a href="http://www.cs.washington.edu/rgbd-dataset/index.html" target="_blank" rel="external">http://www.cs.washington.edu/rgbd-dataset/index.html</a><a href="http://www.cs.washington.edu/rgbd-dataset/software.html" target="_blank" rel="external">
-</a><br><br>RGB-D Object Dataset.做目标识别的。<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"></span></strong>AI<strong>**相关娱乐网页：</strong><br><br><a href="http://en.akinator.com/" target="_blank" rel="external">http://en.akinator.com/</a><br><br>该网站很好玩，可以测试你心里想出的一个人名(当然前提是这个人必须有一定的知名度)，然后该网站会提出一系列的问题，你可以选择yes or no,or I don’t know等等，最后系统会显示你心中所想的那个人。<br><br><a href="http://www.doggelganger.co.nz/" target="_blank" rel="external">http://www.doggelganger.co.nz/</a><br><br>人与狗的匹配游戏，摄像头采集人脸，呵呵…<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"><strong>Android相关：</strong></span><br><br><a href="https://code.google.com/p/android-ui-utils/" target="_blank" rel="external">https://code.google.com/p/android-ui-utils/</a><br><br>该网站上有一些android图标,菜单等跟界面有关的设计工具,可以用来做一些简单的UI设计.<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"><strong>工具和code下载：</strong></span><br><br><a href="http://lear.inrialpes.fr/people/dorko/downloads.html" target="_blank" rel="external">http://lear.inrialpes.fr/people/dorko/downloads.html</a><br><br>6种常见的图像特征点检测子，linux下环境运行。不过只提供了二进制文件，不提供源码。<br><br><a href="http://www.cs.ubc.ca/~pcarbo/objrecls/index.html#code" target="_blank" rel="external">http://www.cs.ubc.ca/~pcarbo/objrecls/index.html#code</a><br><br>ssmcmc的matlab代码,是Learning to recognize objects with little supervision这一系列文章用的源码，属于目标识别方面的研究。<br><br><a href="http://www.robots.ox.ac.uk/~timork/" target="_blank" rel="external">http://www.robots.ox.ac.uk/~timork/</a><br><br>仿射无关尺度特征点检测算子源码，还有些其它算子的源码或二进制文件。<br><br><a href="http://www.vision.ee.ethz.ch/~bleibe/code/ism.html" target="_blank" rel="external">http://www.vision.ee.ethz.ch/~bleibe/code/ism.html</a><br><br>隐式形状模型(ISM)项目主页，作者Bastian Leibe提供了linux下运行的二进制文件。<br><br><a href="http://www.di.ens.fr/~laptev/download.html#stip" target="_blank" rel="external">http://www.di.ens.fr/~laptev/download.html#stip</a><br><br>Ivan Laptev牛人主页中的STIP特征点检测code，但是也只是有二进制文件，无源码。该特征点在行为识别中该特征点非常有名。<br><br><a href="http://ai.stanford.edu/~quocle/" target="_blank" rel="external">http://ai.stanford.edu/~quocle/</a><br><br>斯坦福大学Quoc V.Le主页，上有它2011年行为识别文章的代码。<br><br>&nbsp;<br><br><span style="font-size: 18pt;"><strong><span style="color: #0000ff;">开源软件：</span></strong></span><br><br><a href="http://mloss.org/software/" target="_blank" rel="external">http://mloss.org/software/</a><br><br>一些ML开源软件在这里基本都可以搜到，有上百个。<br><br><a href="https://github.com/myui/hivemall" target="_blank" rel="external">https://github.com/myui/hivemall</a><br><br><span>Scalable machine learning library for Hive/Hadoop.</span><br><br><span><a href="http://scikit-learn.org/stable/" target="_blank" rel="external">http://scikit-learn.org/stable/</a></span><br><br>&nbsp;<br><br>基于python的机器学习开源软件，文档写得不错。<br><br>&nbsp;<br><br><span style="background-color: #ffffff; font-size: 18pt; color: #0000ff;"><strong>挑战赛：</strong></span><br><br><span><a href="http://www.chioka.in/kaggle-competition-solutions/" target="_blank" rel="external">http://www.chioka.in/kaggle-competition-solutions/</a></span><br><br>kaggle一些挑战赛的code.&nbsp;<br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"><strong>公开课：</strong></span><br><br><a href="http://open.163.com/" target="_blank" rel="external">网易公开课，国内做得很不错的公开课，翻译了一些国外出名的公开课教程，与国外公开课平台coursera有合作。</a><br><br><a href="https://www.coursera.org/" target="_blank" rel="external">coursera在线教育网上公开课，很新，有个邮箱注册即可学习，有不少课程，且有对应的练习，特别是编程练习，超赞。</a><br><br><a href="https://class.stanford.edu/dashboard" target="_blank" rel="external">斯坦福网上公开课链接，有统计学习，凸优化等课程。</a><br><br><a href="https://www.udacity.com/wiki/downloads" target="_blank" rel="external">udacity公开课程下载链接，其实速度还可以。里面有不少好教程。</a><br><br><a href="http://bi.snu.ac.kr/Courses/" target="_blank" rel="external">机器学习公开课的连接，有不少课。</a><br><br>&nbsp;<br><br>&nbsp;<br><br>&nbsp;<br><br>&nbsp;<br></div>]]></content>
+    <published>2014-01-20T02:26:00.000Z</published>
+    <updated>2015-10-27T07:33:11.000Z</updated>
+    <content type="html"><![CDATA[<p><span style="color: #0000ff; font-size: 18pt;"><strong>Deep Learning（深度学习）：</strong></span></p>
+<p><a href="http://deeplearning.stanford.edu/wiki/index.php/UFLDL_Tutorial" target="_blank" rel="external">ufldl的2个教程(这个没得说，入门绝对的好教程，Ng的，逻辑清晰有练习)：一</a></p>
+<p><a href="http://ufldl.stanford.edu/tutorial/index.php/UFLDL_Tutorial" target="_blank" rel="external">ufldl的2个教程(这个没得说，入门绝对的好教程，Ng的，逻辑清晰有练习)：二</a></p>
+<p><a href="http://nlp.stanford.edu/courses/NAACL2013/" target="_blank" rel="external">Bengio团队的deep learning教程，用的theano库，主要是rbm系列，搞python的可以参考，很不错。</a></p>
+<p><a href="http://deeplearning.net/" target="_blank" rel="external">deeplearning.net主页，里面包含的信息量非常多，有software, reading list, research lab, dataset, demo等，强烈推荐，自己去发现好资料。</a><br><a id="more"></a><br><a href="https://github.com/rasmusbergpalm/DeepLearnToolbox" target="_blank" rel="external">Deep learning的toolbox，matlab实现的，对应源码来学习一些常见的DL模型很有帮助，这个库我主要是用来学习算法实现过程的。</a></p>
+<p><a href="http://pan.baidu.com/share/link?shareid=3220401770&amp;uk=723014463" target="_blank" rel="external">2013年龙星计划深度学习教程，邓力大牛主讲，虽然老师准备得不充分，不过还是很有收获的。</a></p>
+<p><a href="https://www.coursera.org/course/neuralnets" target="_blank" rel="external">Hinton大牛在coursera上开的神经网络课程，DL部分有不少，非常赞，没有废话，课件每句话都包含了很多信息，有一定DL基础后去听收获更大。</a></p>
+<p><span><a href="http://info.usherbrooke.ca/hlarochelle/cours/ift725_A2013/contenu.html" target="_blank" rel="external">Larochelle关于DL的课件，逻辑清晰，覆盖面广,包含了rbm系列，autoencoder系列，sparse coding系列，还有crf，cnn，rnn等</a>。</span><a href="http://info.usherbrooke.ca/hlarochelle/cours/ift725_A2013/contenu.html" target="_blank" rel="external">虽然网页是法文，但是课件是英文。</a></p>
+<p><a href="http://deeplearning.cs.cmu.edu/" target="_blank" rel="external">CMU大学2013年的deep learning课程，有不少reading paper可以参考。</a></p>
+<p><a href="http://www.cs.dartmouth.edu/~lorenzo/teaching/cs189/readinglist.html" target="_blank" rel="external">达慕思大学Lorenzo Torresani的2013Deep learning课程reading list.</a></p>
+<p><a href="http://cs.nyu.edu/~fergus/tutorials/deep_learning_cvpr12/" target="_blank" rel="external">Deep Learning Methods for Vision(余凯等在cvpr2012上组织一个workshop，关于DL在视觉上的应用)。</a></p>
+<p><a href="http://cs.stanford.edu/people/ang/?page_id=20" target="_blank" rel="external">斯坦福Ng团队成员链接主页，可以进入团队成员的主页，比较熟悉的有Richard Socher,&nbsp;Honglak Lee,&nbsp;Quoc Le等。</a></p>
+<p><a href="http://learning.cs.toronto.edu/index.shtml?section=people" target="_blank" rel="external">多伦多ML团队成员链接主页，可以进入团队成员主页，包括DL鼻祖hinton，还有Ruslan Salakhutdinov ,&nbsp;Alex Krizhevsky等。</a></p>
+<p><a href="https://www.iro.umontreal.ca/article.php3?id_article=60&amp;lang=env" target="_blank" rel="external">蒙特利尔大学机器学习团队成员链接主页，包括大牛Bengio，还有Ian Goodfellow<span>&nbsp;等。</span></a></p>
+<p><a href="http://www.cs.nyu.edu/~yann/people.html" target="_blank" rel="external">纽约大学的机器学习团队成员链接主页，包括大牛Lecun，还有<span>Rob Fergus等。</span></a></p>
+<p><a href="http://www.douban.com/event/19029525/" target="_blank" rel="external">豆瓣上的脑与deep learning读书会，有讲义和部分视频，主要介绍了一些于deep learning相关的生物神经网络。</a></p>
+<p><a href="http://cilvr.cs.nyu.edu/doku.php?id=courses:bigdata:slides:start" target="_blank" rel="external">Large Scale ML的课程，由Lecun和Langford讲的，能不推荐么。</a></p>
+<p><a href="http://blog.csdn.net/zouxy09/article/details/11910527" target="_blank" rel="external">一些常见的DL code列表，csdn博主zouxy09的博文，Deep Learning源代码收集-持续更新…</a></p>
+<p><span style="font-size: 15px; font-family: 宋体;"><a href="http://nlp.stanford.edu/courses/NAACL2013/" target="_blank" rel="external">Deep Learning for NLP (without Magic)，由DL界5大高手之一的Richard Socher小组搞的，他主要是NLP的。</a></span></p>
+<p><a href="https://www.ipam.ucla.edu/schedule.aspx?pc=gss2012" target="_blank" rel="external">2012 Graduate Summer School: Deep Learning, Feature Learning，高手云集，深度学习盛宴，几乎所有的DL大牛都有参加。</a></p>
+<p>&nbsp;</p>
+<p><span style="background-color: #ffffff; color: #0000ff; font-size: 18pt;"><strong>Machine Learning（机器学习）：</strong></span></p>
+<p><a href="http://wenku.baidu.com/view/f32a35d2240c844769eaee55.html" target="_blank" rel="external">介绍图模型的一个ppt，非常的赞，ppt作者总结得很给力，里面还包括了HMM，MEM, CRF等其它图模型。反正看完挺有收获的。</a></p>
+<p><a href="http://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA" target="_blank" rel="external">机器学习一个视频教程，youtube上的，翻吧，内容很全面，偏概率统计模型，每一小集只有几分钟。&nbsp;</a></p>
+<p><a href="http://bigeye.au.tsinghua.edu.cn/DragonStar2012/index.html" target="_blank" rel="external">龙星计划2012机器学习，由余凯和张潼主讲。</a></p>
+<p><span><a href="http://remonstrate.wordpress.com/2012/05/23/pgm-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E8%8A%82%E9%80%89%EF%BC%88%E4%B8%80%EF%BC%89/" target="_blank" rel="external">demonstrate 的 blog :关于PGM(概率图模型)系列，主要按照<span>Daphne Koller的经典PGM教程介绍的</span>，大家依次google之</a>。<br></span></p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>Computer Vision（计算机视觉）：</strong></span></p>
+<p><a href="http://6.869.csail.mit.edu/fa13/schedule.html" target="_blank" rel="external">MIT2013年秋季课程：<span>Advances in Computer Vision，有练习题，有些有code.</span></a></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 18pt; color: #0000ff;"><strong>OpenCV**</strong>相关：**</span></p>
+<p><a href="http://opencv.org/" target="_blank" rel="external">http://opencv.org/</a></p>
+<p>2012年7月4日随着opencv2.4.2版本的发布，opencv更改了其最新的官方网站地址。</p>
+<p><a href="http://www.opencvchina.com/" target="_blank" rel="external">http://www.opencvchina.com/</a></p>
+<p>好像12年才有这个论坛的，比较新。里面有针对《learning opencv》这本书的视频讲解，不过视频教学还没出完，正在更新中。对刚入门学习opencv的人来说很不错。</p>
+<p><a href="http://www.opencv.org.cn/forum/" target="_blank" rel="external">http://www.opencv.org.cn/forum/</a></p>
+<p>opencv中文论坛，对于初次接触opencv的学者来说比较不错，入门资料多，opencv的各种英文文档也翻译成中文了。不足是感觉这个论坛上发帖提问很少人回答，也就是说讨论不够激烈。</p>
+<p><a href="http://opencv.jp/" target="_blank" rel="external">http://opencv.jp/</a></p>
+<p>opencv的日文网站，里面有不少例子代码，看不懂日文可以用网站自带的翻译，能看个大概。</p>
+<p><a href="http://code.opencv.org/projects/opencv" target="_blank" rel="external">http://code.opencv.org/projects/opencv</a></p>
+<p>opencv版本bug修补，版本更新，以及各种相关大型活动安排,还包含了opencv最近几个月内的活动路线，即未来将增加的功能等，可以掌握各种关于opencv进展情况的最新进展。</p>
+<p><a href="http://tech.groups.yahoo.com/group/OpenCV/" target="_blank" rel="external">http://tech.groups.yahoo.com/group/OpenCV/</a></p>
+<p>opencv雅虎邮件列表，据说是最好的opencv论坛，信息更新最新的地方。不过个人认为要查找相关主题的内容，在邮件列表中非常不方便。</p>
+<p><a href="http://www.cmlab.csie.ntu.edu.tw/~jsyeh/wiki/doku.php" target="_blank" rel="external">http://www.cmlab.csie.ntu.edu.tw/~jsyeh/wiki/doku.php</a></p>
+<p>台湾大学暑假集训网站，内有链接到与opencv集训相关的网页。感觉这种教育形式还蛮不错的。</p>
+<p><a href="http://sourceforge.net/projects/opencvlibrary/" target="_blank" rel="external">http://sourceforge.net/projects/opencvlibrary/</a></p>
+<p>opencv版本发布地方。</p>
+<p><a href="http://code.opencv.org/projects/opencv/wiki/ChangeLog#241" target="_blank" rel="external">http://code.opencv.org/projects/opencv/wiki/ChangeLog#241</a>&nbsp; &nbsp;&nbsp;<a href="http://opencv.willowgarage.com/wiki/OpenCV%20Change%20Logs" target="_blank" rel="external">http://opencv.willowgarage.com/wiki/OpenCV%20Change%20Logs</a></p>
+<p>opencv版本内容更改日志网页,前面那个网页更新最快。</p>
+<p><a href="http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html" target="_blank" rel="external">http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html</a></p>
+<p>opencv中文教程网页，分几个模块讲解，有代码有过程。内容是网友翻译opencv自带的doc文件里的。</p>
+<p><a href="https://netfiles.uiuc.edu/jbhuang1/www/resources/vision/index.html" target="_blank" rel="external">https://netfiles.uiuc.edu/jbhuang1/www/resources/vision/index.html</a></p>
+<p>网友总结的常用带有cvpr领域常见算法code链接的网址，感觉非常的不错。</p>
+<p><a href="http://fossies.org/dox/OpenCV-2.4.2/" target="_blank" rel="external">http://fossies.org/dox/OpenCV-2.4.2/</a></p>
+<p>该网站可以查看opencv中一些函数的变量接口，还会列出函数之间的结构图。</p>
+<p><a href="http://opencv.itseez.com/" target="_blank" rel="external">http://opencv.itseez.com/</a></p>
+<p>opencv的函数、类等查找网页，有导航，查起来感觉不错。</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 18pt; color: #0000ff;"><strong>优化：</strong></span></p>
+<p><a href="http://submodularity.org/" target="_blank" rel="external">http://submodularity.org/</a></p>
+<p>submodual优化。</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 18pt; color: #0000ff;"><strong>数学：</strong></span></p>
+<p><a href="http://www.youku.com/playlist_show/id_19465801.html" target="_blank" rel="external">http://www.youku.com/playlist_show/id_19465801.html</a></p>
+<p><span>《计算机中的数学》系列视频，<span>8位老师10讲内容，生动介绍微积分和线性代数基本概念在计算机学科中的各种有趣应用！</span></span></p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>Linux学习资料：</strong></span></p>
+<p><a href="http://itercast.com/library/1" target="_blank" rel="external">http://itercast.com/library/1</a></p>
+<p>linux入门的基础视频教程，对于新手可选择看第一部分，视频来源于<span>LinuxCast.net网站，还不错。</span></p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>OpenNI+Kinect相关：</strong></span></p>
+<p><a href="http://1.yuhuazou.sinaapp.com/" target="_blank" rel="external">http://1.yuhuazou.sinaapp.com/</a></p>
+<p>网友晨宇思远的博客，主攻cvpr，ai等。</p>
+<p><a href="http://blog.csdn.net/chenli2010/article/details/6887646" target="_blank" rel="external">http://blog.csdn.net/chenli2010/article/details/6887646</a></p>
+<p>kinect和openni学习资料汇总。</p>
+<p><a href="http://blog.csdn.net/moc062066/article/category/871261" target="_blank" rel="external">http://blog.csdn.net/moc062066/article/category/871261</a></p>
+<p>OpenCV 计算机视觉 kinect的博客:</p>
+<p><a href="http://kheresy.wordpress.com/index_of_openni_and_kinect/comment-page-5/" target="_blank" rel="external">http://kheresy.wordpress.com/index_of_openni_and_kinect/comment-page-5/</a></p>
+<p>网友Heresy的博客，里面有不少kinect的文章，写的比较详细。</p>
+<p><a href="http://www.cnkinect.com/" target="_blank" rel="external">http://www.cnkinect.com/</a></p>
+<p>体感游戏中文网，有不少新的kinect资讯。</p>
+<p><a href="http://www.kinectutorial.com/" target="_blank" rel="external">http://www.kinectutorial.com/</a></p>
+<p>Kinect体感开发网。</p>
+<p><a href="http://code.google.com/p/openni-hand-tracker" target="_blank" rel="external">http://code.google.com/p/openni-hand-tracker</a></p>
+<p>openni_hand_tracking google code项目。</p>
+<p><a href="http://blog.candescent.ch/" target="_blank" rel="external">http://blog.candescent.ch/</a></p>
+<p>网友的kinect博客，里面有很多手势识别方面的文章介绍，还有源码，不过貌似是基于c#的。</p>
+<p><a href="https://sites.google.com/site/colordepthfusion/" target="_blank" rel="external">https://sites.google.com/site/colordepthfusion/</a></p>
+<p>一些关于深度信息和颜色信息融合（fusion）的文章。</p>
+<p><a href="http://projects.ict.usc.edu/mxr/faast/" target="_blank" rel="external">http://projects.ict.usc.edu/mxr/faast/</a></p>
+<p>kinect新的库，可以结合OpenNI使用。</p>
+<p><a href="https://sites.google.com/a/chalearn.org/gesturechallenge/" target="_blank" rel="external">https://sites.google.com/a/chalearn.org/gesturechallenge/</a></p>
+<p>kinect手势识别网站。</p>
+<p><a href="http://www.ros.org/wiki/mit-ros-pkg" target="_blank" rel="external">http://www.ros.org/wiki/mit-ros-pkg</a></p>
+<p>mit的kinect项目，有code。主要是与手势识别相关。</p>
+<p><a href="http://www.thoughtden.co.uk/blog/2012/08/kinecting-people-our-top-6-kinect-projects/" target="_blank" rel="external">http://www.thoughtden.co.uk/blog/2012/08/kinecting-people-our-top-6-kinect-projects/</a></p>
+<p>kinect 2012年度最具创新的6个项目，有视频，确实够创新的！</p>
+<p><a href="http://www.cnblogs.com/yangyangcv/archive/2011/01/07/1930349.html" target="_blank" rel="external">http://www.cnblogs.com/yangyangcv/archive/2011/01/07/1930349.html</a></p>
+<p>kinect多点触控的一篇博文。</p>
+<p><a href="http://sourceforge.net/projects/kinect-mex/" target="_blank" rel="external">http://sourceforge.net/projects/kinect-mex/</a></p>
+<p><a href="http://www.mathworks.com/matlabcentral/fileexchange/30242-kinect-matlab" target="_blank" rel="external">http://www.mathworks.com/matlabcentral/fileexchange/30242-kinect-matlab</a></p>
+<p>有关matlab for kinect的一些接口。</p>
+<p><a href="http://news.9ria.com/2012/1212/25609.html" target="_blank" rel="external">http://news.9ria.com/2012/1212/25609.html</a></p>
+<p>AIR和Kinect的结合，有一些手指跟踪的code。</p>
+<p><a href="http://eeeweba.ntu.edu.sg/computervision/people/home/renzhou/index.htm" target="_blank" rel="external">http://eeeweba.ntu.edu.sg/computervision/people/home/renzhou/index.htm</a></p>
+<p>研究kinect手势识别的，任洲。刚毕业不久。</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 18pt; color: #0000ff;"><strong>其他网友**</strong>cvpr<strong>**领域的链接总结：</strong></span></p>
+<p><a href="http://www.cnblogs.com/kshenf/" target="_blank" rel="external">http://www.cnblogs.com/kshenf/</a></p>
+<p>网友整理常用牛人链接总结，非常多。不过个人没有没有每个网站都去试过。所以本文也是我自己总结自己曾经用过的或体会过的。</p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>OpenGL有关:</strong></span></p>
+<p><a href="http://nehe.gamedev.net/" target="_blank" rel="external">http://nehe.gamedev.net/</a></p>
+<p>NeHe的OpenGL教程英文版。</p>
+<p><a href="http://www.owlei.com/DancingWind/" target="_blank" rel="external">http://www.owlei.com/DancingWind/</a></p>
+<p>NeHe的OpenGL教程对应的中文版，由网友周玮翻译的。</p>
+<p><a href="http://www.qiliang.net/old/nehe_qt/" target="_blank" rel="external">http://www.qiliang.net/old/nehe_qt/</a></p>
+<p>NeHe的OpengGL对应的Qt版中文教程。</p>
+<p><a href="http://blog.csdn.net/qp120291570" target="_blank" rel="external">http://blog.csdn.net/qp120291570</a></p>
+<p>网友”左脑设计，右脑编程”的Qt_OpenGL博客,写得还不错。</p>
+<p><a href="http://guiliblearning.blogspot.com/" target="_blank" rel="external">http://guiliblearning.blogspot.com/</a></p>
+<p>这个博客对opengl的机制有所剖析，貌似要翻墙才能进去。</p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>cvpr综合网站论坛博客等：</strong></span></p>
+<p><a href="http://www.cvchina.net/" target="_blank" rel="external">http://www.cvchina.net/</a></p>
+<p>中国计算机视觉论坛</p>
+<p><a href="http://www.cvchina.info/" target="_blank" rel="external">http://www.cvchina.info/</a></p>
+<p>这个博客很不错，每次看完都能让人兴奋，因为有很多关于cv领域的科技新闻，还时不时有视频显示。另外这个博客里面的资源也整理得相当不错。中文的。</p>
+<p><a href="http://www.bfcat.com/" target="_blank" rel="external">http://www.bfcat.com/</a></p>
+<p>一位网友的个人计算机视觉博客，有很多关于计算机视觉前沿的东西介绍，与上面的博客一样，看了也能让人兴奋。</p>
+<p><a href="http://blog.csdn.net/v_JULY_v/" target="_blank" rel="external">http://blog.csdn.net/v_JULY_v/</a></p>
+<p>牛人博客，主攻数据结构，机器学习数据挖掘算法等。</p>
+<p><a href="http://blog.youtueye.com/" target="_blank" rel="external">http://blog.youtueye.com/</a></p>
+<p>该网友上面有一些计算机视觉方向的博客,博客中附有一些实验的测试代码.</p>
+<p><a href="http://blog.sciencenet.cn/u/jingyanwang" target="_blank" rel="external">http://blog.sciencenet.cn/u/jingyanwang</a></p>
+<p>多看pami才扯谈的博客，其中有不少pami文章的中文介绍。</p>
+<p><a href="http://chentingpc.me/" target="_blank" rel="external">http://chentingpc.me/</a></p>
+<p>做网络和自然语言处理的，有不少机器学习方面的介绍。</p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>ML常用博客资料等：</strong></span></p>
+<p><a href="http://freemind.pluskid.org/" target="_blank" rel="external">http://freemind.pluskid.org/</a></p>
+<p><span>由 pluskid 所维护的 blog，<span>主要记录一些机器学习、程序设计以及各种技术和非技术的相关内容，写得很不错。</span></span></p>
+<p><a href="http://datasciencemasters.org/" target="_blank" rel="external">http://datasciencemasters.org/</a></p>
+<p>里面包含学ML/DM所需要的一些知识链接，且有些给出了视频教程，网页资料，电子书，开源code等，推荐！</p>
+<p><a href="http://cs.nju.edu.cn/zhouzh/index.htm" target="_blank" rel="external">http://cs.nju.edu.cn/zhouzh/index.htm</a></p>
+<p>周志华主页，不用介绍了，机器学习大牛，更可贵的是他的很多文章都有源码公布。</p>
+<p><a href="http://www.eecs.berkeley.edu/~jpaisley/Papers.htm" target="_blank" rel="external">http://www.eecs.berkeley.edu/~jpaisley/Papers.htm</a></p>
+<p>John Paisley的个人主页，主要研究机器学习领域，有些文章有代码提供。</p>
+<p><a href="http://foreveralbum.yo2.cn/" target="_blank" rel="external">http://foreveralbum.yo2.cn/</a></p>
+<p>里面有一些常见机器学习算法的详细推导过程。</p>
+<p><a href="http://blog.csdn.net/abcjennifer" target="_blank" rel="external">http://blog.csdn.net/abcjennifer</a></p>
+<p>浙江大学CS硕士在读，关注计算机视觉，机器学习，算法研究，博弈， 人工智能， 移动互联网等学科和产业。该博客中有很多机器学习算法方面的介绍。</p>
+<p><a href="http://www.wytk2008.net/" target="_blank" rel="external">http://www.wytk2008.net/</a></p>
+<p>无垠天空的机器学习博客。</p>
+<p><a href="http://www.chalearn.org/index.html" target="_blank" rel="external">http://www.chalearn.org/index.html</a></p>
+<p>机器学习挑战赛。</p>
+<p><a href="http://licstar.net/" target="_blank" rel="external">http://licstar.net/</a></p>
+<p><span>licstar的技术博客，偏自然语言处理方向。</span></p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>国内科研团队和牛人网页：</strong></span></p>
+<p><a href="http://vision.ia.ac.cn/zh/index_cn.html" target="_blank" rel="external">http://vision.ia.ac.cn/zh/index_cn.html</a></p>
+<p>中科院自动化所机器视觉课题小组，有相关数据库、论文、课件等下载。</p>
+<p><a href="http://www.cbsr.ia.ac.cn/users/szli/" target="_blank" rel="external">http://www.cbsr.ia.ac.cn/users/szli/</a></p>
+<p>李子青教授个人主页，中科院自动化所cvpr领域牛叉人！</p>
+<p><a href="http://www4.comp.polyu.edu.hk/~cslzhang/" target="_blank" rel="external">http://www4.comp.polyu.edu.hk/~cslzhang/</a></p>
+<p>香港理工大学教授lei zhang个人主页，也是cvpr领域一大牛人啊，cvpr，iccv各种发表。更重要的是他所以牛叉论文的code全部公开，非常难得！</p>
+<p><a href="http://liama.ia.ac.cn/wiki/start" target="_blank" rel="external">http://liama.ia.ac.cn/wiki/start</a></p>
+<p>中法信息、自动化与应用联合实验室，里面很多内容不仅限而cvpr，还有ai领域一些其他的研究。</p>
+<p><a href="http://www.cogsci.xmu.edu.cn/cvl/english/" target="_blank" rel="external">http://www.cogsci.xmu.edu.cn/cvl/english/</a></p>
+<p>厦门大学特聘教授，cv领域一位牛人。研究方向主要为目标检测，目标跟踪，运动估计，三维重建，鲁棒统计学，光流计算等。</p>
+<p><a href="http://idm.pku.edu.cn/index.aspx" target="_blank" rel="external">http://idm.pku.edu.cn/index.aspx</a></p>
+<p>北京大学数字视频编码技术国家实验室。<strong>&nbsp;</strong></p>
+<p><strong><a href="http://www.csie.ntu.edu.tw/~cjlin/libsvm/" target="_blank" rel="external">http://www.csie.ntu.edu.tw/~cjlin/libsvm/</a></strong></p>
+<p>libsvm项目网址，台湾大学的，很火！</p>
+<p><a href="http://www.jdl.ac.cn/user/sgshan/index.htm" target="_blank" rel="external">http://www.jdl.ac.cn/user/sgshan/index.htm</a></p>
+<p>山世光，人脸识别研究比较牛。在中国科学院智能信息处理重点实验室</p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>国外科研团队和牛人网页：</strong></span></p>
+<p><a href="https://netfiles.uiuc.edu/jbhuang1/www/resources/vision/index.html" target="_blank" rel="external">https://netfiles.uiuc.edu/jbhuang1/www/resources/vision/index.html</a></p>
+<p>常见计算机视觉资源整理索引，国外学者整理，全是出名的算法，并且带有代码的，这个非常有帮助，其链接都是相关领域很火的代码。</p>
+<p><strong><a href="http://www.cs.cmu.edu/afs/cs/project/cil/ftp/html/txtv-groups.html" target="_blank" rel="external">http://www.cs.cmu.edu/afs/cs/project/cil/ftp/html/txtv-groups.html</a></strong></p>
+<p>国外学者整理的各高校研究所团队网站</p>
+<p><a href="http://research.microsoft.com/en-us/groups/vision/" target="_blank" rel="external">http://research.microsoft.com/en-us/groups/vision/</a></p>
+<p>微软视觉研究小组，不解释，大家懂的，牛！</p>
+<p><a href="http://lear.inrialpes.fr/index.php" target="_blank" rel="external">http://lear.inrialpes.fr/index.php</a></p>
+<p>法国国家信息与自动化研究所，有对应牛人的链接，论文项目网页链接，且一些code对应链接等。</p>
+<p><a href="http://www.cs.ubc.ca/~pcarbo/objrecls/" target="_blank" rel="external">http://www.cs.ubc.ca/~pcarbo/objrecls/</a></p>
+<p>Learning to recognize objects with little supervision该篇论文的项目网页，有对应的code下载，另附有详细说明。</p>
+<p><a href="http://www.eecs.berkeley.edu/~lbourdev/poselets/" target="_blank" rel="external">http://www.eecs.berkeley.edu/~lbourdev/poselets/</a></p>
+<p>poselets相关研究界面，关于poselets的第一手资料。</p>
+<p><a href="http://www.cse.oulu.fi/CMV/Research" target="_blank" rel="external">http://www.cse.oulu.fi/CMV/Research</a></p>
+<p>芬兰奥卢大学计算机科学与工程学院网页，里面有很多cv领域相关的研究，比如说人脸，脸部表情，人体行为识别，跟踪，人机交互等cv基本都涉及有。</p>
+<p><a href="http://www.cs.cmu.edu/~cil/vision.html" target="_blank" rel="external">http://www.cs.cmu.edu/~cil/vision.html</a></p>
+<p>卡耐基梅隆大学计算机视觉主页，内容非常多。可惜的是该网站内容只更新到了2004年。</p>
+<p><a href="http://vision.stanford.edu/index.html" target="_blank" rel="external">http://vision.stanford.edu/index.html</a></p>
+<p>斯坦福大学计算机视觉主页，里面有非常非常多的牛人，比如说大家熟悉的lifeifei.</p>
+<p><a href="http://www.wavelet.org/index.php" target="_blank" rel="external">http://www.wavelet.org/index.php</a></p>
+<p>关于wavelet研究的网页。</p>
+<p><a href="http://civs.ucla.edu/" target="_blank" rel="external">http://civs.ucla.edu/</a></p>
+<p>加州大学洛杉矶分校统计学院，关于统计学习方面各种资料，且有相应的网上公开课。</p>
+<p><a href="http://www.cs.cmu.edu/~efros/" target="_blank" rel="external">http://www.cs.cmu.edu/~efros/</a></p>
+<p>卡耐基梅隆大学Alexei(Alyosha)Efros教授个人网站，计算机图形学高手。</p>
+<p><a href="http://web.mit.edu/torralba/www//" target="_blank" rel="external">http://web.mit.edu/torralba/www//</a></p>
+<p>mit牛人Associate教授个人网址，主要研究计算机视觉人体视觉感知，目标识别和场景理解等。</p>
+<p><a href="http://people.csail.mit.edu/billf/" target="_blank" rel="external">http://people.csail.mit.edu/billf/</a></p>
+<p>mit牛人William T. Freeman教授，主要研究计算机视觉和图像学</p>
+<p><a href="http://www.research.ibm.com/peoplevision/" target="_blank" rel="external">http://www.research.ibm.com/peoplevision/</a></p>
+<p>IBM人体视觉研究中心，里面除了有其研究小组的最新成果外，还有很多测试数据(特别是视频）供下载。</p>
+<p><a href="http://www.vlfeat.org/" target="_blank" rel="external">http://www.vlfeat.org/</a></p>
+<p>vlfeat主页，vlfeat也是一个开源组织，主要定位在一些最流行的视觉算法开源上，Ｃ编写，其很多算法效果比opencv要好,不过数量不全，但是非常有用。</p>
+<p><a href="http://www.robots.ox.ac.uk/~az/" target="_blank" rel="external">http://www.robots.ox.ac.uk/~az/</a></p>
+<p>Andrew Zisserman的个人主页，这人大家应该熟悉，《计算机视觉中的多视几何》这本神书的作者之一。</p>
+<p><a href="http://www.cs.utexas.edu/~grauman/" target="_blank" rel="external">http://www.cs.utexas.edu/~grauman/</a></p>
+<p>KristenGrauman教授的个人主页，是个大美女，且是2011年“马尔奖”获得者，”马尔奖“大家都懂的，计算机视觉领域的最高奖项，目前无一个国内学者获得过。她的主要研究方法是视觉识别。</p>
+<p><a href="http://groups.csail.mit.edu/vision/welcome/" target="_blank" rel="external">http://groups.csail.mit.edu/vision/welcome/</a></p>
+<p>mit视觉实验室主页。</p>
+<p><a href="http://code.google.com/p/sixthsense/" target="_blank" rel="external">http://code.google.com/p/sixthsense/</a></p>
+<p>曾经在网络上非常出名一个视频，一个作者研究的第六感装置，现在这个就是其开源的主页。</p>
+<p><a href="http://vision.ucsd.edu/~pdollar/research.html#BehaviorRecognitionAnimalBehavior" target="_blank" rel="external">http://vision.ucsd.edu/~pdollar/research.html#BehaviorRecognitionAnimalBehavior</a></p>
+<p>Piotr Dollar的个人主要，主要研究方向是人体行为识别。</p>
+<p><a href="http://www.mmp.rwth-aachen.de/" target="_blank" rel="external">http://www.mmp.rwth-aachen.de/</a></p>
+<p>移动多媒体处理，将移动设备，计算机图像学，视觉，图像处理等结合的领域。</p>
+<p><a href="http://www.di.ens.fr/~laptev/index.html" target="_blank" rel="external">http://www.di.ens.fr/~laptev/index.html</a></p>
+<p>Ivan Laptev牛人主页，主要研究人体行为识别。有很多数据库可以下载。</p>
+<p><a href="http://blogs.oregonstate.edu/hess/" target="_blank" rel="external">http://blogs.oregonstate.edu/hess/</a></p>
+<p>Rob Hess的个人主要，里面有源码下载，比如说粒子滤波，他写的粒子滤波在网上很火。</p>
+<p><a href="http://morethantechnical.googlecode.com/svn/trunk/" target="_blank" rel="external">http://morethantechnical.googlecode.com/svn/trunk/</a></p>
+<p>cvpr领域一些小型的开源代码。</p>
+<p><a href="http://iica.de/pd/index.py" target="_blank" rel="external">http://iica.de/pd/index.py</a></p>
+<p>做行人检测的一个团队，内部有一些行人检测的代码下载。</p>
+<p><a href="http://www.cs.utexas.edu/~grauman/research/pubs.html" target="_blank" rel="external">http://www.cs.utexas.edu/~grauman/research/pubs.html</a></p>
+<p>UT-Austin计算机视觉小组，包含的视觉研究方向比较广，且有的文章有源码，你只需要填一个邮箱地址，系统会自动发跟源码相关的信息过来。</p>
+<p><a href="http://www.robots.ox.ac.uk/~vgg/index.html" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/index.html</a></p>
+<p>visual geometry group</p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>图像:</strong></span></p>
+<p><a href="http://blog.sina.com.cn/s/blog_4cccd8d301012pw5.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_4cccd8d301012pw5.html</a></p>
+<p>交互式图像分割代码。</p>
+<p><a href="http://vision.csd.uwo.ca/code/" target="_blank" rel="external">http://vision.csd.uwo.ca/code/</a></p>
+<p>graphcut优化代码。</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 18pt; color: #0000ff;"><strong>语音：</strong></span></p>
+<p><a href="http://danielpovey.com/kaldi-lectures.html" target="_blank" rel="external">http://danielpovey.com/kaldi-lectures.html</a></p>
+<p>语音处理中的kaldi学习。</p>
+<p>&nbsp;</p>
+<p><strong><span style="color: #0000ff; font-size: 18pt;">算法分析与设计（计算机领域的基础算法）：</span></strong></p>
+<p><a href="http://www.51nod.com/focus.html" target="_blank" rel="external">http://www.51nod.com/focus.html</a></p>
+<p>该网站主要是讨论一些算法题。里面的<a href="http://www.51nod.com/user/index.html#!userId=1" target="_blank" rel="external">李陶冶</a>是个大牛，回答了很多算法题。</p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>一些综合topic列表：</strong></span></p>
+<p><a href="http://www.cs.cornell.edu/courses/CS7670/2011fa/" target="_blank" rel="external">http://www.cs.cornell.edu/courses/CS7670/2011fa/</a></p>
+<p>计算机视觉中的些topic（Special Topics in Computer Vision），截止到2011年为止，其引用的文章都是非常顶级的topic。</p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>书籍相关网页：</strong></span></p>
+<p><a href="http://www.imageprocessingplace.com/index.htm" target="_blank" rel="external">http://www.imageprocessingplace.com/index.htm</a></p>
+<p>冈萨雷斯的《数字图像处理》一书网站，包含课程材料，matlab图像处理工具包，课件ppt等相关素材。</p>
+<p><em>Consumer Depth Cameras for Computer Vision</em></p>
+<p>很优秀的一本书，不过很贵，买不起啊！做深度信息的使用这本书还不错，google图中可以预览一部分。</p>
+<p><em>Making.Things.See</em></p>
+<p>针对Kinect写的，主要关注深度信息，较为基础。书籍中有不少例子，貌似是java写的。</p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>国内一些AI相关的研讨会：</strong></span></p>
+<p><a href="http://www.iipl.fudan.edu.cn/MLA13/index.htm" target="_blank" rel="external">http://www.iipl.fudan.edu.cn/MLA13/index.htm</a></p>
+<p>中国机器学习及应用研讨会(这个是2013年的)</p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>期刊会议论文下载：</strong></span></p>
+<p><a href="http://cvpapers.com/" target="_blank" rel="external">http://cvpapers.com/</a></p>
+<p>几个顶级会议论文公开下载界面，比如说ICCV,CVPR,ECCV,ACCV,ICPR,SIGGRAPH等。</p>
+<p><a href="http://www.cvpr2011.org/" target="_blank" rel="external">http://www.cvpr2012.org/</a></p>
+<p>cvpr2012的官方地址，里面有各种资料和信息，其他年份的地址类似推理更改即可。</p>
+<p><a href="http://www.sciencedirect.com/science/journal/02628856" target="_blank" rel="external">http://www.sciencedirect.com/science/journal/02628856</a></p>
+<p>ICV期刊下载</p>
+<p><a href="http://www.computer.org/portal/web/tpami" target="_blank" rel="external">http://www.computer.org/portal/web/tpami</a></p>
+<p>TPAMI期刊，AI领域中可以算得上是最顶级的期刊了，里面有不少cvpr方面的内容。</p>
+<p><a href="http://www.springerlink.com/content/100272/" target="_blank" rel="external">http://www.springerlink.com/content/100272/</a></p>
+<p>IJCV的网址。</p>
+<p><a href="http://books.nips.cc/" target="_blank" rel="external">http://books.nips.cc/</a></p>
+<p>NIPS官网，有论文下载列表。</p>
+<p><a href="http://graphlab.org/lsrs2013/program/" target="_blank" rel="external">http://graphlab.org/lsrs2013/program/</a></p>
+<p>LSRS （会议）地址，大规模推荐系统，其它年份依次类推。</p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>会议期刊相关信息：</strong></span></p>
+<p><a href="http://conferences.visionbib.com/Iris-Conferences.html" target="_blank" rel="external">http://conferences.visionbib.com/Iris-Conferences.html</a></p>
+<p>该网页列出了图像处理，计算机视觉领域相关几乎所有比较出名的会议时间表。</p>
+<p><a href="http://conferences.visionbib.com/Browse-conf.php" target="_blank" rel="external">http://conferences.visionbib.com/Browse-conf.php</a></p>
+<p>上面网页的一个子网页，列出了最近的CV领域提交paper的deadline。</p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>cvpr相关数据库下载：</strong></span></p>
+<p><a href="http://research.microsoft.com/en-us/um/people/jckrumm/WallFlower/TestImages.htm" target="_blank" rel="external">http://research.microsoft.com/en-us/um/people/jckrumm/WallFlower/TestImages.htm</a></p>
+<p>微软研究院牛人Wallflower Paper的论文中用到的目标检测等测试图片</p>
+<p><a href="http://archive.ics.uci.edu/ml/" target="_blank" rel="external">http://archive.ics.uci.edu/ml/</a></p>
+<p>UCI数据库列表下载，最常用的机器学习数据库列表。</p>
+<p><a href="http://www.cs.rochester.edu/~rmessing/uradl/" target="_blank" rel="external">http://www.cs.rochester.edu/~rmessing/uradl/</a></p>
+<p>人体行为识别通过关键点的跟踪视频数据库，Rochester university的</p>
+<p><a href="http://www.research.ibm.com/peoplevision/performanceevaluation.html" target="_blank" rel="external">http://www.research.ibm.com/peoplevision/performanceevaluation.html</a></p>
+<p>IBM人体视觉研究中心，有视频监控等非常多的测试视频。</p>
+<p><a href="http://www.cvpapers.com/datasets.html" target="_blank" rel="external">http://www.cvpapers.com/datasets.html</a></p>
+<p>该网站上列出了常见的cvpr研究的数据库。</p>
+<p><a href="http://www.cs.washington.edu/rgbd-dataset/index.html" target="_blank" rel="external">http://www.cs.washington.edu/rgbd-dataset/index.html</a><a href="http://www.cs.washington.edu/rgbd-dataset/software.html" target="_blank" rel="external">
+</a></p>
+<p>RGB-D Object Dataset.做目标识别的。</p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>AI**</strong>相关娱乐网页：**</span></p>
+<p><a href="http://en.akinator.com/" target="_blank" rel="external">http://en.akinator.com/</a></p>
+<p>该网站很好玩，可以测试你心里想出的一个人名(当然前提是这个人必须有一定的知名度)，然后该网站会提出一系列的问题，你可以选择yes or no,or I don’t know等等，最后系统会显示你心中所想的那个人。</p>
+<p><a href="http://www.doggelganger.co.nz/" target="_blank" rel="external">http://www.doggelganger.co.nz/</a></p>
+<p>人与狗的匹配游戏，摄像头采集人脸，呵呵…</p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>Android相关：</strong></span></p>
+<p><a href="https://code.google.com/p/android-ui-utils/" target="_blank" rel="external">https://code.google.com/p/android-ui-utils/</a></p>
+<p>该网站上有一些android图标,菜单等跟界面有关的设计工具,可以用来做一些简单的UI设计.</p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>工具和code下载：</strong></span></p>
+<p><a href="http://lear.inrialpes.fr/people/dorko/downloads.html" target="_blank" rel="external">http://lear.inrialpes.fr/people/dorko/downloads.html</a></p>
+<p>6种常见的图像特征点检测子，linux下环境运行。不过只提供了二进制文件，不提供源码。</p>
+<p><a href="http://www.cs.ubc.ca/~pcarbo/objrecls/index.html#code" target="_blank" rel="external">http://www.cs.ubc.ca/~pcarbo/objrecls/index.html#code</a></p>
+<p>ssmcmc的matlab代码,是Learning to recognize objects with little supervision这一系列文章用的源码，属于目标识别方面的研究。</p>
+<p><a href="http://www.robots.ox.ac.uk/~timork/" target="_blank" rel="external">http://www.robots.ox.ac.uk/~timork/</a></p>
+<p>仿射无关尺度特征点检测算子源码，还有些其它算子的源码或二进制文件。</p>
+<p><a href="http://www.vision.ee.ethz.ch/~bleibe/code/ism.html" target="_blank" rel="external">http://www.vision.ee.ethz.ch/~bleibe/code/ism.html</a></p>
+<p>隐式形状模型(ISM)项目主页，作者Bastian Leibe提供了linux下运行的二进制文件。</p>
+<p><a href="http://www.di.ens.fr/~laptev/download.html#stip" target="_blank" rel="external">http://www.di.ens.fr/~laptev/download.html#stip</a></p>
+<p>Ivan Laptev牛人主页中的STIP特征点检测code，但是也只是有二进制文件，无源码。该特征点在行为识别中该特征点非常有名。</p>
+<p><a href="http://ai.stanford.edu/~quocle/" target="_blank" rel="external">http://ai.stanford.edu/~quocle/</a></p>
+<p>斯坦福大学Quoc V.Le主页，上有它2011年行为识别文章的代码。</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 18pt;"><strong><span style="color: #0000ff;">开源软件：</span></strong></span></p>
+<p><a href="http://mloss.org/software/" target="_blank" rel="external">http://mloss.org/software/</a></p>
+<p>一些ML开源软件在这里基本都可以搜到，有上百个。</p>
+<p><a href="https://github.com/myui/hivemall" target="_blank" rel="external">https://github.com/myui/hivemall</a></p>
+<p><span>Scalable machine learning library for Hive/Hadoop.</span></p>
+<p><span><a href="http://scikit-learn.org/stable/" target="_blank" rel="external">http://scikit-learn.org/stable/</a></span></p>
+<p>&nbsp;</p>
+<p>基于python的机器学习开源软件，文档写得不错。</p>
+<p>&nbsp;</p>
+<p><span style="background-color: #ffffff; font-size: 18pt; color: #0000ff;"><strong>挑战赛：</strong></span></p>
+<p><span><a href="http://www.chioka.in/kaggle-competition-solutions/" target="_blank" rel="external">http://www.chioka.in/kaggle-competition-solutions/</a></span></p>
+<p>kaggle一些挑战赛的code.&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff; font-size: 18pt;"><strong>公开课：</strong></span></p>
+<p><a href="http://open.163.com/" target="_blank" rel="external">网易公开课，国内做得很不错的公开课，翻译了一些国外出名的公开课教程，与国外公开课平台coursera有合作。</a></p>
+<p><a href="https://www.coursera.org/" target="_blank" rel="external">coursera在线教育网上公开课，很新，有个邮箱注册即可学习，有不少课程，且有对应的练习，特别是编程练习，超赞。</a></p>
+<p><a href="https://class.stanford.edu/dashboard" target="_blank" rel="external">斯坦福网上公开课链接，有统计学习，凸优化等课程。</a></p>
+<p><a href="https://www.udacity.com/wiki/downloads" target="_blank" rel="external">udacity公开课程下载链接，其实速度还可以。里面有不少好教程。</a></p>
+<p><a href="http://bi.snu.ac.kr/Courses/" target="_blank" rel="external">机器学习公开课的连接，有不少课。</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;<br></p>
+]]></content>
     <summary type="html">
-    <![CDATA[<a id="more"></a>
-<div id="cnblogs_post_body"><br><br>&nbsp;<br><br><span style="color: #0000ff; font-size: 18pt;"><strong>Deep Learning（深度学]]>
+    <![CDATA[<p><span style="color: #0000ff; font-size: 18pt;"><strong>Deep Learning（深度学习）：</strong></span></p>
+<p><a href="http://deeplearning.stanford.edu/wiki/index.php/UFLDL_Tutorial">ufldl的2个教程(这个没得说，入门绝对的好教程，Ng的，逻辑清晰有练习)：一</a></p>
+<p><a href="http://ufldl.stanford.edu/tutorial/index.php/UFLDL_Tutorial">ufldl的2个教程(这个没得说，入门绝对的好教程，Ng的，逻辑清晰有练习)：二</a></p>
+<p><a href="http://nlp.stanford.edu/courses/NAACL2013/">Bengio团队的deep learning教程，用的theano库，主要是rbm系列，搞python的可以参考，很不错。</a></p>
+<p><a href="http://deeplearning.net/">deeplearning.net主页，里面包含的信息量非常多，有software, reading list, research lab, dataset, demo等，强烈推荐，自己去发现好资料。</a><br>]]>
+    
     </summary>
     
       <category term="Deep Learning" scheme="http://bobchennan.github.io/tags/Deep-Learning/"/>
@@ -318,78 +663,140 @@
   </entry>
   
   <entry>
-    <title><![CDATA[I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear。]]></title>
+    <title><![CDATA[Quotes from Nelson Mandela]]></title>
     <link href="http://bobchennan.github.io/2013/12/06/mandela/"/>
     <id>http://bobchennan.github.io/2013/12/06/mandela/</id>
-    <published>2013-12-06T00:21:31.000Z</published>
-    <updated>2013-12-06T12:25:52.000Z</updated>
-    <content type="html"><![CDATA[<a id="more"></a>
-<pre><code>When I walked out <span class="operator">of</span> <span class="operator">the</span> prison cell towards <span class="operator">the</span> door leading <span class="built_in">to</span> freedom, I have made <span class="keyword">it</span> <span class="built_in">clear</span> his own pain <span class="operator">and</span> resentment <span class="keyword">if</span> <span class="operator">not</span> able <span class="built_in">to</span> stay behind, so <span class="operator">in</span> fact I still <span class="operator">in</span> prison。
-</code></pre><p>　　当我走出囚室迈向通往自由的大门时，我已经清楚，自己若不能把痛苦与怨恨留在身后，那么其实我人在狱中。</p>
-<p>　　A good head and a good heart are always a formidable combination。</p>
-<p>　　精明的头脑和善良的心灵往往是个不可思议的组合。</p>
-<p>　　For to be free is not merely to cast off one’s chains, but to live in a way that respects and enhances the freedom of others。</p>
-<p>　　自由不仅仅意味着摆脱自身的枷锁，还意味着以一种尊重并增加他人自由的方式生活。</p>
-<p>　　Education is the most powerful weapon which you can use to change the world。</p>
-<p>　　教育是最强有力的武器，你能用它来改变世界。</p>
-<p>　　After climbing a great hill, one only finds that there are many more hills to climb。</p>
-<p>　　登上高峰后，你会发现还有更多的山峰要翻越。</p>
-<p>　　I detestracialism, because I regard it as a barbaric thing, whether it comes from a black man or a white man。</p>
-<p>　　我痛恨种族主义，不管是来自黑人或是来自白人的种族主义，在我看来，都是野蛮未开化的。</p>
-<p>　　I dream of an Africa which is in peace with itself。</p>
-<p>　　我向往一个内部和平的非洲。</p>
-<p>　　I dream of the realization of the unity of Africa, whereby its leaders combine in their efforts to solve the problems of this continent. I dream of our vast deserts, of our forests, of all our great wildernesses。</p>
-<p>　　我梦见，通过非洲各国领导人齐心协力共同解决非洲的种种问题，非洲实现了统一。我梦见那广袤的沙漠、茂密的森林，还有那无际的荒野。</p>
-<p>　　If there are dreams about a beautiful South Africa, there are also roads that lead to their goal. Two of these roads could be named Goodness and Forgiveness。</p>
-<p>　　有建设美好南非的梦想，就有通向梦想的道路。善良和宽恕就是其中的两条大道。</p>
-<p>　　I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear。</p>
-<p>　　我懂得了，勇气不是没有恐惧，而是战胜恐惧。勇者不是感觉不到害怕的人，而是克服自身恐惧的人。</p>
-<p>　　If you talk to a man in a language he understands, that goes to his head. If you talk to him in his language, that goes to his heart。</p>
-<p>　　如果你用一个人听得懂的语言与他交流，他会记在脑子里；如果你用他自己的语言与他交流，他会记在心里。</p>
-<p>　　If you want to make peace with your enemy, you have to work with your enemy. Then he becomes your partner。</p>
-<p>　　若想与敌和平共处，就要与敌并肩作战。敌亦将为友。</p>
-<p>　　In my country we go to prison first and then become President。</p>
-<p>　　在我的祖国，我们先当囚徒，后当总统。</p>
-<p>　　It always seems impossible until its done。</p>
-<p>　　在事情未成功之前，一切总看似不可能。</p>
-<p>　　It is better to lead from behind and to put others in front, especially when you celebrate victory when nice things occur. You take the front line when there is danger. Then people will appreciate your leadership。</p>
-<p>　　作为领袖，最好是在后方领导，让其他人站在前线，尤其是在庆祝胜利或好事时；但在危险时，你要站在前线。这样，人们会欣赏你的领导力。</p>
-<p>　　Let there be work, bread, water and salt for all。</p>
-<p>　　让所有人都拥有工作、面包、水和盐吧。</p>
-<p>　　Let freedom reign. The sun never set on so glorious a human achievement。</p>
-<p>　　让自由来主宰一切吧。对于如此辉煌的人类成就，太阳永远不会停止照耀。</p>
-<p>　　Money won’t create success, the freedom to make it will。</p>
-<p>　　创造成功，靠的不是金钱，而是拥有创造成功的自由。</p>
-<p>　　Never, never and never again shall it be that this beautiful land will again experience the oppression of one by another。</p>
-<p>　　这片美丽的土地将永远、永远、永远不会再经历人对人的压迫。</p>
-<p>　　Only free men can negotiate; prisoners cannot enter into contracts. Your freedom and mine cannot be separated。</p>
-<p>　　只有自由的人才能谈判，身陷牢笼的人没有谈判的资格。你们的自由和我的自由是不可分割的。</p>
-<p>　　There can be no keener revelation of a society’s soul than the way in which it treats its children。</p>
-<p>　　知晓一个社会的灵魂，就看这个社会对待小孩的方式，除此以外，没有更好的办法。</p>
-<p>　　There is no easy walk to freedom anywhere, and many of us will have to pass through the valley of the shadow of death again and again before we reach the mountaintop of our desires。</p>
-<p>　　自由之路从不平坦，我们中的许多人都不得不一次又一次地穿过死神笼罩的山谷，才能抵达愿望的顶峰。</p>
-<p>　　There is no passion to be found playing small - in settling for a life that is less than the one you are capable of living。</p>
-<p>　　本来能过得更精彩的生活，却勉强接受现状，满足于个人的生活，这毫无激情可言。</p>
-<p>　　There is no such thing as part freedom。</p>
-<p>　　不存在部分自由之说。</p>
-<p>　　There is nothing like returning to a place that remains unchanged to find the ways in which you yourself have altered。</p>
-<p>　　回到一个未曾改变的地方，却发现自己已经改变，没有什么这更美妙。</p>
-<p>　　When the water starts boiling it is foolish to turn off the heat。</p>
-<p>　　水刚煮沸就关火，这很愚蠢。</p>
-<p>　　Our greatest fear is not from our lack of, but because we have extraordinary strength. Let us often threatened not our weaknesses, but our strengths。</p>
-<p>　　我们最大的恐惧不是来自于我们的不足，而是因为我们超常的强大。通常让我们受到威胁的不是我们的弱点，而是我们的长处。</p>
-<p>　　The greatest brilliance in life lies not in never falling, but fall can always rises again。</p>
-<p>　　生命中最伟大的光辉不在于永不坠落，而是坠落后总能再度升起。</p>
-<p>　　Let black and white as brothers, South Africa to the prosperityand development。</p>
-<p>　　让黑人和白人成为兄弟，让南非繁荣发展。</p>
-<p>　　I have finished my role play, now need unknown life. I want to go back home, the village in childhood frolicking hillside walk。</p>
-]]></content>
+    <published>2013-12-06T00:21:00.000Z</published>
+    <updated>2015-10-27T07:35:21.000Z</updated>
+    <content type="html"><![CDATA[<pre><code>I learned <span class="keyword">that</span> courage was <span class="keyword">not</span> <span class="keyword">the</span> absence <span class="keyword">of</span> fear, <span class="keyword">but</span> <span class="keyword">the</span> triumph <span class="keyword">over</span> <span class="keyword">it</span>. The brave man <span class="keyword">is</span> <span class="keyword">not</span> he who <span class="keyword">does</span> <span class="keyword">not</span> feel afraid, <span class="keyword">but</span> he who conquers <span class="keyword">that</span> fear。
+</code></pre><a id="more"></a>
+<pre><code>When I walked <span class="keyword">out of</span> <span class="keyword">the</span> prison cell towards <span class="keyword">the</span> door leading <span class="keyword">to</span> freedom, I have made <span class="keyword">it</span> clear his own pain <span class="keyword">and</span> resentment <span class="keyword">if</span> <span class="keyword">not</span> able <span class="keyword">to</span> stay <span class="keyword">behind</span>, so <span class="keyword">in</span> fact I still <span class="keyword">in</span> prison。
+
+当我走出囚室迈向通往自由的大门时，我已经清楚，自己若不能把痛苦与怨恨留在身后，那么其实我人在狱中。
+
+A good head <span class="keyword">and</span> a good heart are always a formidable combination。
+
+精明的头脑和善良的心灵往往是个不可思议的组合。
+
+For <span class="keyword">to</span> be free <span class="keyword">is</span> <span class="keyword">not</span> merely <span class="keyword">to</span> cast off one's chains, <span class="keyword">but</span> <span class="keyword">to</span> live <span class="keyword">in</span> a way <span class="keyword">that</span> respects <span class="keyword">and</span> enhances <span class="keyword">the</span> freedom <span class="keyword">of</span> others。
+
+自由不仅仅意味着摆脱自身的枷锁，还意味着以一种尊重并增加他人自由的方式生活。
+
+Education <span class="keyword">is</span> <span class="keyword">the</span> most powerful weapon which you can use <span class="keyword">to</span> change <span class="keyword">the</span> world。
+
+教育是最强有力的武器，你能用它来改变世界。
+
+After climbing a great hill, one only finds <span class="keyword">that</span> there are many more hills <span class="keyword">to</span> climb。
+
+登上高峰后，你会发现还有更多的山峰要翻越。
+
+I detestracialism, because I regard <span class="keyword">it</span> <span class="keyword">as</span> a barbaric thing, whether <span class="keyword">it</span> comes <span class="keyword">from</span> a black man <span class="keyword">or</span> a white man。
+
+我痛恨种族主义，不管是来自黑人或是来自白人的种族主义，在我看来，都是野蛮未开化的。
+
+I dream <span class="keyword">of</span> an Africa which <span class="keyword">is</span> <span class="keyword">in</span> peace <span class="keyword">with</span> itself。
+
+我向往一个内部和平的非洲。
+
+I dream <span class="keyword">of</span> <span class="keyword">the</span> realization <span class="keyword">of</span> <span class="keyword">the</span> unity <span class="keyword">of</span> Africa, whereby <span class="keyword">its</span> leaders combine <span class="keyword">in</span> their efforts <span class="keyword">to</span> solve <span class="keyword">the</span> problems <span class="keyword">of</span> this continent. I dream <span class="keyword">of</span> our vast deserts, <span class="keyword">of</span> our forests, <span class="keyword">of</span> all our great wildernesses。
+
+我梦见，通过非洲各国领导人齐心协力共同解决非洲的种种问题，非洲实现了统一。我梦见那广袤的沙漠、茂密的森林，还有那无际的荒野。
+
+If there are dreams <span class="keyword">about</span> a beautiful South Africa, there are also roads <span class="keyword">that</span> lead <span class="keyword">to</span> their goal. Two <span class="keyword">of</span> these roads could be named Goodness <span class="keyword">and</span> Forgiveness。
+
+有建设美好南非的梦想，就有通向梦想的道路。善良和宽恕就是其中的两条大道。
+
+I learned <span class="keyword">that</span> courage was <span class="keyword">not</span> <span class="keyword">the</span> absence <span class="keyword">of</span> fear, <span class="keyword">but</span> <span class="keyword">the</span> triumph <span class="keyword">over</span> <span class="keyword">it</span>. The brave man <span class="keyword">is</span> <span class="keyword">not</span> he who <span class="keyword">does</span> <span class="keyword">not</span> feel afraid, <span class="keyword">but</span> he who conquers <span class="keyword">that</span> fear。
+
+我懂得了，勇气不是没有恐惧，而是战胜恐惧。勇者不是感觉不到害怕的人，而是克服自身恐惧的人。
+
+If you talk <span class="keyword">to</span> a man <span class="keyword">in</span> a language he understands, <span class="keyword">that</span> goes <span class="keyword">to</span> his head. If you talk <span class="keyword">to</span> him <span class="keyword">in</span> his language, <span class="keyword">that</span> goes <span class="keyword">to</span> his heart。
+
+如果你用一个人听得懂的语言与他交流，他会记在脑子里；如果你用他自己的语言与他交流，他会记在心里。
+
+If you want <span class="keyword">to</span> make peace <span class="keyword">with</span> your enemy, you have <span class="keyword">to</span> work <span class="keyword">with</span> your enemy. Then he becomes your partner。
+
+若想与敌和平共处，就要与敌并肩作战。敌亦将为友。
+
+In <span class="keyword">my</span> country we go <span class="keyword">to</span> prison <span class="keyword">first</span> <span class="keyword">and</span> <span class="keyword">then</span> become President。
+
+在我的祖国，我们先当囚徒，后当总统。
+
+It always seems impossible <span class="keyword">until</span> <span class="keyword">its</span> done。
+
+在事情未成功之前，一切总看似不可能。
+
+It <span class="keyword">is</span> better <span class="keyword">to</span> lead <span class="keyword">from</span> <span class="keyword">behind</span> <span class="keyword">and</span> <span class="keyword">to</span> <span class="keyword">put</span> others <span class="keyword">in</span> <span class="keyword">front</span>, especially when you celebrate victory when nice things occur. You take <span class="keyword">the</span> <span class="keyword">front</span> line when there <span class="keyword">is</span> danger. Then people will appreciate your leadership。
+
+作为领袖，最好是在后方领导，让其他人站在前线，尤其是在庆祝胜利或好事时；但在危险时，你要站在前线。这样，人们会欣赏你的领导力。
+
+Let there be work, bread, water <span class="keyword">and</span> salt <span class="keyword">for</span> all。
+
+让所有人都拥有工作、面包、水和盐吧。
+
+Let freedom reign. The sun never <span class="keyword">set</span> <span class="function_start"><span class="keyword">on</span></span> so glorious a human achievement。
+
+让自由来主宰一切吧。对于如此辉煌的人类成就，太阳永远不会停止照耀。
+
+Money won't create success, <span class="keyword">the</span> freedom <span class="keyword">to</span> make <span class="keyword">it</span> will。
+
+创造成功，靠的不是金钱，而是拥有创造成功的自由。
+
+Never, never <span class="keyword">and</span> never again shall <span class="keyword">it</span> be <span class="keyword">that</span> this beautiful land will again experience <span class="keyword">the</span> oppression <span class="keyword">of</span> one <span class="keyword">by</span> another。
+
+这片美丽的土地将永远、永远、永远不会再经历人对人的压迫。
+
+Only free men can negotiate; prisoners cannot enter <span class="keyword">into</span> contracts. Your freedom <span class="keyword">and</span> mine cannot be separated。
+
+只有自由的人才能谈判，身陷牢笼的人没有谈判的资格。你们的自由和我的自由是不可分割的。
+
+There can be no keener revelation <span class="keyword">of</span> a society's soul than <span class="keyword">the</span> way <span class="keyword">in</span> which <span class="keyword">it</span> treats <span class="keyword">its</span> children。
+
+知晓一个社会的灵魂，就看这个社会对待小孩的方式，除此以外，没有更好的办法。
+
+There <span class="keyword">is</span> no easy walk <span class="keyword">to</span> freedom anywhere, <span class="keyword">and</span> many <span class="keyword">of</span> us will have <span class="keyword">to</span> pass <span class="keyword">through</span> <span class="keyword">the</span> valley <span class="keyword">of</span> <span class="keyword">the</span> shadow <span class="keyword">of</span> death again <span class="keyword">and</span> again <span class="keyword">before</span> we reach <span class="keyword">the</span> mountaintop <span class="keyword">of</span> our desires。
+
+自由之路从不平坦，我们中的许多人都不得不一次又一次地穿过死神笼罩的山谷，才能抵达愿望的顶峰。
+
+There <span class="keyword">is</span> no passion <span class="keyword">to</span> be found playing small - <span class="keyword">in</span> settling <span class="keyword">for</span> a life <span class="keyword">that</span> <span class="keyword">is</span> <span class="keyword">less than</span> <span class="keyword">the</span> one you are capable <span class="keyword">of</span> living。
+
+本来能过得更精彩的生活，却勉强接受现状，满足于个人的生活，这毫无激情可言。
+
+There <span class="keyword">is</span> no such thing <span class="keyword">as</span> part freedom。
+
+不存在部分自由之说。
+
+There <span class="keyword">is</span> nothing like <span class="keyword">returning</span> <span class="keyword">to</span> a place <span class="keyword">that</span> remains unchanged <span class="keyword">to</span> find <span class="keyword">the</span> ways <span class="keyword">in</span> which you yourself have altered。
+
+回到一个未曾改变的地方，却发现自己已经改变，没有什么这更美妙。
+
+When <span class="keyword">the</span> water starts boiling <span class="keyword">it</span> <span class="keyword">is</span> foolish <span class="keyword">to</span> turn off <span class="keyword">the</span> heat。
+
+水刚煮沸就关火，这很愚蠢。
+
+Our greatest fear <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">from</span> our lack <span class="keyword">of</span>, <span class="keyword">but</span> because we have extraordinary strength. Let us often threatened <span class="keyword">not</span> our weaknesses, <span class="keyword">but</span> our strengths。
+
+我们最大的恐惧不是来自于我们的不足，而是因为我们超常的强大。通常让我们受到威胁的不是我们的弱点，而是我们的长处。
+
+The greatest brilliance <span class="keyword">in</span> life lies <span class="keyword">not</span> <span class="keyword">in</span> never falling, <span class="keyword">but</span> fall can always rises again。
+
+生命中最伟大的光辉不在于永不坠落，而是坠落后总能再度升起。
+
+Let black <span class="keyword">and</span> white <span class="keyword">as</span> brothers, South Africa <span class="keyword">to</span> <span class="keyword">the</span> prosperityand development。
+
+让黑人和白人成为兄弟，让南非繁荣发展。
+
+I have finished <span class="keyword">my</span> role play, now need unknown life. I want <span class="keyword">to</span> go <span class="keyword">back</span> home, <span class="keyword">the</span> village <span class="keyword">in</span> childhood frolicking hillside walk。
+</code></pre>]]></content>
     <summary type="html">
-    <![CDATA[<a id="more"></a>
-<pre><code>When I walked out <span class="operator">of</span> <span class="operator">the</span> prison cell towards <span ]]>
+    <![CDATA[<pre><code>I learned <span class="keyword">that</span> courage was <span class="keyword">not</span> <span class="keyword">the</span> absence <span class="keyword">of</span> fear, <span class="keyword">but</span> <span class="keyword">the</span> triumph <span class="keyword">over</span> <span class="keyword">it</span>. The brave man <span class="keyword">is</span> <span class="keyword">not</span> he who <span class="keyword">does</span> <span class="keyword">not</span> feel afraid, <span class="keyword">but</span> he who conquers <span class="keyword">that</span> fear。
+</code></pre>]]>
+    
     </summary>
     
-      <category term="aphorism , motto not epitaph" scheme="http://bobchennan.github.io/tags/aphorism-motto-not-epitaph/"/>
+      <category term="" scheme="http://bobchennan.github.io/tags/undefined/"/>
+    
+      <category term="aphorism" scheme="http://bobchennan.github.io/tags/aphorism/"/>
     
   </entry>
   
