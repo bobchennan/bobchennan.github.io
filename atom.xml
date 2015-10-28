@@ -3,9 +3,9 @@
   <title><![CDATA[bobchennan's blog]]></title>
   <subtitle><![CDATA[record my life]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://bobchennan.github.io/"/>
+  <link href="http://www.myemacs.com/"/>
   <updated>2015-10-28T06:42:20.000Z</updated>
-  <id>http://bobchennan.github.io/</id>
+  <id>http://www.myemacs.com/</id>
   
   <author>
     <name><![CDATA[Nanxin Chen]]></name>
@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[Interspeech 2015]]></title>
-    <link href="http://bobchennan.github.io/2015/10/27/Interspeech-2015/"/>
-    <id>http://bobchennan.github.io/2015/10/27/Interspeech-2015/</id>
+    <link href="http://www.myemacs.com/2015/10/27/Interspeech-2015/"/>
+    <id>http://www.myemacs.com/2015/10/27/Interspeech-2015/</id>
     <published>2015-10-27T06:58:00.000Z</published>
     <updated>2015-10-28T06:42:20.000Z</updated>
     <content type="html"><![CDATA[<p>Interspeech 2015 was held in ICD, Dresden, Germany. I took part in this conference because I had two papers published here. This is the first time to attend an international conference for me. It may take sometime to finish this post.<br><a id="more"></a></p>
@@ -31,18 +31,18 @@
     
     </summary>
     
-      <category term="Interspeech" scheme="http://bobchennan.github.io/tags/Interspeech/"/>
+      <category term="Interspeech" scheme="http://www.myemacs.com/tags/Interspeech/"/>
     
-      <category term="Speech" scheme="http://bobchennan.github.io/tags/Speech/"/>
+      <category term="Speech" scheme="http://www.myemacs.com/tags/Speech/"/>
     
-      <category term="Visit" scheme="http://bobchennan.github.io/categories/Visit/"/>
+      <category term="Visit" scheme="http://www.myemacs.com/categories/Visit/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[linux file descriptor usage]]></title>
-    <link href="http://bobchennan.github.io/2014/05/08/linux-file-descriptor-usage/"/>
-    <id>http://bobchennan.github.io/2014/05/08/linux-file-descriptor-usage/</id>
+    <link href="http://www.myemacs.com/2014/05/08/linux-file-descriptor-usage/"/>
+    <id>http://www.myemacs.com/2014/05/08/linux-file-descriptor-usage/</id>
     <published>2014-05-08T20:59:00.000Z</published>
     <updated>2015-10-28T06:49:14.000Z</updated>
     <content type="html"><![CDATA[<p>On Linux you can print info about file descriptor (ls -l /proc//fd), and file position reader (cat /proc//fdinfo).<br><a id="more"></a><br>So:</p>
@@ -63,16 +63,16 @@
     
     </summary>
     
-      <category term="mysql" scheme="http://bobchennan.github.io/tags/mysql/"/>
+      <category term="mysql" scheme="http://www.myemacs.com/tags/mysql/"/>
     
-      <category term="Linux" scheme="http://bobchennan.github.io/categories/Linux/"/>
+      <category term="Linux" scheme="http://www.myemacs.com/categories/Linux/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[数据收集网站]]></title>
-    <link href="http://bobchennan.github.io/2014/02/22/%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86%E7%BD%91%E7%AB%99/"/>
-    <id>http://bobchennan.github.io/2014/02/22/数据收集网站/</id>
+    <link href="http://www.myemacs.com/2014/02/22/%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86%E7%BD%91%E7%AB%99/"/>
+    <id>http://www.myemacs.com/2014/02/22/数据收集网站/</id>
     <published>2014-02-22T08:35:20.000Z</published>
     <updated>2015-10-28T06:50:17.000Z</updated>
     <content type="html"><![CDATA[<p>chenqin，数据帝<br>田晓春、马蕾、甄嫒楠 等人赞同<br>数据网站很多，我平时使用的各个指标的数据集可能有几十种，但其中绝大部分数据集都只包括经济社会中的一个较小方面，或只有一个国家，或者要付费。以下列出的都是适用于跨国比较的、数据指标比较综合的、并且下载不需要付费的网站。<br><a id="more"></a><br>宏观数据网站，数据到国家或者地区：<br>Monthly Bulletin of Statistics Online，（<a href="http://unstats.un.org/unsd/mbs/app/DataSearchTable.aspx），数据来源顾名思义，来自各个国家统计局和组织。包括近十年来各国的人口、生产指数和价格指数、就业与收入、能源矿产和燃料、工业、交通和建筑、国际贸易、金融、零售业和国民账户的网站。但每个指标都有不少缺失的数据，且一次只能导出一个指标。" target="_blank" rel="external">http://unstats.un.org/unsd/mbs/app/DataSearchTable.aspx），数据来源顾名思义，来自各个国家统计局和组织。包括近十年来各国的人口、生产指数和价格指数、就业与收入、能源矿产和燃料、工业、交通和建筑、国际贸易、金融、零售业和国民账户的网站。但每个指标都有不少缺失的数据，且一次只能导出一个指标。</a><br>World Development Indicators，（<a href="http://data.worldbank.org/indicator），世界银行的数据，一般来说最权威，除了一般统计局数据外，还包括农业、气候、贫穷、健康方面的数据。" target="_blank" rel="external">http://data.worldbank.org/indicator），世界银行的数据，一般来说最权威，除了一般统计局数据外，还包括农业、气候、贫穷、健康方面的数据。</a><br>CIA world factbook，（<a href="https://www.cia.gov/library/publications/the-world-factbook/），中央情报局收集的数据，包括地理、人口、社会、交通、军力等信息。" target="_blank" rel="external">https://www.cia.gov/library/publications/the-world-factbook/），中央情报局收集的数据，包括地理、人口、社会、交通、军力等信息。</a></p>
@@ -111,16 +111,16 @@
     
     </summary>
     
-      <category term="转载，知乎" scheme="http://bobchennan.github.io/tags/%E8%BD%AC%E8%BD%BD%EF%BC%8C%E7%9F%A5%E4%B9%8E/"/>
+      <category term="转载，知乎" scheme="http://www.myemacs.com/tags/%E8%BD%AC%E8%BD%BD%EF%BC%8C%E7%9F%A5%E4%B9%8E/"/>
     
-      <category term="Research" scheme="http://bobchennan.github.io/categories/Research/"/>
+      <category term="Research" scheme="http://www.myemacs.com/categories/Research/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Deep Learning Resource]]></title>
-    <link href="http://bobchennan.github.io/2014/01/20/deep-learning-resource/"/>
-    <id>http://bobchennan.github.io/2014/01/20/deep-learning-resource/</id>
+    <link href="http://www.myemacs.com/2014/01/20/deep-learning-resource/"/>
+    <id>http://www.myemacs.com/2014/01/20/deep-learning-resource/</id>
     <published>2014-01-20T02:26:00.000Z</published>
     <updated>2015-10-28T06:48:17.000Z</updated>
     <content type="html"><![CDATA[<p><span style="color: #0000ff; font-size: 18pt;"><strong>Deep Learning（深度学习）：</strong></span></p>
@@ -482,20 +482,20 @@
     
     </summary>
     
-      <category term="Deep Learning" scheme="http://bobchennan.github.io/tags/Deep-Learning/"/>
+      <category term="Deep Learning" scheme="http://www.myemacs.com/tags/Deep-Learning/"/>
     
-      <category term="software" scheme="http://bobchennan.github.io/tags/software/"/>
+      <category term="software" scheme="http://www.myemacs.com/tags/software/"/>
     
-      <category term="转载" scheme="http://bobchennan.github.io/tags/%E8%BD%AC%E8%BD%BD/"/>
+      <category term="转载" scheme="http://www.myemacs.com/tags/%E8%BD%AC%E8%BD%BD/"/>
     
-      <category term="Research" scheme="http://bobchennan.github.io/categories/Research/"/>
+      <category term="Research" scheme="http://www.myemacs.com/categories/Research/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[值得人生细细品位的50句话]]></title>
-    <link href="http://bobchennan.github.io/2014/01/13/%E5%80%BC%E5%BE%97%E4%BA%BA%E7%94%9F%E7%BB%86%E7%BB%86%E5%93%81%E4%BD%8D%E7%9A%8450%E5%8F%A5%E8%AF%9D/"/>
-    <id>http://bobchennan.github.io/2014/01/13/值得人生细细品位的50句话/</id>
+    <link href="http://www.myemacs.com/2014/01/13/%E5%80%BC%E5%BE%97%E4%BA%BA%E7%94%9F%E7%BB%86%E7%BB%86%E5%93%81%E4%BD%8D%E7%9A%8450%E5%8F%A5%E8%AF%9D/"/>
+    <id>http://www.myemacs.com/2014/01/13/值得人生细细品位的50句话/</id>
     <published>2014-01-13T11:21:16.000Z</published>
     <updated>2015-10-28T06:50:07.000Z</updated>
     <content type="html"><![CDATA[<p>人的一生中除了遇到开心快乐的事，也会遇到伤心难过的事。其实不妨换一种思想，也许就能找回最简单的快乐。以下50句人生箴言，值得我们静下心来，细细品味。</p>
@@ -556,18 +556,18 @@
     
     </summary>
     
-      <category term="aphorism" scheme="http://bobchennan.github.io/tags/aphorism/"/>
+      <category term="aphorism" scheme="http://www.myemacs.com/tags/aphorism/"/>
     
-      <category term="motto not epitaph" scheme="http://bobchennan.github.io/tags/motto-not-epitaph/"/>
+      <category term="motto not epitaph" scheme="http://www.myemacs.com/tags/motto-not-epitaph/"/>
     
-      <category term="Reading" scheme="http://bobchennan.github.io/categories/Reading/"/>
+      <category term="Reading" scheme="http://www.myemacs.com/categories/Reading/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[People are lonely because they build walls instead of bridges]]></title>
-    <link href="http://bobchennan.github.io/2013/12/29/people-are-lonely-because-they-build-walls-instead-of-bridges/"/>
-    <id>http://bobchennan.github.io/2013/12/29/people-are-lonely-because-they-build-walls-instead-of-bridges/</id>
+    <link href="http://www.myemacs.com/2013/12/29/people-are-lonely-because-they-build-walls-instead-of-bridges/"/>
+    <id>http://www.myemacs.com/2013/12/29/people-are-lonely-because-they-build-walls-instead-of-bridges/</id>
     <published>2013-12-29T06:58:03.000Z</published>
     <updated>2015-10-28T06:49:37.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -579,18 +579,18 @@
 ]]>
     </summary>
     
-      <category term="aphorism" scheme="http://bobchennan.github.io/tags/aphorism/"/>
+      <category term="aphorism" scheme="http://www.myemacs.com/tags/aphorism/"/>
     
-      <category term="motto not epitaph" scheme="http://bobchennan.github.io/tags/motto-not-epitaph/"/>
+      <category term="motto not epitaph" scheme="http://www.myemacs.com/tags/motto-not-epitaph/"/>
     
-      <category term="English" scheme="http://bobchennan.github.io/categories/English/"/>
+      <category term="English" scheme="http://www.myemacs.com/categories/English/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[English Vocabulary]]></title>
-    <link href="http://bobchennan.github.io/2013/12/11/english-vocabulary/"/>
-    <id>http://bobchennan.github.io/2013/12/11/english-vocabulary/</id>
+    <link href="http://www.myemacs.com/2013/12/11/english-vocabulary/"/>
+    <id>http://www.myemacs.com/2013/12/11/english-vocabulary/</id>
     <published>2013-12-11T04:42:44.000Z</published>
     <updated>2015-10-28T06:48:57.000Z</updated>
     <content type="html"><![CDATA[<p>英语词根词缀记忆大全<br><a id="more"></a><br>一部分  通过词缀认识单词<br>（常用前缀一）<br>1、a-<br>① 加在单词或词根前面，表示”不，无，非”<br>acentric 无中心的（a+centric中心的）<br>asocial 不好社交的（a+social好社交的）<br>amoral 非道德性的（a+moral道德的；注意：immoral不道德的）<br>apolitical. 不关政治的（a+political政治的）<br>anemia 反常的（a+nomal正常的+ous）<br>② 加在单词前，表示”在…，…的”<br>asleep 睡着的（a+sleep睡觉）<br>aside 在边上（a+side旁边）<br>ahead 在前地（a+head头）<br>alive 活的（a+live活）<br>awash .泛滥的（a+wash冲洗）<br>2、ab-,abs-加在词根前，表示”相反，变坏，离去”等<br>abnormal 反常的（ab+normal正常的）<br>abuse 滥用（ab+use用→用坏→滥用）<br>absorb 吸收（ab+sorb吸收→吸收掉）<br>absent 缺席的（ab+sent出现→没有出现→缺席的）<br>abduct 诱拐（ab+duct引导→引走→诱拐）<br>abject 可怜的（ab+ject抛→抛掉→可怜的）<br>abstract 抽象的；心不在焉的（abs+tract拉→被拉开→心不在焉）<br>abstain 戒绝（abs+tain拿住→不再拿住→戒绝）<br>abscond 潜逃（abs+cond藏→藏起来→潜逃）<br>abscind 废除（abs+cind剪切→切掉→废除）<br>abscise 切除（abs+cise剪→剪掉→切除）<br>abstinence 节制；禁欲（abs+tin拿住+ense→不在拿住→戒除，禁欲）<br>3、ab-,ac-,ad-,af-,ag-,an-,ap-,ar-,as-,at-等加在同辅音字母的词根前，表示”一再”等加强意<br>accelerate加速（ac+company伙伴→陪伴）<br>accentuate强调，重读（ac+celer速度→一再增加速度）<br>accomplish完成（ac+cent唱歌→一再唱出→强调）<br>accumulate积累（ac+cumul堆积+ate→堆积起来→积累）<br>accustom使习惯（ac+custom习俗→习惯习俗）<br>addict上瘾，入迷（ad+dict说→一再说起→对……入迷）<br>additive上瘾的（addict的形容词）<br>adduce引证，举例（ad+duce引导→一再引导→举例说明）<br>affable亲切的（af+fable说话→不断可以说话→亲切）<br>afford买得起（af+ford拿出→一再拿出{钱}→买得起）<br>affirm肯定（af+firm坚定→肯定）<br>aggression侵略，进攻（ag+gress走+ion→一再往前走→进攻）<br>aggrandize扩大（ag+grand大→一再大→扩大[权力]等）<br>aggravate恶化（ag+grav重+ate病加重）<br>announce通告（an+nounce通知→通告）<br>appal使震惊（ap+pal白色→[脸]变白→受惊）<br>applause鼓掌（ap+pease赞扬→一再赞扬→鼓掌）<br>appreciate欣赏（ap+reci价值+ate→一再给价→欣赏）<br>appoint指定，任命（ap+point指→指定）<br>arrange安排（ar+range排列→安排）<br>arrest逮捕，阻止（ar+rest休息→不让动→逮捕）<br>arrive到达（ar+rive河→到达河边→达到目标）<br>assault进攻（as+saul跳→跳起来→进攻）<br>assiduous勤奋的（as+sid坐+uous→一再坐着[学习] →勤奋）<br>assist帮助（as+sist站→站过来→帮助）<br>associate联合，结合（as+soci社团+ate→结成团队→联合）<br>assimilate吸收；同化（as+simil相同+ate→成为相同→同化）<br>assure肯定；确信（as+sure确定→一不再确定→肯定）<br>attach附上；依恋（at+tach接角→接触上→附上）<br>attain达到；获得（at+tain拿住→获得）<br>attend（at+tend关心→关心到了→出度）<br>attract吸引（拉→拉过来→吸引）<br>attest证实（at+test试验→一再试验→证实）<br>4、ad-加在在单词或词根前，表示”做…，加强…”<br>adapt适应（ad+apt能力→有适应能力）<br>adept熟练的（ad+ept能力→有做事能力→熟练的）<br>adopt收养；采纳（ad+opt选择→选出来→采纳）<br>adhere坚持（ad+here粘→粘在一起→坚持）<br>adjacent邻近的（ad+jacent躺→躺在一起→邻近的）<br>adjoin贴近；毗连（ad+join参加→参加在一起→贴近）<br>administrate管理；执行（ad+ministr部长+ate→做部长→管理）<br>admire羡慕（ad+mire惊奇→惊喜；羡慕）<br>adumbrate预示（ad+umbr影子+ate→[将来的]影子出现→预示）<br>adjust调整（ad+just+正确→弄正确→调整）<br>adventure冒险（ad+venture冒险）<br>admonish告诫，警告（ad+mon警告+ish→一再警告）<br>advent来临，来到（ad+vent来→来到）<br>5、amphi-表示”两个，两种”<br>amphibian两栖动物（amphi+bi生命+an→两个生命→两栖动物）<br>amphicar水陆两用车（amphi+car车→两用车）<br>6、an-在词根前，表示”不，无”<br>anarchism无政府主义（an+arch统治+ism→无统治→无政府主义）<br>anharmonic不和谐的(an+hamonic和谐的→不和谐的)<br>anechoic无回声的（an+echo回声+ic→无回声的）<br>anonymous匿名的（an+onym名字+ous→匿名的）<br>7、ana-表示”错误，在旁边，分开”<br>analogy类比；类似(ana+logy讲话→再旁边讲→讲一样的东西→类似)<br>analogous类似的（analogy的形容词）<br>analysis分析（ana+lysis分开→分开来→分析）<br>8、ante-表示”前面，先”<br>antedate提前写日期；先于，早于（ante+date日期→提前写日期）<br>anterior前面的（ante+erior[…的] →前面的）<br>antecedent（aute+ced走+ent→走在前面的[事] →前事）<br>9、anti-表示”反对，相反”<br>antiwar反战的（anti+war战争）<br>antipathy反感（anti+pathy感情）<br>antithesis对立；反论（anti+thesis论文；观点）<br>antibacterial 抗菌的（anti+bacterial细菌的）<br>antibody抗体（anti+body身体）<br>10、人，人类-anthrop(o)<br>anthropology[anthropo人类，-logy…学者]人类学<br>anthropologist[anthropo人类，-logist…学者]人类学者<br>anthropogeography[anthropo人类，gegoraphy地理学]人类地理学<br>anthropomorphous[anthropo人，morph形，-ous…的]有人形的，似人的<br>anthroposociology [anthropo人类，sociology社会学]人类社会学<br>11、人民―（1）popul<br>population[popul人民→居民，-ation名词字尾]全体居民，人口<br>populous [popul人民→居民，-ous…的]人口稠密的<br>populate [popul人民，-ate动词字尾，使…,做…]使人民居住于…中，使人口集中在…之中，移民于….<br>Repopulate [re-再，重新，见上]使人民重新居住于…<br>Depopulate [de-除去，去掉，popul人民→人口，-ate使…]使（某地）人口减少，减少人口<br>Popularity[见上，-ity名词字尾，表示性质]大众性，通俗性<br>Popularize<a href="使">见上，- ize…化，使…</a>大众化，（使）普及，推广<br>Popularizer[见上，-er者]普及者，推广者<br>Popularization[见上，-ation表示行为]普及，推广，通俗化<br>Populace[popul人民→平民，-ace名词字尾]平民，大众<br>人民－（２）dem(o)<br>democracy[demo人民，cracy统治；”人民统治”→人民做主→]民主；民主政治，民主政体；民主主义<br>democrat[见上，crat主张…统治的人]民主主义者<br>democratism[见上，-ism主义]民主主义<br>democratize[见上，-ize…化]民主化；使民主化<br>democratic[见上，-ic…的]民主的，民主主义的；民主政体的<br>demography[demo人民→人数，人口，graphy写，记录→统计]人口统计学<br>demographic[见上，-ic…的]人口统计的<br>epidemic[epi-在…之间，dem人民，-ic…的；”流行于人民之中的”→]流行的，传染的；流行病，时疫<br>epidemiology[见上，- io-连接字母，-logy…学]流行病学<br>epidemiologist[见上，-logist…学者]流行病学者<br>epidemiological[见上，-logical…学的]流行病学的<br>男－（１）andr(o)<br>androgyne[andro男人，gyn女人]具有男妇两性的人，阴阳人<br>androgynism[andro男，gyn女，-ism表性质状态]半男半女<br>男－（２）vir<br>virile[vir男，ile形容词字尾，…的]男的，男性的，男子的，有男子气概的，有男性生殖力的<br>virilism[见上，-ism表示现象]男性现象<br>virility[见上，-ity表示性质]男子气概，男生殖力，男子的成年<br>女－（1）gyn(o);   gynec(o)<br>gynecology[gyneco妇女，-logy…学]妇科学，妇科<br>gynecologist[见上，-ist人]妇科医生<br>gynecian[gynec妇女，-ian…的]妇女的，妇人的<br>女－（2）fem;      femin<br>female[fem女，妇女]女性的，妇女的；女子<br>feminine[femin女，-ine…的]女性的，妇女的<br>femininity[femin女，-ality表示性质]女性，妇女的特性<br>femininity[feminine(e)女性的，-ity表示性质]女子的气质，女人气，妇女总称<br>feminism[femin女，-ism主义]男女平等主义；[-ism表示行为]争取女权运动<br>femme妇女；妻子<br>12、be-<br>① 构成动词，表示”使…成为”<br>beguile欺骗（be+guile欺骗）<br>belie掩盖（be+lie说慌）<br>bequeath遗留给，传下（be+queath要求→要求给某人→遗留给）<br>besiege围攻(be+siege包围→包围起来)<br>beware注意（be+ware注意）<br>befriend友好对待（be+friend朋友）<br>befool欺骗（be+fool笨蛋→使人成笨蛋→欺骗别人）<br>befall降临；发生（be+fall掉下→掉下来→发生）<br>belittle小看(be+little小→小看人)<br>bewilder使…迷惑（be+wilder迷惑）<br>② 构成一些介词<br>before在前面（be+fore前面）<br>beneath在下面（be+neath下面）<br>13、bene-表示”善，好”<br>benewolent好意的（bene+vol意愿+ent→好意的）<br>benefaction好事；恩惠（bene+fact做+ion→好事）<br>benefit好处，利益（bene+fit做→做事后的好处→利益）<br>benediction祝福（bene+dict说+ion→说好话）<br>beneficent仁慈的，善行的（bene+fic做+ent→做好事的）<br>14、bi-表示”两个，两”<br>biweekly双周刊（bi+week星期+ly→两星期）<br>bilingual双语种的（bi+lingu语言+al→双语的）<br>biennial两年一次的（bi+enn年+ial→两年〔一次〕的）<br>biannual一年两次的（bi+ann[年]+ual→一年两次的）<br>15、by-表示”在旁边，副的”<br>byproduct副产品（by+product产品）<br>byroad辅路（by+road路）<br>byway小道（by+way小路）<br>bygone过时的（by+gone过去的）<br>bypass旁路；忽略（by+pass通过→从旁边通过→忽略）<br>by work副业（by+work工作）<br>16、circum-表示”环绕，周围”<br>circumcise环割（circum+cise切→环切）<br>circumference周长（circum+fer带来→ence→带来一圈→周长）<br>circumnavigate环航世界（circum+navigate航行）<br>circumscribe限制（circum+scribe写→规定范围→限制）<br>circumspect小心谨慎的（circum+stance站→站在周围→环境）<br>circumvent回避（circum+vent走→绕圈走→回避）<br>17、co-表示”共同”，通常放在元音词根前<br>Cooperation合作(co+operation操作→共同操作→合作)<br>Coagulate凝结(co+agul凝聚+ate→凝聚起来)<br>Coalesce联合；合作(co+al=ally联盟+esce)<br>Coexist共存(co+exist存在)<br>Cohere附着；粘着(co+here粘→粘在一起)<br>Coincide一致，符合，巧合(co+in进+cide掉下→共同掉进来→巧合)<br>Coordinate协调：同等的(co+ordin顺序+ate→顺序一样→同等的引申为平等；协调)<br>18、col-,cor在同辅音词根前，表示”共同”<br>collaboration协作；合著(col+labor劳动+ation→共同劳动)<br>collocate并置，排列(col+loc地方+ate→放在同一地方→排列)<br>co lingual用同一种语言的(col+lingu语言+al→同语言的)<br>collapse倒塌(col+lapse滑倒→全部滑倒→倒塌)<br>collate校对(col+late放→放到一起→校对)<br>collateral并列的，并行的(col+later边→al→周边的→并列的)<br>colleague同事(col+→league捆绑→捆绑在一起的人→同事)<br>collect收集(col+lect选择→放在一起选择→收集)<br>collegiate学院的； 学生的(col+legi读+ate→共同读书→学院的)<br>colloquial口语的(col+loqu说+ial→两人一起说→口语会话的)<br>collusion共谋，勾结(col+lus玩+ion→共同玩弄→共谋)<br>correct改正，纠正(cor+rect正→全部改正→纠正)<br>correspond通信；符合(cor+respond反应→共同反应→相互通信)<br>corrupt腐败的；变环的(cor+rupt断→全部断→变坏的，腐败的)<br>corrigible能够改正的(cor+rig改正+ible→全部改正的)<br>corroborate证实(cor+robor力量+ate→用力量→证实)<br>19、com-,con-表示”共同”<br>combine联合，结合(com+bine捆→捆在一起→结合)<br>compassion同情(com+passion爱国者→同胞)<br>compatriot同胞(com+patriot动→大家一起动→动乱)<br>commend赞扬；推荐(com+mend信任；命令→大家信任→赞扬；参考；recommend)<br>commemorate纪念(com+memor记住+ate→大家一起记住→纪念)<br>commensurable相等的，相称的(com+mensur测量+able→能放在一起的测量→相等的)<br>comparison比较(com+pari平等+son→一起平等→比较)<br>compact紧密的；合同(com+pact压紧→全部压紧→紧密的)<br>comfort安慰(com+fort加强→[精神]强大→安慰)<br>commodious宽敞的(com+mod动+ious→共同动→有动的地方→宽敞的)<br>compete比赛(com+pete追求→一起追→比赛)<br>component成分(com+pon放+ent→放到一起[的东西]→成分)<br>compress压缩(com+press压→一起压→压缩)<br>concentric同中心的(con+centric中心的)<br>contemporary同时代的(con+tempor时间+ary→同时间的)<br>conclude结束；总结(con+clude关闭→全部关闭→结束)<br>confirm坚定；证实(con+firm坚定)<br>condense凝结；浓缩(con+dense 浓密的)<br>consolidate巩固，加强(con+solid坚固+ate→成为大家的财产→没收)<br>Conflict冲突（con+flict打→一起打斗→冲突）<br>Confluence汇流（con+flu流＋ence→共同流→汇流）<br>Congregate集合的，聚集的（con+greg集合＋ate→集合到一起→聚集的）<br>Console安慰（con+sole安慰→一起安慰）<br>20.contra-表示”反对，相反”<br>contrary相反的（contra+ary→相反的）<br>contradict反驳；矛盾（contra+dict说→反着说→反驳）<br>contravene违反，违背（contra+vene走→反着走→违反）<br>contraband走私（contra+band命令→违反命令做事→走私；参考：ban禁止）<br>21.counter-表示”反对，相反”<br>counteract对抗；抵消（counter+act行为→反着行动→对抗）<br>counterbalance平衡（counter+balance平衡→两边一样→达到平衡）<br>countermand撤消（counter+mand命令→反命令→撤消〔命令〕）<br>22.de-<br>① 表示”去掉，变坏，离开，变慢，向下”等<br>destruction破坏（de+struct结构；建造＋ion→弄坏结构→破坏）<br>desalt除去盐分（de+salt盐→去掉盐分）<br>deforest砍伐森林（de+forest森林→去掉森林）<br>devalue降低价值（de+value价值→去掉价值）<br>depress压制，压抑（de+press压→向下压→压制）<br>detrain下火车（de+train火车）<br>decelerate减速（de+celer速度＋ate→使速度变慢）<br>decode破译（de+code密码→去掉密码）<br>defame诽谤，中伤（de+fame名声→名声变坏→诽谤）<br>② 表示”使…成为，加强”等<br>delimit 划定界限（de+limit限定→加强限定）<br>depict描绘（de+pict图画→成为图画→描绘）<br>design设计；计划（de+sign做标志→设计）<br>definition定义；清晰（de+fin界限＋ition→划出界限→定义）<br>23.di-<br>① 表示”两个，双”<br>dichromatic两色的（di+chrom颜色+atic→两色的）<br>dioxide二氧化物（di+ox氧＋ide→二氧化物）<br>dilemma进退两难（di+lemma争论→二种争论→进退两难）<br>dichotomize分成二，对分（dicho=di+tom切割+ize→切成二分）<br>② 表示”使…变成，分开，离开”<br>dilate膨胀，扩大（di+late放→分开放→扩大）<br>dilute冲淡，稀释(di+lute冲洗→冲洗开→冲淡)<br>digest消化；文摘（di+gest带→带下去→消化→经过消化后的精华→文摘）<br>diminish减少；消失（di+mini小+ish→变小，减少）<br>digress离题（di+gress走→走开→离题）<br>divide分开（di+vide分开→分开）<br>divorce离婚（di+vorce=vert转→从〔丈夫身边〕转开→离婚；参考：divert转开）<br>父，祖－patr(i);   part(o);  pater<br>patriarch[patri父，祖arch首脑，长]家长；族长<br>patriarchal[见上，－al…的]家长的；族长的；家长似的<br>patriot[patri祖→祖国，-ot名词字尾，表示人]爱祖国者，爱国主义者<br>patriotic〔见上，-otic形容词字尾，…的〕爱国的<br>patriotism[见上，-ism主义]爱国主义；爱国心<br>unpatriotic〔un-不，见上〕不爱国的<br>patenal〔pater父，-n-,-al…的〕父亲的，父系的<br>paternalism[见上，-ism表示行为，现象]家长式统治，家长作风<br>母－matr(i);   mater;   metro<br>matriarch[matri母→女性，arch首脑，长]女族长；女家长<br>matrimony[matri母→婚姻，-mony名词字尾]婚姻，结婚<br>matrimonial〔见上，-al…的〕婚姻的，结婚的<br>matron〔mart母，-on表示人〕主妇，老妇<br>matronage[见上，－age名词字尾]主妇的身份或职责<br>maternal[matr母，-n-,-al…的]母亲的，母性的<br>maternity[见上，－ity名词字尾]母性的，母性的<br>metropolis[metro母，polis城市；”母城” →首城，最大的城]大城市，主要城市，大都会，首府<br>24.dia-表示”穿过，二者之间”<br>dialogue对话（dia+logue话→对着说话）<br>diameter直径（dia+meter测量→对着测量〔圆〕直径）<br>diaphanous透明的；精致的（dia+phan显示＋ous→对面显示〔影子〕→透明的）<br>dialectic辩证法（dia+lect讲+ic→二人对讲→辩证法）<br>diagnosis诊断（dia+gnosis知道→穿过〔皮肤〕知道→诊断）<br>diagram图表（dia+gram→交叉对着画→图表）<br>25.dif-和辅音重复表示”不，否定，分开”<br>differ不同（dif+fer带来→带来不同→不同）<br>difference不同（differ的名词）<br>diffident自卑的（dit+fid相信＋ent→不相信〔自己〕→自卑的）<br>diffuse散布的，散开的（dif+fusc流→分开流→散布的）<br>difficult困难的（dif+fic做＋ult→不好做→困难的）<br>difform不同形式的；不规则的（dif+form形状→形状不同）<br>26.dis-<br>① 表示”不，消失掉”<br>dislike不喜欢（dis+like喜爱→不喜爱）<br>disorder无秩序（dis+order顺序→没有顺序）<br>dishonest不诚实的（dis+honest诚实的）<br>disappear消失（dis+appear出现→不出现→消失）<br>disproof反证，反驳（dis+proof证实→不证实→反证）<br>discourage使失去勇气（dis+courage勇气）<br>disarm解除武装（dis+arm武装→去掉武装）<br>dispel驱除，消除（dis+pel推→推开→驱除）<br>dispassionate平心静气的（dis+passionate有激情的）<br>discover发现（dis+cover盖→把盖揭开→发现）<br>dismay沮丧（dis+may能够→不能做事→沮丧；参考：五月能种粮食，所以叫May）<br>② 表示”分开，分离”<br>disseminate散布，传播（dis+semin种子＋ate→散布〔种子〕）<br>dispense分配（dis+pense花费→分开花费→分配〔财富等〕）<br>distract分心（dis+tract拉→把〔心〕拉开→分心）<br>distend膨胀（dis+tend拉→分开拉→膨胀）<br>discriminate辨别；歧视（dis+crimin分辨→ate→分辩开）<br>dismiss解散；开除（dis+miss送→送出→解散）<br>disburse支付，支出（dis+burse钱包→从钱包中分出→支出）<br>discard丢弃，抛弃（dis+card扔→扔出去）<br>discuss讨论（dis+cuss敲打→把〔问题〕分开敲→讨论）<br>27.dys-表示”坏，不良”<br>dyspepsia消化不良（dys+peps消化；胃＋ia病→消化不好）<br>dystrophy营养不良（dys+trophy营养）<br>28.e-,ef-表示”出，出来”<br>elongate延长，拉长（e+long长＋ate→长出来）<br>elaborate精工细做的（e+labor劳动＋ate→劳动出来→精做的）<br>eject投出，掷出（e+ject掷→掷出）<br>emerge浮现（e+merge投入；淹没→淹没的东西出现→浮现）<br>evade逃出，逃避（e+vade走→走出去→逃避）<br>eradicate根除，灭绝（e+radic根＋ate→把根挖出→根除）<br>effluence流出（ef+flu流＋ence→流出）<br>29.em-,en-<br>① 表示”进入…之中，包围”<br>embrace拥抱（em+brace胳膊→进入怀抱）<br>embed安置；嵌于（em+bed范围；床→进入范围→安置）<br>empathy感情相融的（em+pathy感情→进入感情）<br>embarrass使难堪（em+barrass套子→进入套子→难堪）<br>embattle整军备战（em+battle战斗）<br>enroll注册，记入名册（en+roll名单）<br>encage关入笼中（en+cage笼子）<br>enchain束缚（en+chain锁链）<br>② 表示”使…进入状态”<br>empower授权（em+power权力）<br>embitter使痛苦（em+bitter痛苦的）<br>embody体现（em+body身体→〔精神〕进入身体→体现）<br>embellish装饰（em+bell美好＋ish→进入美好→装饰）<br>emboss使凸出（em+boss凸出→使凸出）<br>emphreal天空的（em+pyre火+al→进入火、太阳→天空的）<br>enact制定；颁布（en+act行动→进入行动→颁布〔法令〕）<br>enchant使迷醉（en+chant咒语→被咒语所迷醉）<br>encompass包围，围绕（en+compass包围）<br>endanger使危险（en+danger危险）<br>encourage鼓励（en+courage勇气→使人进入勇气→鼓励）<br>enlighten启发，开导（en+ligh光＋en→给人光明→启发）<br>30.epi-表示”在….上，在….周围，在….后面”<br>epidemic流行性的（epi+dem人民＋ic→在人民周围→流行的）<br>epigram警句，格言（epi+gram写→写在上面的话→格言）<br>epilogue后记，结尾部分（epi+lougue说→在后面说的话→后记）<br>episode一段经历，片段（epi+sode路→在路上→一段经历；片段）<br>epitome梗概，缩影（epi+tome卷册→〔一卷书后的〕梗概）<br>31.eu-表示”好，优秀”<br>eulogize赞美（eu+log说＋ize→说好话）<br>euphemism委婉的词语（eu+phem讲话＋ism→讲好话）<br>euphonious声音优美的（eu+phon声音＋ious→声音好听的）<br>eurhythmic协调的（eu+rhythm节奏＋ic）<br>euphoria幸福愉快感（eu+phor带来＋ia→带来美好→愉快）<br>eugenics优生学（eu+gen产出＋ics→产生优秀〔后代〕→优秀生）<br>32.ex-<br>① 表示”出，出去”<br>exclude排外（ex+clude关闭→关出去→排外）<br>expel赶出，逐出（ex+pel推→推出去→逐出）<br>expose暴露（ex+plse放→放出去→暴露）<br>exalt使升高（ex+alt高→高出来→升高）<br>extract抽出，拔出（ex+tract拉→拉出→拔出）<br>excise切除(ex+cise切→切出→切除)<br>exceed超过，超出（ex+ceed走→走出→超出）<br>exhale呼气（ex+hale气→出气→呼气）<br>exhume掘出，挖出（ex+hume土→出土→挖出）<br>expurgate净化；删去（ex+purg冲洗＋ate→冲洗出来→净化）<br>② 表示”前面的，前任的”<br>ex-wife前妻（ex前+wife妻子）<br>ex-president前任总统（ex前+president总统）<br>33.exo-表示”外部的，外面”<br>exotic来自异国的（exo+tic→从外面来的）<br>exoteric外界的，外面的（exo+teric→外面的）<br>exocentric外向的，离心的（exo+centric中心的）<br>exosphere外大气层（exo+sphere球；大气层）<br>exodus大批移出（exo+odus大批量）<br>exothermic放出热量的（exo+therm热＋ic→热外出→放热）<br>34.extra-表示”以外的，超过的”<br>extracurriculum课外的(extra+curriculum课程表)<br>extraordinary格外的（extra+ordinary变通的→超出普通）<br>extrasolar　太阳系以外的（extra+solar太阳的）<br>extraneous外来的（extra+aneous…的→从外面来的）<br>extravagant奢侈的（extra+vag走＋ant→走得过分→奢侈的）<br>extrovert性格外向的（extra+vert转→〔性格〕向外转→外向）<br> extrapolate推断（extra+polate放→放到〔事实〕外→推断）<br>extraviolet紫外线的（extra+violet紫色的）<br>35.fore-表示”前面，预先”<br>forestall阻止（fore+stall阻止）<br>forebode预兆；凶兆（fore+bode兆头→预兆）<br>forefather前人，祖先（fore+father父亲；祖先）<br>forearm前人，祖先（fore+amr胳膊）<br>forecast预料（fore+cast扔→预先扔下→预料）<br>foreshadow预示，暗示（fore+shadow影子→影子预先来）<br>36.hetero-表示“异类，异种”<br>heterosexual异性的（hetero+sexual性别的）<br>heterodoxy异教，异端（hetero+doxy观点→观点不同）<br>heterogeneous异类的，不同的（hetero+gen产生＋eous→产生不同的）<br>37.homo-表示“同类的”<br>homogeneous同类的；同族的（homo+gen产生＋eous→产生相同的）<br>homosexual同性恋的（homo+sexual性别的）<br>homocentric同中心的（home+centric中心的）<br>相同的方面治疗）<br>homogenize使一致（home+gen产生＋ize→产生一致→使一致）<br>38.hyper-表示“超过，太多”<br>hyperactive活动过度的（hyper+active活动的）<br>hypersensitive过敏的（hyper+sensitive敏感的）<br>hypercritical吹毛求疵的（hyper+critical批评的）<br>hyperbole夸张法（hyper+bole抛→活抛得高→夸张）<br>hypertension过度紧张；高血压（hyper+tension紧张）<br>39.hypo-表示“下面，次等”<br>hypodermic皮下的（hypo+derm皮＋ic）<br>hypothesis假说，假设（hypo+thesis论文→还不是正式的理论→假说）<br>hypomnesia记忆力减退（hypo+mnes记忆+ia→记忆变得不好）<br>hypotrophy发育不良(hypo+trophy营养→营养不够→〔导致〕发育不良)<br>40.il-,ir-<br>① 放在同辅音词根前表示“不，无”<br>illegal非法的（il+legal合法的）<br>illiterate 不识字的（il+literate认字的）<br>illogical不合逻辑的（il+logical逻辑的）<br>illimitable无限的（il+limit限制+able）<br>irregular不规则的（ir+regular规则的）<br>irrational不合理的（ir+rational合理的）<br>irrelative无关的（ir+relative相关的）<br>irresolute无决断力的（ir+resolute果断的）<br>irreproadchable　无可指责的（ir+reproachable能被指责的）<br>irrefutable无可反驳的（ir+refutable可反驳的）<br>irresistible不可抗拒的（ir+resistible可抗拒的）<br>irrevocable不可取消的（ir+revocable可取消的；来自：revoke取消）<br>② 表示“使….成为，进入”<br>illustrate说明，阐明（il+lustr光＋ate→进入光明→说明）<br>illuminate照亮；使明白（il+lumin光+ate→进入光明→说明）<br>illusion幻觉（il+lus玩弄+ion→被〔幻觉〕玩弄→幻觉）<br>illusory虚幻的（来自illusion）<br>irruption闯入，冲入（ir+rupt断＋ion→打断〔别人〕→闯入）<br>irradiate使明亮，生辉（ir+radi发光+ate→发光→生辉）<br>irritate激怒；刺激（ir+rit擦+ate→进入磨擦→激怒）<br>41.im-,in-<br>① 表示“不，无，非”<br>impossible不可能的（im+plssible可能的）<br>immoral不道德的（im+moral道德的）<br>impolite无礼的（im+polite礼貌的）<br>impartial公平的（im+partial有偏见的）<br>impassive无动于衷的（im+pass感情+ive→没感情）<br>impeccable无瑕疵的（im+pecc斑点+able→无斑点的）<br>immortal不朽的（im+mortal死的）<br>immutable不变的（im+mutable可变的）<br>inglorious不光彩的（in+glori光荣+ous→不光荣的）<br>incapable无能力的（in+capable有能力的）<br>inhuman不人道的（in+human人道的）<br>injustice不公正（in+justice公正）<br>incorrigible积习难改的（in+corrigible可改正的）<br>inconstant多变的，无常的（in+constant稳定的）<br>indifferent冷漠的（in+different不同的→同与不同的“事不关已” →冷漠的）<br>innocuous无害的（in+noc毒害+ous→无害的）<br>inimitable无可比拟的（in+imit模仿+able→不能模仿的）<br>insubordinate不服从的，反抗的（in+subordnate服从的）<br>② 表示“向内，进入”<br>imprison监禁（im+prison监狱）<br>impel驱动（im+pel推→推进，驱动）<br>imperil处于危险中（im+peril危险）<br>impulse冲动（im+pulse跳动→冲动）<br>implicit含蓄的（im+plic重叠+it→进入重叠→不直说→储蓄的）<br>impersonate扮演，模仿（im+person人+ate→进入别人→扮演别人）<br>inborn天生的（in+born出生的）<br>inaugurate举行就职典礼（in+augur预兆，开始+ate→进入开始→就职；参考：augury预兆）<br>incentive激励（in+cent唱歌+ive→把精神唱进去→激励）<br>incorporate合并，并入（in+corpor团体+ate→成为团体）<br>inflame使燃烧；激怒（in+flame火焰）<br>inspired有灵感的（in+spired有呼吸的→有生命的，有灵感的）<br>indoor户内的（in+door门→门内的）<br>42.inter-表示“在…之间，相互”<br>international国际的（inter+national国家的）<br>interpersonal人与人之间的（inter+personal个人的）<br>interpose置于，介入（inter+pose放→放在二者之间）<br>intersect横断（inter+sect切割 →在中间切→横断）<br>intervene干涉（inter+vene走→走在二者之间→干涉）<br>interaction相互影响（inter+action行动→相互行动→影响）<br>interchangeable可互换的（inter+changeable可改变的）<br>interlude（活动间的）休息（inter+lude玩→在中间玩→活动间休息）<br>interrelate相互关连（inter+relate关连）<br>43.intro-表示“向内，入内”<br>introduce引入，介绍（intro+duce引→引进）<br>introspect内省，反省（intro+pect看→向内看→内省）<br>introvert内向（intro+vert转→向内转→内向）<br>intromit插入，干预（intro+mit放→放进去→插入）<br>introversible可向内翻的（intro+vers转＋able→能向内转的）<br>44.macro-表示“宏伟，大”<br>macroworld宏观世界（macro+world世界）<br>macrostructure宏观结构（macro+structure结构）<br>macroscale大规模的（macro+scale规模）<br>macrobian长寿的（macro+bi生命＋an→大生命→长寿）<br>macroclimate大气候（macro+climate气候）<br>45.mal-表示“坏，恶”（亦作male）<br>malcontent不满的（mal+content满意的）<br>malpractice不法行为（mal+practice做事，实践→做坏事）<br>malnutrition营养不良（mal+nutrition营养）<br>malediction诅咒（male+dict说+ion→说坏话）<br>malefaction坏事，恶行（male+fact做+ion→做坏事）<br>malodor恶臭（mal+odor气味）<br>maltreat虐待（mal+treat对待）<br>malapropism字的误用（mala＋prop恰当+ism→[用字]不恰当；来自一喜剧中的Mrs.Malaprop,以用词错误闻名）<br>malevolent恶意的（male+vol意志+ent→坏意志）<br>maladroit笨拙的（mal+adroit灵巧的）<br>46.micro-表示“微，小”<br>microscope显微镜（micro+scope看→看小东西→显微镜）<br>microworld微观世界（micro+world世界）<br>microskirt超短裙（micro+skirt裙子）<br>microwave微波（micro＋wave波）<br>microbe微生物（micro+be=bi生命→小生命→微生物）<br>microbiology微生物学（micro+bilolgy生物学）<br>microfilm微缩胶卷（micro+film胶片）<br>47.mini-表示“小”<br>minibus小公共汽车（mini+bus公共汽车）<br>miniskirt超短裙（mini＋skirt裙子）<br>miniwar小规模战争（mini+war战争）<br>miniature小画象，缩影（mini+ature表示物品→小物品→小画象）<br>minify使…缩小（mini+fy→小化）<br>minimal最低限度的（minim=mini+al→最小的）<br>minimum最小量（minim+um）<br>minion仆人（minim+on→小人〔仆人自称小人〕）<br>deminish缩小的，减少的（de+mini小+ish→使…小→缩小）<br>48.mis-表示“错误，坏”<br>mistake错误（mis+take拿→拿错→错误）<br>misspell拼写错误（mis+spell拼写）<br>misunderstand误解（mis+understand理解）<br>misdoing坏事（mis+doing做事）<br>misrule对…施暴政（mis+rule统治→统治不善）<br>misfortune不幸（mis+fortune幸运的）<br>mistrust不信任（mis+trust相信）<br>misanthrope愤世嫉俗者（mis+anthrope人→不喜欢人）<br>miscreant恶棍（mis+creant做事的人→做坏事的人）<br>mishap坏运气，不幸（mis+hap运气→运气不好）<br>mischievous恶作剧的（mis+chiev＝chief首领＋ous→做坏事的首领）<br>49.mono-表示“单个，一个”<br>monarch君主，独裁者（mon+arch统治者→一个统治者）<br>monogamy 一夫一妻制（mono+gamy婚姻）<br>monologue独白（mono+logue说话→一个人说话→独白）<br>monopoly垄断（mono+poly→独家卖→垄断）<br>monotonous单调的（mono+ton声音+ous→一个声音→单调的）<br>50.Multi-表示”很多,很多”<br>multilingual a. 多种语言的(multi+lingual方向的)<br>multidirectional a. 多方向的(multi+directional方向的)<br>multiple a.多样的;多功能的(multi+pile→多的→多功能的)<br>multiply a.乘;繁殖(multi+ply表动词→变多→乘)<br>multiform a.多种多样的(multi+form形式)<br>multicultural a.多种文化的(multi+cultural文化的)<br>multimedia a.多媒体的(multi+media媒介)<br>multitude a.多数;群众(multi+tude状态→多的状态→多数)<br>51.neo-表示”新的”<br>neonatal a.新生的,被生的(neo+natal出生的)<br>neogamist a.新婚者(neo+gamist结婚者)<br>neolithic a.新石器时代的(neo+lith石头+ic)<br>neophilia a.喜新成癖(neo+phil爱+ia 病→爱新的病)<br>neologism a.新词(neo+log词语+ism→新词语)<br>neoteric a.新近的;现代的(neo+oteric表形容词→新近的)<br>52.non-表示”不,非”<br>nonexistent a.不存在的(non+existent存在的)<br>nonsmoking a.不准吸烟的(non+smoking吸烟的)<br>nonstop a.直达的(non+stop停止→不停→直达的)<br>na.冷漠的(non+chalant关心的→不关心的)<br>nonconformist n.不遵循传统竽活的人(non+conform一致+ist→[和传统]不一致的人)<br>53.omni-表示”全部.到处”<br>omnipresent a.无所不在的(omni+present出现的)<br>omnipotent a.全能的(omni+potent的能力的)<br>omniscient a.无所示在的(omni+scient知道的)<br>54.out-<br>① 表示”超过.过度”<br>outdo v.胜过,战胜(out+do做→做得超出别人)<br>outlive v.活得比…长(out+live活→超过别人活着)<br>outnumber v.在数量上超过(out+number数量)<br>outsize a.过大的(out+size范围→范围超出)<br>outwear v.穿破(out+wear穿→穿出了[洞])<br>outwit v.以机智取胜(out+wit机智→机智超出别人)<br>outbid v.出价多于(他人)(out+bid出价→出价超出)<br>outlaw n.歹徒(out+law法律→超越法律之人)<br>② 表示”出去.过时”<br>outside ad.在外面(out+side旁边→在外边)<br>outgoing a.友善的(out+going走→走出来→心胸宽→待人友善的)<br>outlandish a.奇异的(out+land地→ish→外地来的→奇异的)<br>outrage n.粗暴,暴行(out+rage怒气→怒气外露→粗暴)<br>outskirts n.郊区(out+skirts裙子;城市周边→郊区)<br>outflow v.流出(out+flow流→流出)<br>outbreak n.爆发(out+break断裂→事情断裂→爆发)<br>outline n.大纲;轮廓(out+line线条→划出线条→大纲)<br>outmoded a.过时的(out+moded时髦的→出了时髦→不时髦的)<br>55.over-<br>① 表示”过度,过分”<br>overstudy n.用功过度(over+study学习)<br>overwork n.过度劳累(over+work工作)<br>overact v.表演过火(over+act演出)<br>overdose n.药物过量(over+dose剂量)<br>overproduction n.生产过度(over+productoin生产)<br>overcrowded a.挤满的(over+crowded拥挤的)<br>② 表示”在……之上”<br>overlap n\v.重叠(over+lap交叉→[大腿]交叉→重叠)<br>iverride v.推翻,不理会(over+ride骑→骑在上面→推翻[下面的])<br>overwhelm v.压倒;泛滥(over+whelm推翻→翻过来→压倒)<br>overbridge n.天桥(over+bridge桥→上面的桥→天桥)<br>overlook v.俯视;疏忽(over+look看→在上面看→俯视,z上申为疏忽)<br>overcoat n.外套(over+coat衣服→在衣服上的衣服→外套)<br>overcome v.战胜,克服(over+come来→来到上面→战胜)<br>③表示“翻转”<br>overturn 颠覆（over+rurn转→翻转）<br>overthrow　推翻（over+throw扔→扔翻了→推翻）<br>overhaul彻底检修（over+haul拉→拉过去检修）<br>56.paleo 表示:”古,旧”<br>paleozoology n. 古动物学(paleo+zoology动物学)<br>Paleotechnic a. 古代技术的(paleo+technic技术的)<br>Paleontology n. 古生物学(paleo+notology存在学→古代存在学→古生物学;参考:ontology本体论)<br>57.pan-表示“广泛的”<br>pan-American 泛美的<br>pandemic　大范围流行的（pan+dem人民＋in→人民广泛〔染病〕→广为流行的）<br>panorama 全景，概观（pan+orama视力→视力所及→全景）<br>panegyric颂词；颂扬(pan+egyr聚集+ic→聚集一堂→颂扬〔国王〕)<br>pansophic　全知的（pan+soph智慧→ic→智慧广→都知道）<br>58.para-<br>① 表示“半，类似，辅助”<br>parastatal　半官方的（para+sttal国家的）<br>parapolitical 半政治的（para+political政治的）<br>② 表示“在旁边”<br>paradigm范例，示范（para+digm显示→在旁边显示给〔别人〕→示范）<br>paradox矛盾的说法（para+dox观点→观点边上有观点→矛盾）<br>paragon典范（para+gon角→旁边顶尖人物→典范）<br>paralogism不合逻辑的推论（para+logism逻辑→在逻辑边上→不是逻辑）<br>③ 表示“降落伞”<br>parachute降落伞（para+chute降下）<br>paradrop空投，空降（para+drop扔下）<br>59.pen-表示“近似，差不多”<br>peninsula　半岛（pen+insula岛→似岛一样→半岛）<br>penultimate倒数第二的（pen+ultimate最终→靠近最终一个→倒数第二）<br>60.per-<br>① 表示“贯穿，自始至终”<br>perspective透视的（per+spect看＋ive→看透了→透视的）<br>perennial全年的（per+ennial年→全年的）<br>perspire出汗（per+spire呼吸→全身呼吸→出汗）<br>permanent永久的（per+man拿住＋ent→永久拿住→永恒的）<br>persist坚持（per+sist站→站到最后→坚持）<br>persuade劝说（per+suade劝→一直劝→劝说）<br>percussion敲打（per+cuss震＋ion→震动→敲打）<br>perspicacious独具慧眼的（per+spic看＋acious→全部看到→独具慧眼）<br>pernicious有害的，有毒的（per+nic毒+ious→有毒的）<br>perplexed困惑的（per+plex重叠+ed→全部重叠在一起→困惑了）<br>perforate打洞（per+forate打孔→打孔穿过→打洞）<br>permeate渗透（per+me走+ate→走过去→渗透过去）<br>② 表示“假，坏”<br>perfidy不忠，背叛（per+fid相信＋y→假相信→不忠诚）<br>perjury伪证，假誓（per+jur发誓＋y→假发誓；参考：jury陪审团）<br>perfunctory　草率的（per+funct作用+ory→没起好作用→草率的）<br>perpetrate做坏事；犯罪（per+petr=patr父亲＋ate→以父亲式态度对待别人→专横，做坏事）<br>pervert堕落，滥用（per+vert转→转向坏→堕落）<br>61.peri-表示“周围，靠近”<br>perigon周角，360度角（peri+gon角）<br>perimeter周边（peri+meter测量→测量一圈→周边）<br> periphery外围，不重要部分（peri+pher带有＋y→带到周围→外围）<br>62.poly-表示“多”<br>polyandry一妻多制（poly+andry男人）<br> polyglot通晓多种语言者（poly+math数学；知识）<br> polyfunctional多功能的（poly+functional有功能的）<br>63.post-<br>① 表示“在后面”<br>postwar战后的（post+war战争）<br>postpone推迟（post+phone放→放到后面→推迟）<br>postgraduate大学毕业后的（post+graduate毕业）<br>postface刊后语（post+face脸；前面→后面的脸→刊后语）<br>posterior较后的（post＋erity表名词→后面的人→子孙）<br>② 表示“邮件，邮政”<br>postage邮资（post+age钱；状态）<br>postoffice邮局（post+office办公室）<br>postcard明信片（post+card卡片）<br>postal邮政的（post+al）<br>64.pre－表示“….前的，预先”<br>preschool 学龄前的（pre+school学校→上学前的）<br>prehistory 史前(pre+history历史)<br>prefix 前缀(pre+fix固定→固定在前面→前缀)<br>preposition 前置词,介词(pre+position位置→位置放在前面→前置词)<br>prepay 预付(pre+pay付钱)<br>prebuilt 预制的(pre+built建造)<br>preamble 前言,绪言(pre+amble跑→跑在前面→前言)<br>precaution 预防措施(pre+caution小心→预先小心→预防)<br>precede (在时间上)先于,早于(pre+cede走→走在前面→[时间上]先于)<br>precedent 先例(pre+ced走+ent→走在前面的东西→先例)<br>precept 规范;格言(pre+cept拿→以前拿好的[名言]→格言)<br>precinct 区域,范围(pre+cinct捆→预先捆好的→范围)<br>precipice 峭壁(pre+cipice头→在前面是尽头→峭壁)<br>precipitation 降落,仓促(pre+cipit头→ation→落在前头→降落,下降)<br>precise 精确的,精细的(pre+cise切→预先切好的→精确的)<br>preclude 妨碍;阻止(pre+clude关闭→提前关闭→阻止)<br>precocious 早熟的(pre+cocious熟→提前煮熟→早熟的)<br>predict 预言,预报(pre+dict说→预先说→预言)<br>predisposition 倾向,癖性(pre+disposition性情→性情预定→癖性)<br>preoccupation 全神贯注(pre+occup占有+ation→优先占有(注意力) →全神贯注)<br>prescient 有先见之明的(pre+scient知道的→预先知道)<br>prerogative 权利,特权(pre+rog要求+ative→预先要求→(有)特权)<br>65．Pro-<br>① 表示“向前，在前”<br>progress 进步（pro+gress走→向前走）<br>project 投射出;工程项目(pro+ject+扔+扔向前面→投射;引申为工程项目)<br>prologue 前言,序言(pro+logue说→在前面说→前言)<br>promote 促进;提升(pro+mote动→向前动→促进)<br>protrude 向前突出(pro+trude突出→向前突出)<br>propel 推进(pro+pel推→向前推)<br>proficient 精通的;熟练的(pro+fici做+ent→做在[别人] 前面→精通)<br>profile 侧面像;轮廓(pro+file纱线→前面的线条)<br>profess 公开表明,坦白(pro+fess说→在前面说坦白)<br>prodigious (数量等)巨大的(pro=pro+ig=act做→做在前面,做得多→大量的)<br>proclivity 倾向性,癖性(pro+cliv倾斜+ity→向前倾斜)<br>procure (费心)取得,获得(pro+cure关心→关心在前→[想要]获得)<br>prominent 显著的,杰出的(pro+min伸+ent→向前伸出→杰出的)<br>prosecute 检举;指控(pro+secu追随+ate→追随到[法院]前面→检举;指控)<br>prospect 景象,前景(pro+spect看→向前看→前景)<br>provident 顾及未来的,有远见的(pro+vid看+ent→向前看的→有远见的)<br>provoke 激怒,刺激(pro+voke喊→在[你]前面喊→激怒[你])<br>② 表示“很多…”<br>procrastinate 拖延(pro+crastin明天+ate→有许多明天明日复明日→拖延)<br>procreate 生育(pro+create创造→创造很多→生儿育女)<br>profligate 浪费的,挥霍的(pro+flig打出+ate→把钱不断的打出去→挥霍)<br>proliferate 繁殖,增殖(pro+lifer带来+ate→带来很多生命→繁殖)<br>profit 利润,收益(pro+fit做→做很多→做得好→利润)<br>profuse 大量的,丰富的(pro+fuse流→流很多→大量的)<br>prolific 多产的,多育的(pro+lif带来+ic→带来东西→多产的)<br>prosperous 兴旺的,繁荣的(pro+sper希望+ous→希望很多→兴旺的)<br>③ 表示“赞同，亲…”<br>pro-American 亲美的<br>proslavery 赞成奴隶制的(pro+slavery奴隶制)<br>proabortionist 赞成堕胎者的(pro+abortion堕胎+ist)<br>67.paeudo-表示“假，伪”<br>pseudo 假的,虚伪的<br>pseudonym 假名,笔名(pseudo+nym名字)<br>pseudoscience 伪科学(pseudo+science科学)<br>pseudograph 冒名作品(pseudo+graph写→写出的假东西)<br>pseudology 谎话(pseudo+ology说话→学科说假话)<br>68.re-<br>①表示“向后，相反，不”<br>reflect 回想;反射(re+flect弯曲→反弯曲→反射)<br>retreat 后退,撤退(re+treat拉→拉回来→撤退)<br>retract 缩回;收回(re+tract拉→拉回,缩回)<br>resist 反抗,抵抗(re+sist站→反着站→反抗)<br>reverse 反转的,颠倒的(re+verse转→反转的)<br>revolt 反叛(re+volt转→反过转→反叛)<br>resent 忿恨,不满(re+sent感觉→反感→不满)<br>relinquish 不再采取行动,放弃(re+linqu离开+ish→离开不再要→放弃)<br>renegade撤消；　取消（re+peal呼吁→反呼吁→取消；参考：appeal呼吁）<br>repel驱除，击退（re+pel推→击退）<br>repose休息；躺下（re+plse放→入下〔工作〕→休息）<br>reprobate道德败坏之人（re+prob正直＋ate→不正直→败坏）<br>repugnant令人厌恶的（re+pugn打＋ant→[把人]打回去→〔行为〕令人厌恶的）<br>resonant回响的；洪亮的（re+son声音+ant→声音回过来→回响的）<br>②表示“一再，重新”<br>resplendent辉湟的（re+splend光辉＋ent→再光辉→辉煌的）<br>reappear再出现（re+appear出现）<br>rearrage重新安排（re+arrange安排）<br>reassure消除某人疑虑（re+assure放心）<br>recapitulate重述；概括（re+capit头＋ulate→重新把头拿出来→概括要点）<br>recidivism重新犯罪（re+cidiv掉下＋ism→再次掉入罪行）<br>reclaim取回,回收（re+claim喊→喊回来→取回，引申为开垦荒地）<br>recommend赞扬；推荐（re+commend赞扬→一再赞扬）<br>recompense报酬；赔偿（re+compense补偿）<br>refurbish刷新；擦亮（re+furbish装饰→再装饰→刷新）<br>regenerate改过自新的（re+gener产生＋ate→重新产生生命→改过自新的）<br>reincarnate化生，转生(re+in入＋carn肉＋ate→重新进入肉体→产生)<br>reinstate重新恢复职位（re+in+state国家，权力→重新进入权力）<br>reiterate重申（re+iterate重说→反复重说）<br>resurgence复兴，再起（re+surg浪浪潮＋ence→重起浪潮→复兴）<br>reverberate起回声，反响（re+verber震动＋ate→重新震动→起回声）<br>69.retro-表示“向后，倒退”<br>retrograd后退，倒退（retro+grade走→向后走）<br>retrogress倒退，退化（retro+gress走→向后走）<br>retrospect回顾，回想（retro+spect看→向后看）<br>retroaction倒行，反动（retro+action行动→向后行动→倒行逆施）<br>retroject向后投射（retro+ject扔→向后扔）<br>retrovert把….翻转；使倒退（retro+vert转→向后转→侄退）<br>70.se-表示“分开，离开，区别开”<br>secede正式退出（组织）（se+cede走→走开→退出）<br>seclude和别人隔离；隐居（se+clude关闭→分开关→隐居的）<br>secrete分泌；藏匿（se+crete分辨→分辨开→分泌；藏起来；）<br>sedition煽动叛乱（sed=se+it走＋ion→分开走→煽动叛乱）<br>seduce勾引，诱惑（se+duce引→引开→勾引别人）<br>segregate隔离（se+greg群＋ate→和人群分开→隔离）<br>sever切断；脱离（se+ver分开→分离开→切断）<br>select选出（se+lect选→选出分开）<br>71.sub-<br>① 表示“在下面，次一等，副手”<br>subdue征服；减轻（sub+due从属→从属在下面→征服）<br>subjugate镇压；征服（sub+jug牛轭＋ate→套上牛轭→镇压）<br>subliminal潜意识的（sub+limin门槛＋al→在门槛下→在意识之下→潜意识的）<br>submerge沉没，淹没(sub+merge淹没→淹没下去)<br>submissive恭顺的（sub+miss给→ive→在下面给→恭顺的）<br>subordinate附属的（sub+ordin顺序＋ate→顺序在下→附属的）<br>suborn收买，贿赂（sub+orn装饰→在下面装饰→贿赂）<br>subscribe捐献，订购（sub+scribe写→在下面写上名字→订购）<br>subside下陷；平息（sub+terr地＋anean→地下的）<br>subterranean地下的（sub+terr转→转下去→推翻）<br>subcontinent次大陆（sub+continetn大陆）<br>subtropics亚热带（sub+tropics热带）<br>subtitle副标题（sub+tropics热带）<br>subeditor助理编辑（sub+editor编辑）<br>suboffice分办事处（sub+office办公室）<br>② 表示“接近，靠近”<br>subcentral接近中心的（sub+central中心的）<br>subaratic近北极的（sub+arctic北极的）<br>subadult接近成年的（sub+adult成年人）<br>subacid略酸的（sub+acid酸）<br>subarid有点干燥的（sub+arid干燥的）</p>
@@ -680,14 +680,14 @@
     
     </summary>
     
-      <category term="English" scheme="http://bobchennan.github.io/categories/English/"/>
+      <category term="English" scheme="http://www.myemacs.com/categories/English/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Quotes from Nelson Mandela]]></title>
-    <link href="http://bobchennan.github.io/2013/12/06/mandela/"/>
-    <id>http://bobchennan.github.io/2013/12/06/mandela/</id>
+    <link href="http://www.myemacs.com/2013/12/06/mandela/"/>
+    <id>http://www.myemacs.com/2013/12/06/mandela/</id>
     <published>2013-12-06T00:21:00.000Z</published>
     <updated>2015-10-28T06:49:27.000Z</updated>
     <content type="html"><![CDATA[<pre><code>I learned <span class="keyword">that</span> courage was <span class="keyword">not</span> <span class="keyword">the</span> absence <span class="keyword">of</span> fear, <span class="keyword">but</span> <span class="keyword">the</span> triumph <span class="keyword">over</span> <span class="keyword">it</span>. The brave man <span class="keyword">is</span> <span class="keyword">not</span> he who <span class="keyword">does</span> <span class="keyword">not</span> feel afraid, <span class="keyword">but</span> he who conquers <span class="keyword">that</span> fear。
@@ -816,18 +816,18 @@ I have finished <span class="keyword">my</span> role play, now need unknown life
     
     </summary>
     
-      <category term="" scheme="http://bobchennan.github.io/tags/undefined/"/>
+      <category term="" scheme="http://www.myemacs.com/tags/undefined/"/>
     
-      <category term="aphorism" scheme="http://bobchennan.github.io/tags/aphorism/"/>
+      <category term="aphorism" scheme="http://www.myemacs.com/tags/aphorism/"/>
     
-      <category term="English" scheme="http://bobchennan.github.io/categories/English/"/>
+      <category term="English" scheme="http://www.myemacs.com/categories/English/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Faults are thick where love is thin.]]></title>
-    <link href="http://bobchennan.github.io/2013/11/23/faults-are-thick-where-love-is-thin/"/>
-    <id>http://bobchennan.github.io/2013/11/23/faults-are-thick-where-love-is-thin/</id>
+    <link href="http://www.myemacs.com/2013/11/23/faults-are-thick-where-love-is-thin/"/>
+    <id>http://www.myemacs.com/2013/11/23/faults-are-thick-where-love-is-thin/</id>
     <published>2013-11-23T21:51:00.000Z</published>
     <updated>2015-10-28T06:48:52.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -839,18 +839,18 @@ I have finished <span class="keyword">my</span> role play, now need unknown life
 ]]>
     </summary>
     
-      <category term="aphorism" scheme="http://bobchennan.github.io/tags/aphorism/"/>
+      <category term="aphorism" scheme="http://www.myemacs.com/tags/aphorism/"/>
     
-      <category term="motto not epitaph" scheme="http://bobchennan.github.io/tags/motto-not-epitaph/"/>
+      <category term="motto not epitaph" scheme="http://www.myemacs.com/tags/motto-not-epitaph/"/>
     
-      <category term="English" scheme="http://bobchennan.github.io/categories/English/"/>
+      <category term="English" scheme="http://www.myemacs.com/categories/English/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Love of beauty is taste. The creation of beauty is Art.]]></title>
-    <link href="http://bobchennan.github.io/2013/11/16/love-of-beauty-is-taste-the-creation-of-beauty-is-art/"/>
-    <id>http://bobchennan.github.io/2013/11/16/love-of-beauty-is-taste-the-creation-of-beauty-is-art/</id>
+    <link href="http://www.myemacs.com/2013/11/16/love-of-beauty-is-taste-the-creation-of-beauty-is-art/"/>
+    <id>http://www.myemacs.com/2013/11/16/love-of-beauty-is-taste-the-creation-of-beauty-is-art/</id>
     <published>2013-11-16T07:43:28.000Z</published>
     <updated>2015-10-28T06:49:19.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -862,18 +862,18 @@ I have finished <span class="keyword">my</span> role play, now need unknown life
 ]]>
     </summary>
     
-      <category term="aphorism" scheme="http://bobchennan.github.io/tags/aphorism/"/>
+      <category term="aphorism" scheme="http://www.myemacs.com/tags/aphorism/"/>
     
-      <category term="motto not epitaph" scheme="http://bobchennan.github.io/tags/motto-not-epitaph/"/>
+      <category term="motto not epitaph" scheme="http://www.myemacs.com/tags/motto-not-epitaph/"/>
     
-      <category term="English" scheme="http://bobchennan.github.io/categories/English/"/>
+      <category term="English" scheme="http://www.myemacs.com/categories/English/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[深度学习软件资源列表]]></title>
-    <link href="http://bobchennan.github.io/2013/11/13/deep-learning-library/"/>
-    <id>http://bobchennan.github.io/2013/11/13/deep-learning-library/</id>
+    <link href="http://www.myemacs.com/2013/11/13/deep-learning-library/"/>
+    <id>http://www.myemacs.com/2013/11/13/deep-learning-library/</id>
     <published>2013-11-13T12:34:12.000Z</published>
     <updated>2015-10-28T06:48:07.000Z</updated>
     <content type="html"><![CDATA[<p>深度学习( Deep Learning )软件资源列表</p>
@@ -919,22 +919,22 @@ I have finished <span class="keyword">my</span> role play, now need unknown life
     
     </summary>
     
-      <category term="Deep Learning" scheme="http://bobchennan.github.io/tags/Deep-Learning/"/>
+      <category term="Deep Learning" scheme="http://www.myemacs.com/tags/Deep-Learning/"/>
     
-      <category term="library" scheme="http://bobchennan.github.io/tags/library/"/>
+      <category term="library" scheme="http://www.myemacs.com/tags/library/"/>
     
-      <category term="software" scheme="http://bobchennan.github.io/tags/software/"/>
+      <category term="software" scheme="http://www.myemacs.com/tags/software/"/>
     
-      <category term="转载" scheme="http://bobchennan.github.io/tags/%E8%BD%AC%E8%BD%BD/"/>
+      <category term="转载" scheme="http://www.myemacs.com/tags/%E8%BD%AC%E8%BD%BD/"/>
     
-      <category term="Research" scheme="http://bobchennan.github.io/categories/Research/"/>
+      <category term="Research" scheme="http://www.myemacs.com/categories/Research/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[life is an onion and one cries while peeling it.]]></title>
-    <link href="http://bobchennan.github.io/2013/11/01/life-is-an-onion-and-one-cries-while-peeling-it/"/>
-    <id>http://bobchennan.github.io/2013/11/01/life-is-an-onion-and-one-cries-while-peeling-it/</id>
+    <link href="http://www.myemacs.com/2013/11/01/life-is-an-onion-and-one-cries-while-peeling-it/"/>
+    <id>http://www.myemacs.com/2013/11/01/life-is-an-onion-and-one-cries-while-peeling-it/</id>
     <published>2013-11-01T21:42:31.000Z</published>
     <updated>2015-10-28T06:49:05.000Z</updated>
     <content type="html"></content>
@@ -942,18 +942,18 @@ I have finished <span class="keyword">my</span> role play, now need unknown life
     
     </summary>
     
-      <category term="aphorism" scheme="http://bobchennan.github.io/tags/aphorism/"/>
+      <category term="aphorism" scheme="http://www.myemacs.com/tags/aphorism/"/>
     
-      <category term="motto not epitaph" scheme="http://bobchennan.github.io/tags/motto-not-epitaph/"/>
+      <category term="motto not epitaph" scheme="http://www.myemacs.com/tags/motto-not-epitaph/"/>
     
-      <category term="English" scheme="http://bobchennan.github.io/categories/English/"/>
+      <category term="English" scheme="http://www.myemacs.com/categories/English/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Automatic Speech Recognition]]></title>
-    <link href="http://bobchennan.github.io/2013/10/17/automatic-speech-recognition/"/>
-    <id>http://bobchennan.github.io/2013/10/17/automatic-speech-recognition/</id>
+    <link href="http://www.myemacs.com/2013/10/17/automatic-speech-recognition/"/>
+    <id>http://www.myemacs.com/2013/10/17/automatic-speech-recognition/</id>
     <published>2013-10-17T06:27:57.000Z</published>
     <updated>2015-10-28T06:47:56.000Z</updated>
     <content type="html"><![CDATA[<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 研究生期间收集了一些有关语音识别方面的网址，感觉非常有用，保留一下，留到以后用。</p>
@@ -1088,20 +1088,20 @@ I have finished <span class="keyword">my</span> role play, now need unknown life
     
     </summary>
     
-      <category term="语音识别" scheme="http://bobchennan.github.io/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/"/>
+      <category term="语音识别" scheme="http://www.myemacs.com/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/"/>
     
-      <category term="资料" scheme="http://bobchennan.github.io/tags/%E8%B5%84%E6%96%99/"/>
+      <category term="资料" scheme="http://www.myemacs.com/tags/%E8%B5%84%E6%96%99/"/>
     
-      <category term="转载" scheme="http://bobchennan.github.io/tags/%E8%BD%AC%E8%BD%BD/"/>
+      <category term="转载" scheme="http://www.myemacs.com/tags/%E8%BD%AC%E8%BD%BD/"/>
     
-      <category term="Research" scheme="http://bobchennan.github.io/categories/Research/"/>
+      <category term="Research" scheme="http://www.myemacs.com/categories/Research/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Never give advice... a wise man won't need it and a fool won't heed it.]]></title>
-    <link href="http://bobchennan.github.io/2013/10/16/never-give-advice-a-wise-man-won't-need-it-and-a-fool-won't-heed-it/"/>
-    <id>http://bobchennan.github.io/2013/10/16/never-give-advice-a-wise-man-won't-need-it-and-a-fool-won't-heed-it/</id>
+    <link href="http://www.myemacs.com/2013/10/16/never-give-advice-a-wise-man-won't-need-it-and-a-fool-won't-heed-it/"/>
+    <id>http://www.myemacs.com/2013/10/16/never-give-advice-a-wise-man-won't-need-it-and-a-fool-won't-heed-it/</id>
     <published>2013-10-16T05:25:43.000Z</published>
     <updated>2015-10-28T06:49:32.000Z</updated>
     <content type="html"></content>
@@ -1109,18 +1109,18 @@ I have finished <span class="keyword">my</span> role play, now need unknown life
     
     </summary>
     
-      <category term="aphorism" scheme="http://bobchennan.github.io/tags/aphorism/"/>
+      <category term="aphorism" scheme="http://www.myemacs.com/tags/aphorism/"/>
     
-      <category term="motto not epitaph" scheme="http://bobchennan.github.io/tags/motto-not-epitaph/"/>
+      <category term="motto not epitaph" scheme="http://www.myemacs.com/tags/motto-not-epitaph/"/>
     
-      <category term="English" scheme="http://bobchennan.github.io/categories/English/"/>
+      <category term="English" scheme="http://www.myemacs.com/categories/English/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Try to start a new blog]]></title>
-    <link href="http://bobchennan.github.io/2013/10/11/try-to-start-a-new-blog/"/>
-    <id>http://bobchennan.github.io/2013/10/11/try-to-start-a-new-blog/</id>
+    <link href="http://www.myemacs.com/2013/10/11/try-to-start-a-new-blog/"/>
+    <id>http://www.myemacs.com/2013/10/11/try-to-start-a-new-blog/</id>
     <published>2013-10-11T11:19:24.000Z</published>
     <updated>2015-10-28T06:49:51.000Z</updated>
     <content type="html"><![CDATA[<p>  昨天看到一个同行的博客，放在github pages上。我对静态博客这种形式很有兴趣，因为Markdown写起来比较方便，而自己不需要考虑主题什么的。于是自己也来配置一下。<br>  碰巧在网上看到了<a href="https://github.com/tommy351/hexo" target="_blank" rel="external">Hexo</a>，是基于NodeJS做的，还比较熟，于是尝试在Cloud 9上配置了环境，生成了这个Blog。<br>  目前整个项目放在<a href="c9.io/cnx/gitblog">Cloud 9</a>上面，使用云端IDE编辑，免去配置环境等麻烦。4</p>
@@ -1135,16 +1135,16 @@ I have finished <span class="keyword">my</span> role play, now need unknown life
     
     </summary>
     
-      <category term="新尝试" scheme="http://bobchennan.github.io/tags/%E6%96%B0%E5%B0%9D%E8%AF%95/"/>
+      <category term="新尝试" scheme="http://www.myemacs.com/tags/%E6%96%B0%E5%B0%9D%E8%AF%95/"/>
     
-      <category term="NodeJS" scheme="http://bobchennan.github.io/categories/NodeJS/"/>
+      <category term="NodeJS" scheme="http://www.myemacs.com/categories/NodeJS/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <link href="http://bobchennan.github.io/2013/10/11/hello-world/"/>
-    <id>http://bobchennan.github.io/2013/10/11/hello-world/</id>
+    <link href="http://www.myemacs.com/2013/10/11/hello-world/"/>
+    <id>http://www.myemacs.com/2013/10/11/hello-world/</id>
     <published>2013-10-11T09:34:10.000Z</published>
     <updated>2013-11-02T05:32:14.000Z</updated>
     <content type="html"><![CDATA[<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank" rel="external">documentation</a> to learn how to use.</p>
