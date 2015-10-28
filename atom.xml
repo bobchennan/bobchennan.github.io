@@ -4,7 +4,7 @@
   <subtitle><![CDATA[CNX's blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.myemacs.com/"/>
-  <updated>2015-10-28T13:55:40.000Z</updated>
+  <updated>2015-10-28T14:19:56.000Z</updated>
   <id>http://www.myemacs.com/</id>
   
   <author>
@@ -19,9 +19,8 @@
     <link href="http://www.myemacs.com/2015/10/27/Interspeech-2015/"/>
     <id>http://www.myemacs.com/2015/10/27/Interspeech-2015/</id>
     <published>2015-10-27T06:58:00.000Z</published>
-    <updated>2015-10-28T13:55:40.000Z</updated>
-    <content type="html"><![CDATA[<p>Interspeech 2015 was held in ICD, Dresden, Germany. I took part in this conference because I had two papers published here. This is the first time to attend an international conference for me. It may take sometime to finish this post.<br><a id="more"></a></p>
-<p>All figures are compressed using <a href="https://tinypng.com/" target="_blank" rel="external">TinyPNG</a>. ~78% space is saved.</p>
+    <updated>2015-10-28T14:19:56.000Z</updated>
+    <content type="html"><![CDATA[<p>Interspeech 2015 was held in ICD, Dresden, Germany. I took part in this conference because I had two papers published here. This is the first time to attend an international conference for me. The first part of this post includes lots of photos. LG Flex2 was used to take these photos. All photos are compressed using <a href="https://tinypng.com/" target="_blank" rel="external">TinyPNG</a>. ~78% space is saved. The second part includes analysis of some papers.<br><a id="more"></a></p>
 <h2 id="Airport">Airport</h2><p>Airplane in Shanghai Pudong:<br><img src="/images/20150906_012205.jpg" alt="airplane"><br>Foggy Moscow:<br><img src="/images/20150906_112249.jpg" alt="Moscow"></p>
 <h2 id="Dresden">Dresden</h2><p><img src="/images/20150906_232136.jpg" alt="Dresden1"><br><img src="/images/20150907_183804.jpg" alt="Dresden2"><br><img src="/images/20150907_183809.jpg" alt="Dresden3"><br>In front of the church:<br><img src="/images/DSC00390.JPG" alt="Dresden4"></p>
 <h2 id="Interspeech_2015">Interspeech 2015</h2><p>Our group:<br><img src="/images/P50910-082601.jpg" alt="group"><br>Photo with Tomas Mikolov:<br><img src="/images/20150909_161000.jpg" alt="mikolv"><br>Banquet:<br><img src="/images/20150907_201631.jpg" alt="banquet"><br>Standup banquet:<br><img src="/images/20150909_191034_HDR.jpg" alt="standup"><br>Presentation:<br><img src="/images/P50907-115635.jpg" alt=""><br><img src="/images/P50907-115645.jpg" alt=""><br><img src="/images/P50909-094157.jpg" alt=""></p>
@@ -86,12 +85,12 @@
 <p>Text-Informed Speech Enhancement with Deep Neural Networks</p>
 <ul>
 <li>combine TTS with speech enhancement</li>
-<li>the main drawback is that it assumes text information are given while in reality we can only use ASR result</li>
+<li>the main drawback is that it assumes text information are given while in reality we can only use ASR result use ASR result</li>
 </ul>
 </blockquote>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>Interspeech 2015 was held in ICD, Dresden, Germany. I took part in this conference because I had two papers published here. This is the first time to attend an international conference for me. It may take sometime to finish this post.<br>]]>
+    <![CDATA[<p>Interspeech 2015 was held in ICD, Dresden, Germany. I took part in this conference because I had two papers published here. This is the first time to attend an international conference for me. The first part of this post includes lots of photos. LG Flex2 was used to take these photos. All photos are compressed using <a href="https://tinypng.com/">TinyPNG</a>. ~78% space is saved. The second part includes analysis of some papers.<br>]]>
     
     </summary>
     
