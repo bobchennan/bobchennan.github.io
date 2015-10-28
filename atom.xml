@@ -4,7 +4,7 @@
   <subtitle><![CDATA[record my life]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://bobchennan.github.io/"/>
-  <updated>2015-10-27T07:01:28.000Z</updated>
+  <updated>2015-10-28T06:42:20.000Z</updated>
   <id>http://bobchennan.github.io/</id>
   
   <author>
@@ -19,8 +19,12 @@
     <link href="http://bobchennan.github.io/2015/10/27/Interspeech-2015/"/>
     <id>http://bobchennan.github.io/2015/10/27/Interspeech-2015/</id>
     <published>2015-10-27T06:58:00.000Z</published>
-    <updated>2015-10-27T07:01:28.000Z</updated>
+    <updated>2015-10-28T06:42:20.000Z</updated>
     <content type="html"><![CDATA[<p>Interspeech 2015 was held in ICD, Dresden, Germany. I took part in this conference because I had two papers published here. This is the first time to attend an international conference for me. It may take sometime to finish this post.<br><a id="more"></a></p>
+<p>All figures are compressed using <a href="https://tinypng.com/" target="_blank" rel="external">TinyPNG</a>. ~78% space is saved.</p>
+<h2 id="Airport">Airport</h2><p>Airplane in Shanghai Pudong:<br><img src="/images/20150906_012205.jpg" alt="airplane"><br>Foggy Moscow:<br><img src="/images/20150906_112249.jpg" alt="Moscow"></p>
+<h2 id="Dresden">Dresden</h2><p><img src="/images/20150906_232136.jpg" alt="Dresden1"><br><img src="/images/20150907_183804.jpg" alt="Dresden2"><br><img src="/images/20150907_183809.jpg" alt="Dresden3"><br>In front of the church:<br><img src="/images/DSC00390.JPG" alt="Dresden4"></p>
+<h2 id="Interspeech_2015">Interspeech 2015</h2><p>Our group:<br><img src="/images/P50910-082601.jpg" alt="group"><br>Banquet:<br><img src="/images/20150907_201631.jpg" alt="banquet"><br>Standup banquet:<br><img src="/images/20150909_191034_HDR.jpg" alt="standup"><br>Presentation:<br><img src="/images/P50907-115635.jpg" alt=""><br><img src="/images/P50907-115645.jpg" alt=""><br><img src="/images/P50909-094157.jpg" alt=""></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>Interspeech 2015 was held in ICD, Dresden, Germany. I took part in this conference because I had two papers published here. This is the first time to attend an international conference for me. It may take sometime to finish this post.<br>]]>
@@ -30,6 +34,8 @@
       <category term="Interspeech" scheme="http://bobchennan.github.io/tags/Interspeech/"/>
     
       <category term="Speech" scheme="http://bobchennan.github.io/tags/Speech/"/>
+    
+      <category term="Visit" scheme="http://bobchennan.github.io/categories/Visit/"/>
     
   </entry>
   
