@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title></title>
-  <subtitle><![CDATA[blog for CNX]]></subtitle>
+  <title><![CDATA[Share and Enjoy]]></title>
+  <subtitle><![CDATA[CNX's blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.myemacs.com/"/>
   <updated>2015-10-28T06:42:20.000Z</updated>
