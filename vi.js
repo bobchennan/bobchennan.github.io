@@ -203,16 +203,25 @@ function _hra(x) {
 		if (x3 == '<b>') {
 			cx = cx | 1;
 			i += 2;
-		} else if (x3 == '') {
+		} else if (x3 == '</b') {
+			cx = (cx | 1) ^ 1;
+			i += 3;
+		} else if (x3 == '<u>') {
 			cx = cx | 2;
 			i += 2;
-		} else if (x3 == '') {
+		} else if (x3 == '</u') {
+			cx = (cx | 2) ^ 2;
+			i += 3;
+		} else if (x3 == '<i>') {
 			cx = cx | 16;
 			i += 2;
-		} else if (x3 == '
+		} else if (x3 == '</i') {
+			cx = (cx | 16) ^ 16;
+			i += 3;
+		} else if (x3 == '<sp') { // <span class="rv">
 			cx = cx | 4;
 			i += 16;
-		} else if (x3 == '
+		} else if (x3 == '</s') { // </span>
 			cx = (cx | 4) ^ 4;
 			i += 6;
 		} else if (x3 == '&am') { // &amp;
@@ -220,9 +229,49 @@ function _hra(x) {
 			g += gx;
 			i += 4;
 		} else if (x3 == '&lt') { // &lt;
-			t += '<'; g="" +="gx;" i="" }="" else="" {="" t="" var="" aa="new" array();="" aa[0]="t;" aa[1]="g;" return="" aa;="" function="" _rtf(t,g)="" cx="0;" i;="" o="" ;="" if="" (t="=" undefined)="" for="" (i="0;" <="" t.length;="" i++)="" gx="g.substr(i," 1).charcodeat(0);="" tx="t.substr(i," 1);="" (tx="=" "<")="" '&')="" (gx="" !="cx)" ((gx="" &="" 1)="" &&="" !(cx="" 1))="" (!(gx="" (cx="" 2)="" 2))="" 4)="" 4))="" rv\"="">";
+			t += '<';
+			g += gx;
+			i += 3;
+		} else {
+			t += x.substr(i,1);
+			g += gx;
+		}
+	}
+	var aa = new Array();
+	aa[0] = t;
+	aa[1] = g;
+	return aa;
+}
+function _rtf(t,g) {
+	var cx = 0;
+	var i;
+	var o = '';
+	if (t == undefined) {
+		t = '';
+		g = '';
+	}
+	for (i = 0; i < t.length; i++) {
+		var gx = g.substr(i, 1).charCodeAt(0);
+		var tx = t.substr(i, 1);
+		if (tx == "<") tx = "&lt;";
+		else if (tx == '&') tx = '&amp;';
+		if (gx != cx) {
+			if ((gx & 1) && !(cx & 1)) {
+				o += "<b>";
+			} else if (!(gx & 1) && (cx & 1)) {
+				o += "</b>";
+			}
+
+			if ((gx & 2) && !(cx & 2)) {
+				o += "<u>";
+			} else if (!(gx & 2) && (cx & 2)) {
+				o += "</u>";
+			}
+
+			if ((gx & 4) && !(cx & 4)) {
+				o += "<span class=\"rv\">";
 			} else if (!(gx & 4) && (cx & 4)) {
-				o += "";
+				o += "</span>";
 			}
 			if ((gx & 16) && !(cx & 16)) {
 				o += "<i>";
@@ -256,7 +305,7 @@ function _term_update_printer() {
 	var i;
 	var o = '';
 	for (i = 0; i < file.length; i++) {
-		o += _rtfl(i)+"<br>";
+		o += _rtfl(i)+"<br/>";
 	}
 	printer.innerHTML = o;
 }
@@ -268,7 +317,7 @@ function term_thaw(s) {
 	tags = new Array();
 	var o = '';
 	for (i = 0; i < a.length; i++) {
-		o += a[i] + "<br>";
+		o += a[i] + "<br/>";
 		aa = _hra(a[i]);
 		file[i] = aa[0];
 		tags[i] = aa[1];
@@ -302,7 +351,65 @@ function _fauc() {
 	for (i = 0; i < d.length; i++) {
 		var j = d[i];
 		if (j._len && j._term) {
-			if (j._row == (base+cursory) && (left+cursorx) >= j._col && (left+cursorx) <= (j._col+j._len))="" {="" return="" j;="" }="" undefined;="" function="" _pass_click(e)="" var="" z="_fauc();" if="" (z="" &&="" z.onclick)="" z.onclick();="" false;="" _pass_dblclick(e)="" z.ondblclick)="" z.ondblclick();="" _cancel_ev(e)="" (!e)="" e="window.event;" (e.preventdefault)="" e.preventdefault();="" (e.stoppropagation)="" e.stoppropagation();="" _willclick(e)="" (window.event)="" true;="" (cclick="" !="undefined)" window.cleartimeout(cclick);="" x="e.clientX;" y="e.clientY;" cclick="window.setTimeout(function()" _cursortoxy(x,y);="" },="" 200);="" _subclick(e)="" _willclick(e);="" _srep(e)="" e.cancelbubble="true;" len="this._len;" rep="this._word;" t="(file[y]);" g="(tags[y]);" w="(t.substr(x," len));="" st="(g.substr(x," while="" (st.length="" <="" rep.length)="" +="" st;=""> rep.length) {
+			if (j._row == (base+cursory) && (left+cursorx) >= j._col && (left+cursorx) <= (j._col+j._len)) {
+				return j;
+			}
+		}
+	}
+	return undefined;
+}
+function _pass_click(e) {
+	var z = _fauc();
+	if (z && z.onclick) return z.onclick();
+	return false;
+}
+function _pass_dblclick(e) {
+	var z = _fauc();
+	if (z && z.ondblclick) return z.ondblclick();
+	return false;
+}
+
+function _cancel_ev(e) {
+	if (!e) e = window.event;
+	if (!e) return false;
+	if (e.preventDefault) e.preventDefault();
+	if (e.stopPropagation) e.stopPropagation();
+	return false;
+}
+function _willclick(e) {
+	if (window.event) {
+		if (!e) e = window.event;
+	}
+	if (!e) return true;
+	if (cclick != undefined) window.clearTimeout(cclick);
+	var x = e.clientX;
+	var y = e.clientY;
+	cclick = window.setTimeout(function() {
+			cclick=undefined;
+			_cursortoxy(x,y);
+		}, 200);
+	return false;
+}
+function _subclick(e) {
+	return _willclick(e);
+}
+function _srep(e) {
+	if (!e) e = window.event;
+	if (e.preventDefault) e.preventDefault();
+	if (e.stopPropagation) e.stopPropagation();
+	e.cancelBubble=true;
+	var y = this._row;
+	var x = this._col;
+	var len = this._len;
+	var rep = this._word;
+	var t = (file[y]);
+	var g = (tags[y]);
+	var w = (t.substr(x, len));
+	var st = (g.substr(x, len));
+	while (st.length < rep.length) {
+		st = st + st;
+	}
+	if (st.length > rep.length) {
 		st = st.substr(0, rep.length);
 	}
 
@@ -414,7 +521,11 @@ function _dosuggest(z) {
 		da.style.backgroundColor = palette[0];
 		da.style.fontSize = fs + '%';
 		fs -= fd;
-		if (fs <= 100)="" fs="100;" da.appendchild(document.createtextnode(sa[i]));="" err...="" da.appendchild(document.createelement('br'));="" if="" ((wrow-base)=""> term_rows-(sa.length+1)) {
+		if (fs <= 100) fs = 100;
+		da.appendChild(document.createTextNode(sa[i]));
+		// err...
+		da.appendChild(document.createElement('BR'));
+		if ((wrow-base) > term_rows-(sa.length+1)) {
 			sg.insertBefore(da, sg.firstChild);
 			bf = true;
 		} else if (((i % 2) == 0) || (wrow < (sa.length+1))) {
@@ -546,7 +657,24 @@ function _yaty(y) {
 	var cy = 0;
 	for (zx = term.firstChild; zx; zx = zx.nextSibling) {
 		nh += (zx.offsetHeight + 4);
-		if (y <= nh)="" {="" cy="ny;" break;="" }="" ny++;="" return="" cy;="" function="" _cursortoxy(x,y)="" this="" is="" a="" little="" gross...="" var="" sx="cursorx;" cursorx="parseInt(x" term_cur_width);="" term_redraw();="" sy="cursory;" cursory="_yaty(y);" if="" (cursory="">= (term_rows-1)) {
+		if (y <= nh) {
+			cy = ny;
+			break;
+		}
+		ny++;
+	}
+	return cy;
+}
+function _cursortoxy(x,y) {
+	// this is a little gross...
+	var sx = cursorx;
+	cursorx = parseInt(x / term_cur_width);
+	term_redraw();
+
+	var sy = cursory;
+	cursory = _yaty(y);
+
+	if (cursory >= (term_rows-1)) {
 		cursory = sy;
 		cursorx = sx;
 		sy = 0;
@@ -1044,12 +1172,161 @@ function term_operate() {
 	var g = tags[ey];
 	var restore = false;
 	if (term_vi_flag('c')) term_vi_set('d');
-	if (vselm != 2 && ey == sy && ex <= t.length)="" {="" if="" (vselm)="" ex++;="" (ex="" !="sx)" (term_vi_flag('f'))="" styling="" tags[ey]="(g.substr(0," sx))="" +="" _mxs(ex-sx,="" tagstyle)="" (g.substr(ex,="" g.length-ex));="" }="" else="" (term_vi_flag('d')="" ||="" term_vi_flag('y'))="" yank_buffer="_rtf(t.substr(sx," ex-sx),="" g.substr(sx,ex-sx));="" (term_vi_flag('d'))="" file[ey]="(t.substr(0," (t.substr(ex,="" t.length-ex));="" (lastreg="" )="" registers[lastreg]="yank_buffer;" term_roll_yank();="" (term_vi_flag('y'))="" (term_vi_flag('="">')) {
+	if (vselm != 2 && ey == sy && ex <= t.length) {
+		if (vselm) ex++;
+		if (ex != sx) {
+			if (term_vi_flag('F')) {
+				// styling
+				tags[ey] = (g.substr(0, sx)) + _mxs(ex-sx, tagstyle) + (g.substr(ex, g.length-ex));
+			} else if (term_vi_flag('d') || term_vi_flag('y')) {
+				yank_buffer = _rtf(t.substr(sx, ex-sx),
+						g.substr(sx,ex-sx));
+			}
+			if (term_vi_flag('d')) {
+				file[ey] = (t.substr(0, sx)) + (t.substr(ex, t.length-ex));
+				tags[ey] = (g.substr(0, sx)) + (g.substr(ex, g.length-ex));
+				if (lastreg != '_') {
+					registers[lastreg] = yank_buffer;
+					term_roll_yank();
+				}
+			} else if (term_vi_flag('y')) {
+				registers[lastreg] = yank_buffer;
+				term_roll_yank();
+			}
+			if (term_vi_flag('>')) {
 				term_indent(ey,fa);
-			} else if (term_vi_flag('<')) {="" term_unindent(ey,fa);="" }="" else="" if="" (vselm="=" 1)="" (term_vi_flag('d')="" ||="" term_vi_flag('y')="" term_vi_flag('f'))="" yank_buffer="" ;="" var="" al,="" bl;="" for="" (i="sy;" i="" <="ey;" i++)="" t="file[i];" g="tags[i];" sy)="" ((sy="=" vsely="" &&="" sx="=" vselx)="" (sy="" !="vsely" al="sx;" bl="t.length;" ey)="" +="_rtf(t.substr(al," bl-al),="" g.substr(al,bl-al));="" vselm="=" 2)="" (term_vi_flag('d'))="" file[i]="t.substr(0," al)="" t.substr(bl,="" t.length-bl);="" tags[i]="g.substr(0," g.substr(bl,="" g.length-bl);="" (term_vi_flag('f'))="" _mxs(bl-al,="" tagstyle)="" (term_vi_flag('="">')) {
+			} else if (term_vi_flag('<')) {
+				term_unindent(ey,fa);
+			}
+		}
+	} else if (vselm == 1) {
+		if (term_vi_flag('d') || term_vi_flag('y') || term_vi_flag('F')) {
+			yank_buffer = '';
+			var al, bl;
+			for (i = sy; i <= ey; i++) {
+				t = file[i];
+				g = tags[i];
+				if (i == sy) {
+					if ((sy == vsely && sx == vselx) || (sy != vsely && sx != vselx)) {
+						al = sx;
+					} else {
+						al = ex;
+					}
+					bl = t.length;
+				} else if (i == ey) {
+					al = 0;
+					if ((sy == vsely && sx == vselx) || (sy != vsely && sx != vselx)) {
+						al = ex;
+					} else {
+						al = sx;
+					}
+				} else {
+					al = 0;
+					bl = t.length;
+				}
+				yank_buffer += _rtf(t.substr(al, bl-al),
+						g.substr(al,bl-al));
+				if (sy != ey || vselm == 2) yank_buffer += "\n";
+				if (term_vi_flag('d')) {
+					file[i] = t.substr(0, al) + t.substr(bl, t.length-bl);
+					tags[i] = g.substr(0, al) + g.substr(bl, g.length-bl);
+				} else if (term_vi_flag('F')) {
+					tags[i] = g.substr(0, al) + _mxs(bl-al, tagstyle)
+						 + g.substr(bl, g.length-bl);
+				}
+				if (term_vi_flag('>')) {
 					term_indent(i,fa);
-				} else if (term_vi_flag('<')) {="" term_unindent(i,fa);="" }="" if="" (lastreg="" !="_" &&="" !term_vi_flag('f'))="" registers[lastreg]="yank_buffer;" term_roll_yank();="" else="" (term_vi_flag('f'))="" for="" (i="sy;" i="" <="ey;" i++)="" tags[i]="_mxs(file[i].length," tagstyle);="" (term_vi_flag('d'))="" yank_buffer="" ;="" +="term_delete(sy);" )="" (term_vi_flag('y'))="" "\n";="" (term_vi_flag('="">')) {
-			for (i = sy; i <= ey;="" i++)="" {="" term_indent(i,fa);="" }="" else="" if="" (term_vi_flag('<'))="" for="" (i="sy;" i="" <="ey;" term_unindent(i,fa);="" (term_vi_flag('d')="" ||="" term_vi_flag('f')="" term_vi_flag('c'))="" _term_update_printer();="" (term_vi_flag('d'))="" term_vi_unset('d');="" lastcommand="d" ;="" lastmotion="term_ex_motion;" restore="true;" (term_vi_flag('y'))="" term_vi_unset('y');="" (term_vi_flag('f'))="" term_vi_unset('f');="" lastaccum="accum;" (restore)="" cursorx="sx" -="" left;="" (cursorx="" 0)="" left="0;" cursory="sy" base;="" (cursory="" base="0;" term_scrollto();="" (term_vi_flag('c'))="" term_vi_unset('c');="" term_setmode(1);="" accum="0;" function="" term_save_undo_line()="" ((base+cursory)="" !="undoy)" undoy="base+cursory;" undoline="_rtfl(undoy);" term_save_undo()="" undoset="term_freeze();" term_delete(i)=""> file.length) return '';
+				} else if (term_vi_flag('<')) {
+					term_unindent(i,fa);
+				}
+			}
+			if (lastreg != '_' && !term_vi_flag('F')) {
+				registers[lastreg] = yank_buffer;
+				term_roll_yank();
+			}
+		}
+	} else {
+		if (term_vi_flag('F')) {
+			for (i = sy; i <= ey; i++) {
+				tags[i] = _mxs(file[i].length, tagstyle);
+			}
+		} else if (term_vi_flag('d')) {
+			yank_buffer = '';
+			for (i = sy; i <= ey; i++) {
+				yank_buffer += term_delete(sy);
+			}
+			if (lastreg != '_') {
+				registers[lastreg] = yank_buffer;
+				term_roll_yank();
+			}
+		} else if (term_vi_flag('y')) {
+			yank_buffer = '';
+			for (i = sy; i <= ey; i++) {
+				yank_buffer += _rtfl(sy) + "\n";
+			}
+			registers[lastreg] = yank_buffer;
+			term_roll_yank();
+		} else if (term_vi_flag('>')) {
+			for (i = sy; i <= ey; i++) {
+				term_indent(i,fa);
+			}
+		} else if (term_vi_flag('<')) {
+			for (i = sy; i <= ey; i++) {
+				term_unindent(i,fa);
+			}
+		}
+	}
+
+	if (term_vi_flag('d') || term_vi_flag('F') || term_vi_flag('c')) {
+		_term_update_printer();
+	}
+	if (term_vi_flag('d')) {
+		term_vi_unset('d');
+		lastcommand = 'd';
+		lastmotion = term_ex_motion;
+		restore = true;
+	}
+	if (term_vi_flag('y')) {
+		term_vi_unset('y');
+		restore = true;
+	}
+	if (term_vi_flag('F')) {
+		term_vi_unset('F');
+		restore = true;
+	}
+	lastaccum = accum;
+	if (restore) {
+		cursorx = sx - left;
+		if (cursorx < 0) {
+			cursorx = sx;
+			left = 0; 
+		}
+		cursory = sy - base;
+		if (cursory < 0) {
+			cursory = sy;
+			base = 0;
+		}
+		term_scrollto();
+	}
+	if (term_vi_flag('c')) {
+		term_vi_unset('c');
+		term_setmode(1);
+	}
+	accum = 0;
+}
+
+function term_save_undo_line() {
+	if ((base+cursory) != undoy) {
+		undoy = base+cursory;
+		undoline = _rtfl(undoy);
+	}
+}
+function term_save_undo() {
+	undoset = term_freeze();
+}
+
+function term_delete(i) {
+	if (i > file.length) return '';
 	var j;
 	var z = file[i];
 	var g = tags[i];
@@ -1171,7 +1448,20 @@ function term_search(s, top, start, bottom) {
 			return true;
 		}
 		statustext = 'search hit BOTTOM, continuing at TOP';
-		for (i = top; i <= start;="" i++)="" {="" var="" aa="re.exec(file[i]);" if="" (!aa)="" continue;="" left="0;" base="0;" cursorx="_rel(re,file[i],aa).length;" cursory="i;" term_scrollto();="" return="" true;="" }="" statustext="Pattern not found: " +="" s.substr(1);="" else="" ;="" for="" (i="start;" i="">= top; i--) {
+		for (i = top; i <= start; i++) {
+			var aa = re.exec(file[i]);
+			if (!aa) continue;
+			left = 0;
+			base = 0;
+			cursorx = _rel(re,file[i],aa).length;
+			cursory = i;
+			term_scrollto();
+			return true;
+		}
+		statustext = 'Pattern not found: ' + s.substr(1);
+	} else {
+		statustext='';
+		for (i = start; i >= top; i--) {
 			var t = file[i];
 			if (t == undefined) continue;
 			var tail = 0;
@@ -1552,7 +1842,133 @@ function term_command(s) {
 		// okay, we've set tagstyle
 		if (i != 0) {
 			// if this happened, then we were given a range(!)
-			for (y = top; y <= bottom;="" y++)="" {="" if="" (file[y]="=" undefined)="" continue;="" tags[y]="_mxs(file[y].length," tagstyle);="" }="" tagstyle="otc;" else="" (vselm)="" term_select();="" term_vi_unset('d');="" term_vi_unset('y');="" term_vi_unset('c');="" term_vi_set('f');="" term_operate();="" (cmd="=" 'g'="" ||="" cmd="=" 'v')="" okay="" then="" var="" y;="" ng="s.substr(i+1,(s.length-i)-1);" +="" ng;="" for="" (y="0;" y="" <="" file.length;="" base="0;" cursory="y;" term_command(ng);="" 't'="" cmd2="=" 'co')="" copy-="" need="" address="" t="s.substr(i," s.length-i).replace(="" ^[a-z]*[="" ]*="" );="" x;="" yank_buffer="" ;="" (x="top;" x="" x++)="" (file[x]="" !="undefined)" "\n";="" a="cursory;" b="base;" cursorx="0;" left="0;" (cursory="" 0)="" term_paste(false,="" yank_buffer);="" 'm')="" move-="" i++;="" (s.substr(i,="" 3)="=" 'ove')="" i="" s.length-i);="" while="" (top="" bottom)="" bottom--;="" 's')="" substitute="" extract="" regex="" q="s.substr(i,1);" (q="=" '="" ')="" sep="s.substr(i,1);" lr,="" ls,="" lf;="" (sep="=" '')="" (!lastsearch="" !lastsubst)="" statustext="No previous substitute regular expression" return;="" lr="lastsearch.substr(1," lastsearch.length-1);="" ls="lastsubst;" lf="lastflags;" jj="i;" zj;="" (;="" s.length;="" i++)="" zj="s.substr(i,1);" (zj="=" "\\")="" sep)="" break;="" lastsearch="/" s.substr(jj,="" i-jj);="" registers["="" "]="lastsearch.substr(1," lastsubst="s.substr(jj," lastflags="" count="-1;" 'i'="" 'g')="" (count=""> 0) {
+			for (y = top; y <= bottom; y++) {
+				if (file[y] == undefined) continue;
+				tags[y] = _mxs(file[y].length, tagstyle);
+			}
+			tagstyle = otc;
+
+		} else if (vselm) {
+			term_select();
+			term_vi_unset('d');
+			term_vi_unset('y');
+			term_vi_unset('c');
+			term_vi_set('F');
+			term_operate();
+			tagstyle = otc;
+		}
+
+
+	} else if (cmd == 'g' || cmd == 'v') {
+		// okay then
+		var y;
+		var ng = s.substr(i+1,(s.length-i)-1);
+		if (cmd == 'v') ng = '!' + ng;
+		for (y = 0; y < file.length; y++) {
+			base = 0;
+			cursory = y;
+			term_command(ng);
+		}
+
+	} else if (cmd == 't' || cmd2 == 'co') {
+		// copy- need address
+		var t = s.substr(i, s.length-i).replace(/^[a-z]*[ ]*/);
+		var x;
+		yank_buffer = "";
+		for (x = top; x <= bottom; x++) {
+			if (file[x] != undefined) {
+				yank_buffer += (file[x]) + "\n";
+			}
+		}
+		var a = cursory;
+		var b = base;
+		base = 0;
+		cursorx = 0;
+		left = 0;
+		cursory = _addr(t);
+		if (cursory < 0) cursory = 0;
+		term_paste(false, yank_buffer);
+		cursory = a;
+		base = b;
+
+	} else if (cmd == 'm') {
+		// move- need address
+		i++;
+		if (s.substr(i, 3) == 'ove') {
+			i += 3;
+		}
+		var t = s.substr(i, s.length-i);
+		yank_buffer = term_delete(top);
+		while (top < bottom) {
+			yank_buffer += term_delete(top);
+			bottom--;
+		}
+		var a = cursory;
+		var b = base;
+		base = 0;
+		cursorx = 0;
+		left = 0;
+		cursory = _addr(t);
+		if (cursory < 0) cursory = 0;
+		term_paste(false, yank_buffer);
+		cursory = a;
+		base = b;
+
+	} else if (cmd == 's') {
+		// substitute
+		i++;
+		// extract regex
+		var q = s.substr(i,1);
+		while (q == ' ') {
+			i++;
+			q = s.substr(i,1);
+		}
+		var sep = s.substr(i,1);
+		i++;
+
+		var lr, ls, lf;
+		if (sep == '') {
+			if (!lastsearch || !lastsubst) {
+				statustext = 'No previous substitute regular expression';
+				return;
+			}
+			lr = lastsearch.substr(1, lastsearch.length-1);
+			ls = lastsubst;
+			lf = lastflags;
+		} else {
+			var jj = i;
+			var zj;
+			for (; i < s.length; i++) {
+				zj = s.substr(i,1);
+				if (zj == "\\") {
+					i++;
+				} else if (zj == sep) {
+					break;
+				}
+			}
+			lastsearch = "/" + s.substr(jj, i-jj);
+			registers["/"] = lastsearch.substr(1, lastsearch.length-1);
+			i++; // sep
+			jj=i;
+			for (; i < s.length; i++) {
+				zj = s.substr(i,1);
+				if (zj == "\\") {
+					i++;
+				} else if (zj == sep) {
+					break;
+				}
+			}
+			lastsubst = s.substr(jj, i-jj);
+			lastflags = '';
+			i++;
+			var count = -1;
+			for (; i < s.length; i++) {
+				zj = s.substr(i,1);
+				if (zj == 'i' || zj == 'g') {
+					lastflags += zj;
+				} else {
+					count = parseInt(s.substr(i,s.length-i));
+					if (count > 0) {
 						break;
 					} else {
 						statustext = "Trailing characters";
@@ -2106,7 +2522,10 @@ function term_keypress_inner(e, synth) {
 		lastkey = undefined;
 	}
 
-	if (k >= 57373 && k <= 57373="" 57376="" &&="" !synth)="" {="" bail="" return="" }="" else="" if="" (!synth="" (k="" <="" ||="" k=""> 57376)) {
+	if (k >= 57373 && k <= 57376 && !synth) {
+		// bail
+		return
+	} else if (!synth && (k < 57373 || k > 57376)) {
 		// no touching...
 	} else if (k == 31 || k == 40 || k == 57374) { // down
 		if (!synth) return;
@@ -2282,7 +2701,10 @@ function term_keypress_inner(e, synth) {
 			term_operate();
 
 		} else if (kc == '%') {
-			if (accum <= 0)="" {="" term_ex_motion="term_vi_bounce;" term_operate();="" }="" else="" if="" (file.length=""> 0) {
+			if (accum <= 0) {
+				term_ex_motion = term_vi_bounce;
+				term_operate();
+			} else if (file.length > 0) {
 				base = 0;
 				cursorx = 0;
 				left = 0;
@@ -2374,7 +2796,10 @@ function term_keypress_inner(e, synth) {
 				term_vi_set('d');
 				term_vi_unset('y');
 			}
-		} else if (kc == '>' || kc == '<') {="" if="" (vselm)="" term_vi_unset('<');="" term_vi_unset('="">');
+		} else if (kc == '>' || kc == '<') {
+			if (vselm) {
+				term_vi_unset('<');
+				term_vi_unset('>');
 				term_vi_set(kc);
 				term_vi_unset('d');
 				term_vi_unset('y');
@@ -2389,9 +2814,11 @@ function term_keypress_inner(e, synth) {
 				term_operate();
 				cursorx = savex-left;
 				cursory = savey-base;
-				term_vi_unset('<'); term_vi_unset('="">');
+				term_vi_unset('<');
+				term_vi_unset('>');
 			} else {
-				term_vi_unset('<'); term_vi_unset('="">');
+				term_vi_unset('<');
+				term_vi_unset('>');
 				term_vi_set(kc);
 				term_vi_unset('d');
 				term_vi_unset('y');
@@ -2659,7 +3086,25 @@ function term_keypress_inner(e, synth) {
 			if (!synth) return;
 			command = command.substr(command, command.length-1);
 			cursorx--;
-			if (cursorx <= 0)="" {="" var="" w="term_cols;" commandleft="" -="(w-16);" cursorx="w" 8;="" if="" (commandleft="" <="" cursory="savey;" (emacsen)="" mode="1;" }="" else="" command="command" +="" kc;="" cursorx++;="" (cursorx="">= (w-8)) {
+			if (cursorx <= 0) {
+				var w = term_cols;
+				commandleft -= (w-16);
+				cursorx = w - 8;
+				if (commandleft < 0) {
+					cursorx = savex;
+					cursory = savey;
+					if (emacsen) {
+						mode = 1;
+					} else {
+						mode = 0;
+					}
+				}
+			}
+		} else {
+			command = command + kc;
+			cursorx++;
+			var w = term_cols;
+			if (cursorx >= (w-8)) {
 				cursorx = 8;
 				commandleft += w-16;
 			}
@@ -2859,7 +3304,7 @@ function _redraw_term() {
 			if (vselm == 1 && sa == sb && sa == y) {
 				// middle of line between ca->cb is selected
 				g = g.substr(0,ca) + _mxo(g.substr(ca,(cb-ca)+1), 4) + g.substr(cb,(g.length-cb)-1);
-			} else if ((sa < y && sb > y) || (vselm == 2 && (sa <= y="" &&="" sb="">= y))) {
+			} else if ((sa < y && sb > y) || (vselm == 2 && (sa <= y && sb >= y))) {
 				// entire line selected
 				g = _mxo(g, 4);
 			} else if (sa < y && sb == y) {
@@ -2997,7 +3442,30 @@ function _redraw_term() {
 		ax.appendChild(document.createTextNode("\240"));
 		zx._cachex = x;
 		zx._cacheg = g;
-		if (term.childNodes.length <= y)="" {="" term.appendchild(zx);="" }="" if="" (y="=" 1)="" var="" qx="zx;" nh="0;" while="" (qx="" &&="" !="document.body)" +="qx.offsetTop;" (nh="" line_height="nh;" term_resize();="" cursory)="" _calcy(zx,="" x,="" g);="" ax="undefined;" break;="" (term.childnodes.length=""> h) {
+		if (term.childNodes.length <= y) {
+			term.appendChild(zx);
+		}
+
+		if (y == 1) {
+			var qx = zx;
+			var nh = 0;
+			while (qx && qx != document.body) {
+				nh  += qx.offsetTop;
+				qx = qx.offsetParent;
+			}
+			if (nh != line_height) {
+				line_height = nh;
+				term_resize();
+			}
+		}
+
+		if (y == cursory) {
+			_calcy(zx, x, g);
+		}
+
+		ax = undefined; // break;
+	}
+	while (term.childNodes.length > h) {
 		term.removeChild(term.lastChild);
 	}
 	zx = undefined; // break
@@ -3157,14 +3625,14 @@ function editor(t) {
 	tools.style.right = '0px';
 	tools.style.bottom = '0px';
 	tools.innerHTML = ''
-		+ '<input tabindex="-1" type="button" value="B" style="font-weight:bold;" onclick="term_command(\':F!b\');">'
-		+ '<input tabindex="-1" type="button" value="I" style="font-style:italic;" onclick="term_command(\':F!i\');">'
-		+ '<input tabindex="-1" type="button" value="U" style="text-decoration:underline;" onclick="term_command(\':F!u\');">'
+		+ '<input tabindex="-1" type="button" value="B" style="font-weight:bold;" onClick="term_command(\':F!b\');" />'
+		+ '<input tabindex="-1" type="button" value="I" style="font-style:italic;" onClick="term_command(\':F!i\');" />'
+		+ '<input tabindex="-1" type="button" value="U" style="text-decoration:underline;" onClick="term_command(\':F!u\');" />'
 		+ '&nbsp;'
-		+ '<input tabindex="-1" type="button" value="Print" onclick="term_command(\':ha\');">'
+		+ '<input tabindex="-1" type="button" value="Print" onClick="term_command(\':ha\');" />'
 		+ '&nbsp;'
-		+ '<input tabindex="-1" type="button" value="Abort" onclick="term_command(\':q?\');">'
-		+ '<input tabindex="-1" type="button" value="Save and Close" onclick="term_command(\':wq\');">'
+		+ '<input tabindex="-1" type="button" value="Abort" onClick="term_command(\':q?\');" />'
+		+ '<input tabindex="-1" type="button" value="Save and Close" onClick="term_command(\':wq\');" />'
 	cursor.onclick = _pass_click;
 	cursor.ondblclick = _pass_dblclick;
 
@@ -3288,4 +3756,3 @@ function editor(t) {
 	_cbw('beforeprint', _term_update_printer);
 	_update_backing();
 }
-</=></=></=></');></');></')></=></=></=></=></=></'))></'))></=></.*></=></=></=></';></b>
