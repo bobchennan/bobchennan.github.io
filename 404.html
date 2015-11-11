@@ -1,11 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!-- saved from url=(0037)http://gpl.internetconnection.net/vi/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<script>
+function checkURL(){
+    if(document.location.hostname=="bobchennan.github.io")return true;
+	else
+	    window.location.assign("http://bobchennan.github.io/404.html");
+}
+</script>
 <script src="vi.js"></script>
 <link rel="stylesheet" href="vi.css" type="text/css">
 </head>
-<body onload="editor(this.document.forms['demoForm'].elements.body);"><form id="demoForm">
+<body onload="if(checkURL())editor(this.document.forms['demoForm'].elements.body);"><form id="demoForm">
 <textarea name="body" onfocus="editor(this.document.forms['demoForm'].elements.body);">
+Warning: If it show incorrectly, please check the monospaced fonts 
+in your browser...................................................
 .................................................................. 
 ................................:::............................... 
 .............+++..............+++++++.....................+++:.... 
