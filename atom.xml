@@ -4,7 +4,7 @@
   <subtitle><![CDATA[CNX's blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.myemacs.com/"/>
-  <updated>2015-12-18T08:39:22.000Z</updated>
+  <updated>2015-12-18T09:42:19.000Z</updated>
   <id>http://www.myemacs.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://www.myemacs.com/2015/12/16/NIPS-2015-reading-list/"/>
     <id>http://www.myemacs.com/2015/12/16/NIPS-2015-reading-list/</id>
     <published>2015-12-16T14:00:00.000Z</published>
-    <updated>2015-12-18T08:39:22.000Z</updated>
+    <updated>2015-12-18T09:42:19.000Z</updated>
     <content type="html"><![CDATA[<p>This reading list refered following articles:</p>
 <ul>
 <li><a href="http://hunch.net/?p=3001617" target="_blank" rel="external">Interesting thing at NIPS 2015</a></li>
@@ -34,9 +34,11 @@ This list consists of three parts:</li>
 <h3 id="Deep_Learning_Papers">Deep Learning Papers</h3><h6 id="Deep_Residual_Learning_for_Image_Recognition"><a href="http://arxiv.org/abs/1512.03385" target="_blank" rel="external">Deep Residual Learning for Image Recognition</a></h6><p>This paper was not published in NIPS2015. The reason for including is due to the extraordinary performance on ImageNet<br>    Residual here means the object function fits the residual parts <code>f(x)-x</code>.<br> Intuition: if the added layers can be constructed as identity mappings, a deeper model should have training error no greater than its shallower counterpart. So the introduction of shortcuts(element-wise addition with the input) reduces the difficulty to fit identity mappings. It allows to train much deeper neural networks.</p>
 <p> Advantages:</p>
 <ul>
-<li><h6 id="Very_Deep_Learning_with_Highway_Networks"><a href="http://people.idsia.ch/~rupesh/very_deep_learning/" target="_blank" rel="external">Very Deep Learning with Highway Networks</a></h6><p>######## <a href="http://arxiv.org/abs/1507.06228" target="_blank" rel="external">Training Very Deep Networks</a><br>######## <a href="http://arxiv.org/abs/1505.00387" target="_blank" rel="external">Highway Networks</a></p>
-</li>
+<li>It shows impressive performance on ImageNet and other datasets. Compared with the corresponding plain neural network(without shortcuts), the residual networks get better performance</li>
+<li>The residual networks enable people to train much deeper neural networks without performance loss. For the shallower networks, the residual networks converge faster </li>
 </ul>
+<h6 id="Very_Deep_Learning_with_Highway_Networks"><a href="http://people.idsia.ch/~rupesh/very_deep_learning/" target="_blank" rel="external">Very Deep Learning with Highway Networks</a></h6><p>######## <a href="http://arxiv.org/abs/1507.06228" target="_blank" rel="external">Training Very Deep Networks</a></p>
+<p>######## <a href="http://arxiv.org/abs/1505.00387" target="_blank" rel="external">Highway Networks</a></p>
 <p><a href="http://arxiv.org/abs/1510.08983" target="_blank" rel="external">Another paper</a> related to this was published by Yu Zhang who works on CNTK project: </p>
 <pre><code>Zhang et al. <span class="string">"Highway Long Short-Term Memory RNNs for Distant Speech Recognition."</span> arXiv preprint arXiV:<span class="number">1510.08983</span> (<span class="number">2015</span>).
 </code></pre><h6 id="Path-SGD:_Path-Normalized_Optimization_in_Deep_Neural_Networks"><a href="http://papers.nips.cc/paper/5797-path-sgd-path-normalized-optimization-in-deep-neural-networks" target="_blank" rel="external">Path-SGD: Path-Normalized Optimization in Deep Neural Networks</a></h6><h3 id="Reinforcement_Learning_Papers">Reinforcement Learning Papers</h3><h3 id="Others">Others</h3><h6 id="Competitive_Distribution_Estimation:_Why_is_Good-Turing_Good"><a href="http://papers.nips.cc/paper/5762-competitive-distribution-estimation-why-is-good-turing-good" target="_blank" rel="external">Competitive Distribution Estimation: Why is Good-Turing Good</a></h6><p>Theoretical paper. Seems to be <strong>the best paper</strong> according to <a href="http://http://www.machinedlearnings.com/" target="_blank" rel="external">Paul Mineiro</a></p>
