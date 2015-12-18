@@ -69,7 +69,7 @@ NIPS 2015 Review">
 Interesting thing at NIPS 2015
 On the spirit of NIPS 2015 and OpenAI
 NIPS 2015 Review">
-<meta property="og:updated_time" content="2015-12-17T05:07:40.000Z">
+<meta property="og:updated_time" content="2015-12-18T08:39:22.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NIPS 2015 reading list">
 <meta name="twitter:description" content="This reading list refered following articles:
@@ -298,9 +298,12 @@ This list consists of three parts:</li>
 <li>Others</li>
 </ul>
 <p>Due to lack of time(tests for driver license and PhD applications), this list was updated according to the above order. The reason is that deep learning papers usually take less time to read (although sometimes it is hard to achieve the giving result).</p>
-<h3 id="Deep_Learning_Papers">Deep Learning Papers</h3><h6 id="Deep_Residual_Learning_for_Image_Recognition"><a href="http://arxiv.org/abs/1512.03385" target="_blank" rel="external">Deep Residual Learning for Image Recognition</a></h6><p>This paper was not published in NIPS2015. The reason for including is due to the extraordinary performance on ImageNet<br>    Residual here means the object function fits the residual parts <code>f(x)-x</code>. The only question is that why this residual network (also the bottleneck design) took less time to train. I need more careful reading for this paper in order to answer these questions.</p>
-<h6 id="Very_Deep_Learning_with_Highway_Networks"><a href="http://people.idsia.ch/~rupesh/very_deep_learning/" target="_blank" rel="external">Very Deep Learning with Highway Networks</a></h6><p>######## <a href="http://arxiv.org/abs/1507.06228" target="_blank" rel="external">Training Very Deep Networks</a></p>
-<p>######## <a href="http://arxiv.org/abs/1505.00387" target="_blank" rel="external">Highway Networks</a></p>
+<h3 id="Deep_Learning_Papers">Deep Learning Papers</h3><h6 id="Deep_Residual_Learning_for_Image_Recognition"><a href="http://arxiv.org/abs/1512.03385" target="_blank" rel="external">Deep Residual Learning for Image Recognition</a></h6><p>This paper was not published in NIPS2015. The reason for including is due to the extraordinary performance on ImageNet<br>    Residual here means the object function fits the residual parts <code>f(x)-x</code>.<br> Intuition: if the added layers can be constructed as identity mappings, a deeper model should have training error no greater than its shallower counterpart. So the introduction of shortcuts(element-wise addition with the input) reduces the difficulty to fit identity mappings. It allows to train much deeper neural networks.</p>
+<p> Advantages:</p>
+<ul>
+<li><h6 id="Very_Deep_Learning_with_Highway_Networks"><a href="http://people.idsia.ch/~rupesh/very_deep_learning/" target="_blank" rel="external">Very Deep Learning with Highway Networks</a></h6><p>######## <a href="http://arxiv.org/abs/1507.06228" target="_blank" rel="external">Training Very Deep Networks</a><br>######## <a href="http://arxiv.org/abs/1505.00387" target="_blank" rel="external">Highway Networks</a></p>
+</li>
+</ul>
 <p><a href="http://arxiv.org/abs/1510.08983" target="_blank" rel="external">Another paper</a> related to this was published by Yu Zhang who works on CNTK project: </p>
 <pre><code>Zhang et al. <span class="string">"Highway Long Short-Term Memory RNNs for Distant Speech Recognition."</span> arXiv preprint arXiV:<span class="number">1510.08983</span> (<span class="number">2015</span>).
 </code></pre><h6 id="Path-SGD:_Path-Normalized_Optimization_in_Deep_Neural_Networks"><a href="http://papers.nips.cc/paper/5797-path-sgd-path-normalized-optimization-in-deep-neural-networks" target="_blank" rel="external">Path-SGD: Path-Normalized Optimization in Deep Neural Networks</a></h6><h3 id="Reinforcement_Learning_Papers">Reinforcement Learning Papers</h3><h3 id="Others">Others</h3><h6 id="Competitive_Distribution_Estimation:_Why_is_Good-Turing_Good"><a href="http://papers.nips.cc/paper/5762-competitive-distribution-estimation-why-is-good-turing-good" target="_blank" rel="external">Competitive Distribution Estimation: Why is Good-Turing Good</a></h6><p>Theoretical paper. Seems to be <strong>the best paper</strong> according to <a href="http://http://www.machinedlearnings.com/" target="_blank" rel="external">Paul Mineiro</a></p>
