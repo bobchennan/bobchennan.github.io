@@ -4,7 +4,7 @@
   <subtitle><![CDATA[CNX's blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.myemacs.com/"/>
-  <updated>2015-12-19T14:17:15.000Z</updated>
+  <updated>2015-12-22T12:48:46.000Z</updated>
   <id>http://www.myemacs.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://www.myemacs.com/2015/12/16/NIPS-2015-reading-list/"/>
     <id>http://www.myemacs.com/2015/12/16/NIPS-2015-reading-list/</id>
     <published>2015-12-16T14:00:00.000Z</published>
-    <updated>2015-12-19T14:17:15.000Z</updated>
+    <updated>2015-12-22T12:48:46.000Z</updated>
     <content type="html"><![CDATA[<p>This reading list refered following articles:</p>
 <ul>
 <li><a href="http://hunch.net/?p=3001617" target="_blank" rel="external">Interesting thing at NIPS 2015</a></li>
@@ -40,7 +40,10 @@ This list consists of three parts:</li>
 <h6 id="Very_Deep_Learning_with_Highway_Networks"><a href="http://people.idsia.ch/~rupesh/very_deep_learning/" target="_blank" rel="external">Very Deep Learning with Highway Networks</a></h6><p>It includes more papers like <a href="http://arxiv.org/abs/1507.06228" target="_blank" rel="external">Training Very Deep Networks</a> and <a href="http://arxiv.org/abs/1505.00387" target="_blank" rel="external">Highway Networks</a>. The intuition is very similar to residual network(in fact this work is early than deep residual networks).<br>I’d like to introduce the highway network as the combination of one layer residual network with parameters. It used the gate, which is broadly used in LSTM to control whether outputs the identity of input or output default output.<br>More precisely, each layer output <code>T(x)x+(1-T(x))f(x,W)</code> where T(x) controls the portion of input<code>x</code> and calculated value<code>f(x,W)</code>. The initial values let T(x) equals to one so this block always output the input value.</p>
 <p><a href="http://arxiv.org/abs/1510.08983" target="_blank" rel="external">Another paper</a> related to this was published by Yu Zhang who works on CNTK project: </p>
 <pre><code>Zhang et al. <span class="string">"Highway Long Short-Term Memory RNNs for Distant Speech Recognition."</span> arXiv preprint arXiV:<span class="number">1510.08983</span> (<span class="number">2015</span>).
-</code></pre><h6 id="Path-SGD:_Path-Normalized_Optimization_in_Deep_Neural_Networks"><a href="http://papers.nips.cc/paper/5797-path-sgd-path-normalized-optimization-in-deep-neural-networks" target="_blank" rel="external">Path-SGD: Path-Normalized Optimization in Deep Neural Networks</a></h6><h3 id="Reinforcement_Learning_Papers">Reinforcement Learning Papers</h3><h3 id="Others">Others</h3><h6 id="Competitive_Distribution_Estimation:_Why_is_Good-Turing_Good"><a href="http://papers.nips.cc/paper/5762-competitive-distribution-estimation-why-is-good-turing-good" target="_blank" rel="external">Competitive Distribution Estimation: Why is Good-Turing Good</a></h6><p>Theoretical paper. Seems to be <strong>the best paper</strong> according to <a href="http://http://www.machinedlearnings.com/" target="_blank" rel="external">Paul Mineiro</a></p>
+</code></pre><h6 id="Path-SGD:_Path-Normalized_Optimization_in_Deep_Neural_Networks"><a href="http://papers.nips.cc/paper/5797-path-sgd-path-normalized-optimization-in-deep-neural-networks" target="_blank" rel="external">Path-SGD: Path-Normalized Optimization in Deep Neural Networks</a></h6><p>Background: SGD is not rescaling invariant(rescaling+update-&gt;different networks)</p>
+<p>Core Application: Dynamic Programming</p>
+<p>Inspired by the success of max-norm, the author proposed a global max-norm strategy. Dynamic programming was used to calculated the global regularizer such that the Path-SGD is as efficient as SGD.<br>The experiments show considerable result. </p>
+<h3 id="Reinforcement_Learning_Papers">Reinforcement Learning Papers</h3><h3 id="Others">Others</h3><h6 id="Competitive_Distribution_Estimation:_Why_is_Good-Turing_Good"><a href="http://papers.nips.cc/paper/5762-competitive-distribution-estimation-why-is-good-turing-good" target="_blank" rel="external">Competitive Distribution Estimation: Why is Good-Turing Good</a></h6><p>Theoretical paper. Seems to be <strong>the best paper</strong> according to <a href="http://http://www.machinedlearnings.com/" target="_blank" rel="external">Paul Mineiro</a></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>This reading list refered following articles:</p>
