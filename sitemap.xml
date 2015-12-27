@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.myemacs.com/2015/12/27/Residual-Learning-on-CIFAR-10-with-Lasagne/</loc>
+    <lastmod>2015-12-27T08:32:39.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.myemacs.com/2015/12/16/NIPS-2015-reading-list/</loc>
     <lastmod>2015-12-22T12:48:46.000Z</lastmod>
   </url>

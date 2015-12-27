@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="aphorism,motto not epitaph," />
+  <meta name="keywords" content="Deep Learning," />
 
 
 
@@ -53,16 +53,16 @@
 
 
 
-<meta name="description" content="Write life of CNX">
+<meta name="description" content="After reading this paper, I decided to implement the network and do some experiments on CIFAR-10 which is small enough. This is the first time for me to do vision tasks(besides MNIST which don’t requi">
 <meta property="og:type" content="article">
-<meta property="og:title" content="life is an onion and one cries while peeling it.">
-<meta property="og:url" content="http://www.myemacs.com/2013/11/01/life-is-an-onion-and-one-cries-while-peeling-it/index.html">
+<meta property="og:title" content="Residual Learning on CIFAR-10 with Lasagne">
+<meta property="og:url" content="http://www.myemacs.com/2015/12/27/Residual-Learning-on-CIFAR-10-with-Lasagne/index.html">
 <meta property="og:site_name" content="Share and Enjoy">
-<meta property="og:description" content="Write life of CNX">
-<meta property="og:updated_time" content="2015-10-28T06:49:05.000Z">
+<meta property="og:description" content="After reading this paper, I decided to implement the network and do some experiments on CIFAR-10 which is small enough. This is the first time for me to do vision tasks(besides MNIST which don’t requi">
+<meta property="og:updated_time" content="2015-12-27T08:32:39.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="life is an onion and one cries while peeling it.">
-<meta name="twitter:description" content="Write life of CNX">
+<meta name="twitter:title" content="Residual Learning on CIFAR-10 with Lasagne">
+<meta name="twitter:description" content="After reading this paper, I decided to implement the network and do some experiments on CIFAR-10 which is small enough. This is the first time for me to do vision tasks(besides MNIST which don’t requi">
 
 
 
@@ -74,7 +74,7 @@
   };
 </script>
 
-  <title> life is an onion and one cries while peeling it. | Share and Enjoy </title>
+  <title> Residual Learning on CIFAR-10 with Lasagne | Share and Enjoy </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -233,7 +233,7 @@
             
             
               
-                life is an onion and one cries while peeling it.
+                Residual Learning on CIFAR-10 with Lasagne
               
             
           </h1>
@@ -242,34 +242,19 @@
         <div class="post-meta">
           <span class="post-time">
             Posted on
-            <time itemprop="dateCreated" datetime="2013-11-01T21:42:31+00:00" content="Nov 1 2013">
-              Nov 1 2013
+            <time itemprop="dateCreated" datetime="2015-12-27T08:01:00+00:00" content="Dec 27 2015">
+              Dec 27 2015
             </time>
           </span>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; In
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/English/" itemprop="url" rel="index">
-                    <span itemprop="name">English</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
           
 
           
             
               <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2013/11/01/life-is-an-onion-and-one-cries-while-peeling-it/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2013/11/01/life-is-an-onion-and-one-cries-while-peeling-it/" itemprop="commentsCount"></span>
+              <a href="/2015/12/27/Residual-Learning-on-CIFAR-10-with-Lasagne/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/12/27/Residual-Learning-on-CIFAR-10-with-Lasagne/" itemprop="commentsCount"></span>
               </a>
             </span>
             
@@ -288,7 +273,19 @@
       
 
       
-        <span itemprop="articleBody"></span>
+        <span itemprop="articleBody"><p>After reading <a href="arxiv.org/abs/1512.03385">this paper</a>, I decided to implement the network and do some experiments on CIFAR-10 which is small enough. This is the first time for me to do vision tasks(besides MNIST which don’t require much knowledge on vision).</p>
+<a id="more"></a>
+<p>After reading <a href="https://github.com/Lasagne/Lasagne/issues/531" target="_blank" rel="external">this issue</a> and <a href="https://github.com/fchollet/keras/issues/1321" target="_blank" rel="external">this issue</a>, I decided to use <em>lasagne</em> library because it seems that there are still some bugs in <em>Keras</em>.</p>
+<p>My first implementation was based on <a href="https://gist.github.com/anonymous/a6029547d49b04d732c7" target="_blank" rel="external">this code</a>. It is quite simple and I’m not sure why the softmax layer isn’t used in the last. The implemented model is NIN(which is given by <a href="http://openreview.net/document/9b05a3bb-3a5e-49cb-91f7-0f482af65aea" target="_blank" rel="external">Network in Network</a>). I changed the model to residual block:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">convLayer</span><span class="params">(l, num_filters, filter_size=<span class="params">(<span class="number">1</span>, <span class="number">1</span>)</span>, stride=<span class="params">(<span class="number">1</span>, <span class="number">1</span>)</span>,</span><br><span class="line">              nonlinearity=nonlinearity, pad=<span class="string">'same'</span>, W=lasagne.init.HeNormal, b=lasagne.init.HeNormal)</span>:</span></span><br><span class="line">    l = conv(</span><br><span class="line">        l, num_filters=num_filters,</span><br><span class="line">        filter_size=filter_size, stride=stride,</span><br><span class="line">        nonlinearity=nonlinearity, pad=pad,W=lasagne.init.GlorotUniform(gain=<span class="string">'relu'</span>))</span><br><span class="line">    l = batchnorm(l)</span><br><span class="line">    <span class="keyword">return</span> l</span><br><span class="line"></span><br><span class="line"><span class="comment"># Bottleneck architecture as descriped in paper</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bottleneck</span><span class="params">(l, num_filters, stride=<span class="params">(<span class="number">1</span>, <span class="number">1</span>)</span>, nonlinearity=nonlinearity)</span>:</span></span><br><span class="line">    l = convLayer(</span><br><span class="line">        l, num_filters=num_filters, stride=stride, nonlinearity=nonlinearity)</span><br><span class="line">    l = convLayer(</span><br><span class="line">        l, num_filters=num_filters, filter_size=(<span class="number">3</span>, <span class="number">3</span>), nonlinearity=nonlinearity)</span><br><span class="line">    l = convLayer(</span><br><span class="line">        l, num_filters=num_filters*<span class="number">4</span>, nonlinearity=<span class="keyword">None</span>)</span><br><span class="line">    <span class="keyword">return</span> l</span><br><span class="line"></span><br><span class="line"><span class="comment"># Simply stacks the bottlenecks, makes it easy to model size of architecture with int n</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bottlestack</span><span class="params">(l, n, num_filters)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        l = sumlayer([bottleneck(l, num_filters=num_filters), l])</span><br><span class="line">        l = NonlinearityLayer(l)</span><br><span class="line">    <span class="keyword">return</span> l</span><br></pre></td></tr></table></figure>
+<p>The function <em>bottleneck</em> implement the architecture mentioned in the right part of Figure 5(a “bottleneck” building block).</p>
+<p>Unfortunatelly, the accuracy is really low(less than 60%). I changed the training part using flexible learning rate. It improved the result but it is still unacceptable. </p>
+<p>Then I started to implement the data preprocessing part, which is mentioned in the origin paper:</p>
+<pre><code>We follow <span class="keyword">the</span> simple data augmentation <span class="keyword">in</span> [<span class="number">24</span>] <span class="keyword">for</span> training: <span class="number">4</span> pixels are padded <span class="function_start"><span class="keyword">on</span></span> each side, <span class="keyword">and</span> a <span class="number">32</span>×<span class="number">32</span> crop <span class="keyword">is</span> randomly sampled <span class="keyword">from</span> <span class="keyword">the</span> padded image <span class="keyword">or</span> <span class="keyword">its</span> horizontal flip.
+</code></pre><p>Although the report I have read given by <a href="http://benanne.github.io/" target="_blank" rel="external">benanne</a> who is winner of Galaxy Challenge on Kaggle mentioned the importance of image processing, I never read the origin paper and implementation. I referred <a href="https://code.google.com/p/cuda-convnet/source/browse/trunk/convdata.py" target="_blank" rel="external">Alex Krizhevsky’s implementation on Google Code</a>. The following is my implementation:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">crop</span><span class="params">(X)</span>:</span></span><br><span class="line"><span class="comment">#reference: https://code.google.com/p/cuda-convnet/source/browse/trunk/convdata.py</span></span><br><span class="line">    ret=[]</span><br><span class="line">    <span class="keyword">for</span> c <span class="keyword">in</span> xrange(X.shape[<span class="number">0</span>]):</span><br><span class="line">        startY, startX = np.random.randint(<span class="number">0</span>, CROP_SIZE * <span class="number">2</span> + <span class="number">1</span>), np.random.randint(<span class="number">0</span>, CROP_SIZE * <span class="number">2</span> + <span class="number">1</span>)</span><br><span class="line">        endY, endX = startY + <span class="number">32</span>, startX + <span class="number">32</span></span><br><span class="line">        pic = np.pad(X[c],((<span class="number">0</span>,<span class="number">0</span>),(<span class="number">4</span>,<span class="number">4</span>),(<span class="number">4</span>,<span class="number">4</span>)),<span class="string">'constant'</span>)</span><br><span class="line">        pic = pic[:,startY:endY,startX:endX]</span><br><span class="line">        <span class="keyword">if</span> np.random.randint(<span class="number">2</span>)==<span class="number">0</span>:</span><br><span class="line">            pic = pic[:,:,::-<span class="number">1</span>]</span><br><span class="line">        ret.append(pic)</span><br><span class="line">    <span class="keyword">return</span> lasagne.utils.floatX(np.array(ret))</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">train_epoch</span><span class="params">(X, y)</span>:</span></span><br><span class="line">    num_samples = X.shape[<span class="number">0</span>]</span><br><span class="line">    num_batches = int(np.ceil(num_samples / float(BATCH_SIZE)))</span><br><span class="line">    costs = []</span><br><span class="line">    correct = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(num_batches):</span><br><span class="line">        idx = range(i*BATCH_SIZE, np.minimum((i+<span class="number">1</span>)*BATCH_SIZE, num_samples))</span><br><span class="line">        X_batch = crop(X[idx])</span><br><span class="line">        y_batch = y[idx]</span><br><span class="line">        <span class="comment">#print X_batch.shape, y_batch.shape, y_batch.max()</span></span><br><span class="line">        cost_batch = train_fn(X_batch, y_batch)</span><br><span class="line">        costs += [cost_batch]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> np.mean(costs)<span class="comment">#, correct / float(num_samples)</span></span><br></pre></td></tr></table></figure>
+<p><a href="https://github.com/benanne/kaggle-galaxies/blob/master/realtime_augmentation.py" target="_blank" rel="external">The realtime augmentation</a> seems to be useful and in the future I’m planning to integrate it.</p>
+</span>
       
     </div>
 
@@ -296,9 +293,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/aphorism/" rel="tag">#aphorism</a>
-          
-            <a href="/tags/motto-not-epitaph/" rel="tag">#motto not epitaph</a>
+            <a href="/tags/Deep-Learning/" rel="tag">#Deep Learning</a>
           
         </div>
       
@@ -307,17 +302,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2013/10/17/automatic-speech-recognition/" rel="next" title="Automatic Speech Recognition">
-                <i class="fa fa-chevron-left"></i> Automatic Speech Recognition
+              <a href="/2015/12/16/NIPS-2015-reading-list/" rel="next" title="NIPS 2015 reading list">
+                <i class="fa fa-chevron-left"></i> NIPS 2015 reading list
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2013/11/13/deep-learning-library/" rel="prev" title="深度学习软件资源列表">
-                深度学习软件资源列表 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -510,9 +501,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'bobchennan';
-      var disqus_identifier = '2013/11/01/life-is-an-onion-and-one-cries-while-peeling-it/';
-      var disqus_title = 'life is an onion and one cries while peeling it.';
-      var disqus_url = 'http://www.myemacs.com/2013/11/01/life-is-an-onion-and-one-cries-while-peeling-it/';
+      var disqus_identifier = '2015/12/27/Residual-Learning-on-CIFAR-10-with-Lasagne/';
+      var disqus_title = 'Residual Learning on CIFAR-10 with Lasagne';
+      var disqus_url = 'http://www.myemacs.com/2015/12/27/Residual-Learning-on-CIFAR-10-with-Lasagne/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
