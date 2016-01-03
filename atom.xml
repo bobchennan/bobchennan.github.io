@@ -4,7 +4,7 @@
   <subtitle><![CDATA[CNX's blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.myemacs.com/"/>
-  <updated>2015-12-31T16:02:17.000Z</updated>
+  <updated>2016-01-03T08:03:53.000Z</updated>
   <id>http://www.myemacs.com/</id>
   
   <author>
@@ -18,13 +18,35 @@
     <title><![CDATA[Review of 2015 ]]></title>
     <link href="http://www.myemacs.com/2015/12/31/Review-of-2015/"/>
     <id>http://www.myemacs.com/2015/12/31/Review-of-2015/</id>
-    <published>2015-12-31T15:59:31.000Z</published>
-    <updated>2015-12-31T16:02:17.000Z</updated>
+    <published>2015-12-31T15:59:00.000Z</published>
+    <updated>2016-01-03T08:03:53.000Z</updated>
     <content type="html"><![CDATA[<p>At the end of 2015, let me start a brief summary for my 2015. This post started at 23:59, 31st Dec.</p>
+<a id="more"></a>
+<p>Timeline of 2015:</p>
+<ul>
+<li>Jan. - Feb. MSRA Intern (in KM Group) </li>
+<li>Mar. - Aug. Last semester in Shanghai Jiao Tong University.  Prepared for the thesis and worked on the European applications</li>
+<li>Sep. Attended Interspeech2015 in Dresden, Germany and took part in another TOEFL test</li>
+<li>Nov. Attended CNCC2015 and worked on different graduate applications</li>
+<li>Dec. Submitted all applications and started to learn driving(finished 2/4 subjects)</li>
+</ul>
+<p>Working projects:</p>
+<ul>
+<li>speaker verification system(with publication)</li>
+<li>spoofing detection system(with publication)</li>
+<li>co-reference resolution system</li>
+<li>object recognition system(CIFAR-10)</li>
+<li>Personal website(<strong>myemacs.com</strong> started from 10th June, inspired by <a href="http://www.directedgraph.com/" target="_blank" rel="external">Kai</a> <a href="http://www.kaisun.org/" target="_blank" rel="external">Sun</a>. I don’t know why all of these were down)</li>
+</ul>
+<p>New devices:</p>
+<ul>
+<li>Kindle Paperwhite 3: bought in Japan</li>
+<li>HP Spectre x360: bought in America</li>
+</ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>At the end of 2015, let me start a brief summary for my 2015. This post started at 23:59, 31st Dec.</p>
-]]>
+    <![CDATA[<p>At the end of 2015, let me start a brief summary for my 2015. This post started at 23:59, 31st Dec.</p>]]>
+    
     </summary>
     
   </entry>
