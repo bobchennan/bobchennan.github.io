@@ -4,7 +4,7 @@
   <subtitle><![CDATA[CNX's blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.myemacs.com/"/>
-  <updated>2016-01-24T04:27:50.000Z</updated>
+  <updated>2016-01-24T04:30:02.000Z</updated>
   <id>http://www.myemacs.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://www.myemacs.com/2016/01/23/Network-Training-for-Speaker-Verification-Spoofing-Detection/"/>
     <id>http://www.myemacs.com/2016/01/23/Network-Training-for-Speaker-Verification-Spoofing-Detection/</id>
     <published>2016-01-23T15:19:55.000Z</published>
-    <updated>2016-01-24T04:27:50.000Z</updated>
+    <updated>2016-01-24T04:30:02.000Z</updated>
     <content type="html"><![CDATA[<p>I firstly noticed this question when I worked as an intern in AISpeech.<br><a id="more"></a><br>When you have thousands of speakers in your training data, it is much harder to train a neural network predicting the right label. The differences between syllables are too obvious such that it is very hard to classify speakers with different texts. </p>
 <p>In speaker verification tasks this problem is much easier to be solved. In my experience the ASR network which predicts tri-phone labels works pretty well for the text-dependent speaker verification (I don’t have such experience on text-independent one). In Interspeech 2015 I have shown the result given by LSTM network, which works amazingly well for the short-duration case. </p>
 <p>For the spoofing detection the problem becomes much complex since it is much hard to get the word-level labels like senones. Recently I’m preparing for the challenge released by Idiap and working on new network structures for spoofing. But unfortunatelly the basic DNN network got very bad performance on the ASVspoof 2015 dataset. Until now I still don’t know the exact reason but there must be some differences between TNet and my Lasagne implementation, such as randomization process.</p>
