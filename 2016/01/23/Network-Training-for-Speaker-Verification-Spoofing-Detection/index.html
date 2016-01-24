@@ -59,7 +59,7 @@
 <meta property="og:url" content="http://www.myemacs.com/2016/01/23/Network-Training-for-Speaker-Verification-Spoofing-Detection/index.html">
 <meta property="og:site_name" content="Share and Enjoy">
 <meta property="og:description" content="I firstly noticed this question when I worked as an intern in AISpeech.">
-<meta property="og:updated_time" content="2016-01-24T04:26:24.000Z">
+<meta property="og:updated_time" content="2016-01-24T04:27:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Network Training for Speaker Verification/ Spoofing Detection">
 <meta name="twitter:description" content="I firstly noticed this question when I worked as an intern in AISpeech.">
@@ -273,9 +273,7 @@
       
 
       
-        <span itemprop="articleBody"><p>I firstly noticed this question when I worked as an intern in AISpeech.</p>
-<a id="more"></a>
-<p>When you have thousands of speakers in your training data, it is much harder to train a neural network predicting the right label. The differences between syllables are too obvious such that it is very hard to classify speakers with different texts. </p>
+        <span itemprop="articleBody"><p>I firstly noticed this question when I worked as an intern in AISpeech.<br><a id="more"></a><br>When you have thousands of speakers in your training data, it is much harder to train a neural network predicting the right label. The differences between syllables are too obvious such that it is very hard to classify speakers with different texts. </p>
 <p>In speaker verification tasks this problem is much easier to be solved. In my experience the ASR network which predicts tri-phone labels works pretty well for the text-dependent speaker verification (I don’t have such experience on text-independent one). In Interspeech 2015 I have shown the result given by LSTM network, which works amazingly well for the short-duration case. </p>
 <p>For the spoofing detection the problem becomes much complex since it is much hard to get the word-level labels like senones. Recently I’m preparing for the challenge released by Idiap and working on new network structures for spoofing. But unfortunatelly the basic DNN network got very bad performance on the ASVspoof 2015 dataset. Until now I still don’t know the exact reason but there must be some differences between TNet and my Lasagne implementation, such as randomization process.</p>
 <p>Generally this is a sequence label problem and models such as BLSTM should work well in my perspective. I will working on this problem for next few weeks.</p>
