@@ -109,7 +109,7 @@
     <link href="http://www.myemacs.com/2015/12/16/NIPS-2015-reading-list/"/>
     <id>http://www.myemacs.com/2015/12/16/NIPS-2015-reading-list/</id>
     <published>2015-12-16T14:00:00.000Z</published>
-    <updated>2015-12-22T12:48:46.000Z</updated>
+    <updated>2016-02-01T16:38:48.000Z</updated>
     <content type="html"><![CDATA[<p>This reading list refered following articles:</p>
 <ul>
 <li><a href="http://hunch.net/?p=3001617" target="_blank" rel="external">Interesting thing at NIPS 2015</a></li>
@@ -134,6 +134,7 @@ This list consists of three parts:</li>
 <p>Core Application: Dynamic Programming</p>
 <p>Inspired by the success of max-norm, the author proposed a global max-norm strategy. Dynamic programming was used to calculated the global regularizer such that the Path-SGD is as efficient as SGD.<br>The experiments show considerable result. </p>
 <h3 id="Reinforcement_Learning_Papers">Reinforcement Learning Papers</h3><h3 id="Others">Others</h3><h6 id="Competitive_Distribution_Estimation:_Why_is_Good-Turing_Good"><a href="http://papers.nips.cc/paper/5762-competitive-distribution-estimation-why-is-good-turing-good" target="_blank" rel="external">Competitive Distribution Estimation: Why is Good-Turing Good</a></h6><p>Theoretical paper. Seems to be <strong>the best paper</strong> according to <a href="http://http://www.machinedlearnings.com/" target="_blank" rel="external">Paul Mineiro</a></p>
+<h6 id="End-to-End_Attention-based_Large_Vocabulary_Speech_Recognition"><a href="http://papers.nips.cc/paper/5847-attention-based-models-for-speech-recognition.pdf" target="_blank" rel="external">End-to-End Attention-based Large Vocabulary Speech Recognition</a></h6><p>(Updates on 2nd Feb.) Attention model is very hot during these years. This is the first end-to-end system using attention model for speech recognition. Very promising structure and I think it’s a great replacement for average operation in my work. This model focused on few frames and it will be useful for speaker recognition and spoofing detection.<br>Smoothing and sharpening is very useful to improve the result.</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>This reading list refered following articles:</p>
