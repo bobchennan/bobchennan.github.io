@@ -4,7 +4,7 @@
   <subtitle><![CDATA[CNX's blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.myemacs.com/"/>
-  <updated>2016-03-20T13:05:33.000Z</updated>
+  <updated>2016-03-20T13:08:18.000Z</updated>
   <id>http://www.myemacs.com/</id>
   
   <author>
@@ -19,11 +19,11 @@
     <link href="http://www.myemacs.com/2016/03/20/Attention-model/"/>
     <id>http://www.myemacs.com/2016/03/20/Attention-model/</id>
     <published>2016-03-20T12:35:00.000Z</published>
-    <updated>2016-03-20T13:05:33.000Z</updated>
+    <updated>2016-03-20T13:08:18.000Z</updated>
     <content type="html"><![CDATA[<p>Recent I have done some experiments using new models such as attention model for spoofing detection(still working on the BTAS challenge). It is hard to improve the result because the error rate for development set is quite small. But it should be useful for the speaker verification.</p>
 <p>Current attention model for spoofing detection:</p>
 <p>Supervector $sv_i=concat(O_i,C_i)$ where $O_i$ indicates the representation for current frame and $C_i$ represents the context vector(usually given by recurrent models).</p>
-<p>For each utterance $s$ we defined the weight vector $w<em>s$ as<br>[w</em>{s,r}=\frac{\exp{Wsv_{s,r}v}}{\sum<em>i \exp{Wsv</em>{s,i}v}}]<br>The overall representation for $s$ equals to $\sum<em>r w</em>{s,r}sv_{s,r}$. </p>
+<p>For each utterance $s$ we defined the weight vector $w_s$ as<br>[w_{s,r}=\frac{\exp{Wsv_{s,r}v}}{\sum_i \exp{Wsv_{s,i}v}}]<br>The overall representation for $s$ equals to $\sum_r w_{s,r}sv_{s,r}$. </p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>Recent I have done some experiments using new models such as attention model for spoofing detection(still working on the BTAS challenge).]]>

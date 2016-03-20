@@ -59,7 +59,7 @@
 <meta property="og:url" content="http://www.myemacs.com/2016/03/20/Attention-model/index.html">
 <meta property="og:site_name" content="Share and Enjoy">
 <meta property="og:description" content="Recent I have done some experiments using new models such as attention model for spoofing detection(still working on the BTAS challenge). It is hard to improve the result because the error rate for de">
-<meta property="og:updated_time" content="2016-03-20T13:05:33.000Z">
+<meta property="og:updated_time" content="2016-03-20T13:08:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Attention Model">
 <meta name="twitter:description" content="Recent I have done some experiments using new models such as attention model for spoofing detection(still working on the BTAS challenge). It is hard to improve the result because the error rate for de">
@@ -276,7 +276,7 @@
         <span itemprop="articleBody"><p>Recent I have done some experiments using new models such as attention model for spoofing detection(still working on the BTAS challenge). It is hard to improve the result because the error rate for development set is quite small. But it should be useful for the speaker verification.</p>
 <p>Current attention model for spoofing detection:</p>
 <p>Supervector $sv_i=concat(O_i,C_i)$ where $O_i$ indicates the representation for current frame and $C_i$ represents the context vector(usually given by recurrent models).</p>
-<p>For each utterance $s$ we defined the weight vector $w<em>s$ as<br>[w</em>{s,r}=\frac{\exp{Wsv_{s,r}v}}{\sum<em>i \exp{Wsv</em>{s,i}v}}]<br>The overall representation for $s$ equals to $\sum<em>r w</em>{s,r}sv_{s,r}$. </p>
+<p>For each utterance $s$ we defined the weight vector $w_s$ as<br>[w_{s,r}=\frac{\exp{Wsv_{s,r}v}}{\sum_i \exp{Wsv_{s,i}v}}]<br>The overall representation for $s$ equals to $\sum_r w_{s,r}sv_{s,r}$. </p>
 </span>
       
     </div>
