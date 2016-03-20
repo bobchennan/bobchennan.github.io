@@ -241,6 +241,97 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/20/Attention-model/" itemprop="url">
+                  Attention Model
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            Posted on
+            <time itemprop="dateCreated" datetime="2016-03-20T12:35:00+00:00" content="Mar 20 2016">
+              Mar 20 2016
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2016/03/20/Attention-model/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/03/20/Attention-model/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <p>Recent I have done some experiments using new models such as attention model for spoofing detection(still working on the BTAS challenge). It is hard to improve the result because the error rate for development set is quite small. But it should be useful for the speaker verification.</p>
+<p>Current attention model for spoofing detection:</p>
+<p>Supervector $sv_i=concat(O_i,C_i)$ where $O_i$ indicates the representation for current frame and $C_i$ represents the context vector(usually given by recurrent models).</p>
+<p>For each utterance $s$ we defined the weight vector $w<em>s$ as $w</em>{s,r}=\frac{\exp{Wsv_{s,r}v}}{\sum<em>i \exp{Wsv</em>{s,i}v}}$. The overall representation for $s$ equals to $\sum<em>r w</em>{s,r}sv_{s,r}$. </p>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/01/23/Network-Training-for-Speaker-Verification-Spoofing-Detection/" itemprop="url">
                   Network Training for Speaker Verification/ Spoofing Detection
                 </a>
@@ -1080,109 +1171,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2014/01/13/值得人生细细品位的50句话/" itemprop="url">
-                  值得人生细细品位的50句话
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            Posted on
-            <time itemprop="dateCreated" datetime="2014-01-13T11:21:16+00:00" content="Jan 13 2014">
-              Jan 13 2014
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; In
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Reading/" itemprop="url" rel="index">
-                    <span itemprop="name">Reading</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-              &nbsp; | &nbsp;
-              <a href="/2014/01/13/值得人生细细品位的50句话/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/01/13/值得人生细细品位的50句话/" itemprop="commentsCount"></span>
-              </a>
-            </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>人的一生中除了遇到开心快乐的事，也会遇到伤心难过的事。其实不妨换一种思想，也许就能找回最简单的快乐。以下50句人生箴言，值得我们静下心来，细细品味。</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2014/01/13/值得人生细细品位的50句话/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
 
   </section>
 
@@ -1229,7 +1217,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">21</span>
+              <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -1243,7 +1231,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">17</span>
+              <span class="site-state-item-count">18</span>
               <span class="site-state-item-name">tags</span>
               </a>
           </div>
