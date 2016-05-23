@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.myemacs.com/publications/index.html</loc>
+    <lastmod>2016-05-23T08:39:27.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.myemacs.com/2016/03/20/Attention-model/</loc>
     <lastmod>2016-03-20T13:09:44.000Z</lastmod>
   </url>
@@ -39,11 +44,6 @@
   <url>
     <loc>http://www.myemacs.com/vi.css</loc>
     <lastmod>2015-11-11T06:17:18.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.myemacs.com/publications/index.html</loc>
-    <lastmod>2015-11-09T09:36:23.000Z</lastmod>
   </url>
   
   <url>
