@@ -4,7 +4,7 @@
   <subtitle><![CDATA[CNX's blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.myemacs.com/"/>
-  <updated>2016-03-20T13:09:44.000Z</updated>
+  <updated>2017-04-06T19:01:20.000Z</updated>
   <id>http://www.myemacs.com/</id>
   
   <author>
@@ -13,6 +13,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Hierarchical Dirichlet Process]]></title>
+    <link href="http://www.myemacs.com/2017/04/06/Hierarchical-Dirichlet-Process/"/>
+    <id>http://www.myemacs.com/2017/04/06/Hierarchical-Dirichlet-Process/</id>
+    <published>2017-04-06T18:44:00.000Z</published>
+    <updated>2017-04-06T19:01:20.000Z</updated>
+    <content type="html"><![CDATA[<p>This semester I took the Advanced Topics in Bayesian Statistics from <a href="http://www.ams.jhu.edu/˜yxu70/" target="_blank" rel="external">Prof. Yanxun Xu</a>. It is a interesting course and this is my presentation slides in the mid term:</p>
+
+
+	<div class="row">
+    <embed src="https://raw.githubusercontent.com/bobchennan/bobchennan.github.io/master/publications/HDP_Nanxin%20Chen.pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>This semester I took the Advanced Topics in Bayesian Statistics from <a href="http://www.ams.jhu.edu/˜yxu70/" target="_blank" rel="extern]]>
+    </summary>
+    
+      <category term="Presentation" scheme="http://www.myemacs.com/tags/Presentation/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Attention Model]]></title>
@@ -1336,25 +1359,6 @@ I have finished <span class="keyword">my</span> role play, now need unknown life
       <category term="转载" scheme="http://www.myemacs.com/tags/%E8%BD%AC%E8%BD%BD/"/>
     
       <category term="Research" scheme="http://www.myemacs.com/categories/Research/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Never give advice... a wise man won't need it and a fool won't heed it.]]></title>
-    <link href="http://www.myemacs.com/2013/10/16/never-give-advice-a-wise-man-won't-need-it-and-a-fool-won't-heed-it/"/>
-    <id>http://www.myemacs.com/2013/10/16/never-give-advice-a-wise-man-won't-need-it-and-a-fool-won't-heed-it/</id>
-    <published>2013-10-16T05:25:43.000Z</published>
-    <updated>2015-10-28T06:49:32.000Z</updated>
-    <content type="html"></content>
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="aphorism" scheme="http://www.myemacs.com/tags/aphorism/"/>
-    
-      <category term="motto not epitaph" scheme="http://www.myemacs.com/tags/motto-not-epitaph/"/>
-    
-      <category term="English" scheme="http://www.myemacs.com/categories/English/"/>
     
   </entry>
   

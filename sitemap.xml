@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.myemacs.com/2017/04/06/Hierarchical-Dirichlet-Process/</loc>
+    <lastmod>2017-04-06T19:01:20.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.myemacs.com/about/index.html</loc>
     <lastmod>2017-04-06T18:42:43.000Z</lastmod>
   </url>
