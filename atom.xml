@@ -4,7 +4,7 @@
   <subtitle><![CDATA[CNX's blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.myemacs.com/"/>
-  <updated>2017-05-25T17:23:20.000Z</updated>
+  <updated>2017-05-25T17:26:57.000Z</updated>
   <id>http://www.myemacs.com/</id>
   
   <author>
@@ -19,8 +19,9 @@
     <link href="http://www.myemacs.com/2017/05/25/Variational-Auto-encoder-with-Non-parametric-Bayesian-Prior-II/"/>
     <id>http://www.myemacs.com/2017/05/25/Variational-Auto-encoder-with-Non-parametric-Bayesian-Prior-II/</id>
     <published>2017-05-25T17:22:00.000Z</published>
-    <updated>2017-05-25T17:23:20.000Z</updated>
+    <updated>2017-05-25T17:26:57.000Z</updated>
     <content type="html"><![CDATA[<h1 id="Non-parametric_Bayesian_Prior_for_Variational_Auto-encoder">Non-parametric Bayesian Prior for Variational Auto-encoder</h1><p>This is the final project for course <em>Advanced Topics in Bayesian Statistics</em>.<br>You can find the mid-term presentation about hierarchical dirichlet process <a href="http://myemacs.com/2017/04/06/Hierarchical-Dirichlet-Process/" target="_blank" rel="external">here</a>.</p>
+<a id="more"></a>
 <p> The whole idea for this work comes from this paper by Prof. Eric Xing’s team:</p>
 <blockquote>
 <p><a href="https://arxiv.org/abs/1703.07027" target="_blank" rel="external">Nonparametric Variational Auto-encoders for Hierarchical Representation Learning</a></p>
@@ -111,7 +112,8 @@
 <h2 id="code">code</h2><p> The implementation can be found in my <a href="https://github.com/bobchennan/VAE_NBP" target="_blank" rel="external">github repo</a>.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h1 id="Non-parametric_Bayesian_Prior_for_Variational_Auto-encoder">Non-parametric Bayesian Prior for Variational Auto-encoder</h1><p>This i]]>
+    <![CDATA[<h1 id="Non-parametric_Bayesian_Prior_for_Variational_Auto-encoder">Non-parametric Bayesian Prior for Variational Auto-encoder</h1><p>This is the final project for course <em>Advanced Topics in Bayesian Statistics</em>.<br>You can find the mid-term presentation about hierarchical dirichlet process <a href="http://myemacs.com/2017/04/06/Hierarchical-Dirichlet-Process/">here</a>.</p>]]>
+    
     </summary>
     
       <category term="Bayesian" scheme="http://www.myemacs.com/tags/Bayesian/"/>
