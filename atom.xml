@@ -4,7 +4,7 @@
   <subtitle><![CDATA[CNX's blog]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.myemacs.com/"/>
-  <updated>2017-04-06T19:15:23.000Z</updated>
+  <updated>2017-05-25T17:23:20.000Z</updated>
   <id>http://www.myemacs.com/</id>
   
   <author>
@@ -13,6 +13,139 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Variational Auto-encoder with Non-parametric Bayesian Prior II]]></title>
+    <link href="http://www.myemacs.com/2017/05/25/Variational-Auto-encoder-with-Non-parametric-Bayesian-Prior-II/"/>
+    <id>http://www.myemacs.com/2017/05/25/Variational-Auto-encoder-with-Non-parametric-Bayesian-Prior-II/</id>
+    <published>2017-05-25T17:22:00.000Z</published>
+    <updated>2017-05-25T17:23:20.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="Non-parametric_Bayesian_Prior_for_Variational_Auto-encoder">Non-parametric Bayesian Prior for Variational Auto-encoder</h1><p>This is the final project for course <em>Advanced Topics in Bayesian Statistics</em>.<br>You can find the mid-term presentation about hierarchical dirichlet process <a href="http://myemacs.com/2017/04/06/Hierarchical-Dirichlet-Process/" target="_blank" rel="external">here</a>.</p>
+<p> The whole idea for this work comes from this paper by Prof. Eric Xing’s team:</p>
+<blockquote>
+<p><a href="https://arxiv.org/abs/1703.07027" target="_blank" rel="external">Nonparametric Variational Auto-encoders for Hierarchical Representation Learning</a></p>
+</blockquote>
+<p> This is the abstract for this paper:</p>
+<blockquote>
+<p>The recently developed variational autoencoders (VAEs) have proved to be an effective confluence of the rich representational power of neural networks with Bayesian methods. However, most work on VAEs use a rather simple prior over the latent variables such as standard normal distribution, thereby restricting its applications to relatively simple phenomena. In this work, we propose hierarchical nonparametric variational autoencoders, which combines tree-structured Bayesian nonparametric priors with VAEs, to enable infinite flexibility of the latent representation space. Both the neural parameters and Bayesian priors are learned jointly using tailored variational inference. The resulting model induces a hierarchical structure of latent semantic concepts underlying the data corpus, and infers accurate representations of data instances. We apply our model in video representation learning. Our method is able to discover highly interpretable activity hierarchies, and obtain improved clustering accuracy and generalization capacity based on the learned rich representations.</p>
+</blockquote>
+<p> I also give a presentation about this paper and you can find slides <a href="http://myemacs.com" target="_blank" rel="external">here</a>.</p>
+<p> This project also proposes a combination of non-parametric bayesian prior and variational auto-encoder.<br> In the normal variational auto-encoder, we assume that the latent variable has the non-informative prior.<br> And the object consists two parts: the log-likelihood under the variational distribution and the similarities between posterior and the prior (KL divergence term).<br> For more details about variational auto-encoder you can read <a href="kvfrans.com/variational-autoencoders-explained/">this tutorial</a>.</p>
+<p> But in some cases it is not suitable to use the same prior regardless of the real data we used.<br> Although with the powerful encoder and decoder it may be fine, it is still non-informative.<br> One idea of the paper listed above is to use the prior for the hierarchical clustering.<br> The model they used is nCRP which is a infinitely large tree.<br> In each node of the tree they did a Chinese Restaurant Process.</p>
+<p> Instead of using a complex model to group the data into a big tree, i tried to use some simple non-parametric bayesian model as prior.<br> The model I used here is the dirichlet process mixture model.<br> You can think it as a mixture models with infinite number of components (it is totally depends on hyperparameters and the training data).<br> Compared to the classical Gaussian Mixture Models we don’t have a pre-defined value for the number of components.<br> For more details about dirichlet process and non-parametric bayesian stuff I found <a href="https://www.youtube.com/watch?v=kKZkNUvsJ4M" target="_blank" rel="external">this video seris</a> given by Prof. Tamara Broderick is very helpful for the beginner because of the vivid examples.</p>
+<h2 id="Experiments">Experiments</h2><hr>
+<h3 id="Corpus">Corpus</h3><p> What is used for experiments is <a href="http://yann.lecun.com/exdb/mnist/" target="_blank" rel="external">MNIST of handwritten digits</a>.<br> Following is some description about this corpus:</p>
+<blockquote>
+<p>The MNIST database of handwritten digits, available from this page, has a training set of <strong><em>60,000</em></strong> examples, and a test set of <strong><em>10,000</em></strong> examples. It is a subset of a larger set available from NIST. The digits have been size-normalized and centered in a fixed-size image.<br>The original black and white (bilevel) images from NIST were size normalized to fit in a 20x20 pixel box while preserving their aspect ratio. The resulting images contain grey levels as a result of the anti-aliasing technique used by the normalization algorithm. the images were centered in a 28x28 image by computing the center of mass of the pixels, and translating the image so as to position this point at the center of the <strong><em>28x28</em></strong> field.</p>
+</blockquote>
+<p> The corpus size is not too small for practice in machine learning and is not too large for non-parametric models.</p>
+<p> Since we have ground truth (10 classes: {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}), I did two class of experiments:</p>
+<ul>
+<li>As the indefinite mixture model, how well is the clustering result? For example, how pure is each cluster? Does one cluster includes samples from multiple class?</li>
+<li>As the auto-encoder model, how well is the reconstruction result? Further more, can we sample from this model?</li>
+</ul>
+<h3 id="Experiment_Details">Experiment Details</h3><p> Variational inference is used for dirichlet process.<br> Compared to sampling method like Gibbs sampling variational inference is usually faster.<br> For more details about variational inference implementation for dirichlet process please read <a href="http://scikit-learn.org/stable/modules/dp-derivation.html" target="_blank" rel="external">this page</a>.<br> I chose diagonal covariance in all experiments.</p>
+<p> The whole training process repeats two steps:</p>
+<ul>
+<li>Fixed the encoder, sampled <img src="https://latex.codecogs.com/gif.latex?$z$" title="$z$"> from the training data and update the prior</li>
+<li><p>Fixed the prior and update the encoder and decoder as the standard variational auto-encoder. The KL-divergence between the posterior and the predicted cluster (which is still a normal distribution) is calculated as well as the likelihood.</p>
+<p>And the whole system is trained with 11 iterations.</p>
+<p>For the encoder, one hidden layer with 400 nodes is used to transform the image data. And then two layers are added to map the output to mean and variance.</p>
+<p>For the decoder, one hidden layer with 400 nodes is also used, and then one hidden layer with 28*28 nodes is added for reconstruction.</p>
+<p>All results are given on the test set.</p>
+</li>
+</ul>
+<h3 id="Clustering_results_analysis">Clustering results analysis</h3><p> In this part I am trying to figure out the “purity” of the clustering.<br> For example, we think this clustering result is “pure”:</p>
+<table>
+<thead>
+<tr>
+<th>Class labels</th>
+<th>1</th>
+<th>1</th>
+<th>1</th>
+<th>2</th>
+<th>2</th>
+<th>3</th>
+<th>3</th>
+<th>3</th>
+<th>3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cluster labels</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p> How to estimate the clustering result?<br> Fortunately as the “purity” suggests we use the <a href="https://en.wikipedia.org/wiki/Mutual_information" target="_blank" rel="external">mutual information</a>.</p>
+<p> For the example above, the mutual information is about 1.06.<br> Because the mutual information is between 0 (independent) and positive infinity, it is not clear whether is good or not.<br> Some good alternatives include <a href="http://scikit-learn.org/stable/modules/generated/sklearn.metrics.normalized_mutual_info_score.html#sklearn.metrics.normalized_mutual_info_score" target="_blank" rel="external">normalized mutual information</a> which is between 0 and 1.<br> For this example the normalized mutual information is approximately 0.82, fairly good.</p>
+<h4 id="Baseline_Performance">Baseline Performance</h4><p> For the baseline system, dirichlet process is directly used. The maximum number of components is set to 50 and generally it is very slow and hard to converge.</p>
+<p> The mutual information is around 1.13 when the maximum number of iterations is set to 1000 and number of initializations is set to 5.</p>
+<h4 id="Relation_between_latent_space_dimension_and_mutual_information">Relation between latent space dimension and mutual information</h4><p> In this experiment the maximum number of dimension is fixed to 100.</p>
+<p> The hidden dimension is varied from 5 to 50.</p>
+<p> <img src="https://github.com/bobchennan/VAE_NBP/raw/master/vis2.png" alt="Figure 1" title="Connection between latent space dimension and mutual information"></p>
+<p> It is quite clear that 15 is the best configuration which means either too small or too large latent space is not good.</p>
+<h4 id="Relation_between_maximum_number_of_components_and_mutual_information">Relation between maximum number of components and mutual information</h4><p> One drawback of variational inference implementation for dirichlet process is that the maximal number of components need to be assigned manually for truncation.<br> In the <a href="http://www.cs.columbia.edu/~blei/papers/BleiJordan2004.pdf" target="_blank" rel="external">original paper</a> they truncated the variational distribution instead of using the whole stick-breaking representation.</p>
+<p> So one interesting question is that how the maximum number of components influence the result.<br> I tried different values from 50 to 700 and the latent dimension is fixed to 15.</p>
+<p> This is the result:</p>
+<p><img src="https://github.com/bobchennan/VAE_NBP/raw/master/vis1.png" alt="Figure 2" title="Connection between maximum number of components and mutual information"></p>
+<p>As you can see, when this number is larger than 500, there is not much improvement.</p>
+<h3 id="Sample_analysis">Sample analysis</h3><p> In order to sample from the model, the latent vector is sampled from the prior (from either non-informative prior or dirichlet process mixture model).<br> Then the decoder will transform the latent vector to the real image.</p>
+<p> Samples from variational auto-encoder with dirichlet process mixture model prior:</p>
+<p><img src="https://github.com/bobchennan/VAE_NBP/raw/master/gen_dp.png" alt="Figure 3" title="Samples from variational auto-encoder with dirichlet process mixture model prior"></p>
+<p>Samples from variational auto-encoder with non-informative prior:</p>
+<p><img src="https://github.com/bobchennan/VAE_NBP/raw/master/gen_normal.png" alt="Figure 4" title="Samples from variational auto-encoder with non-informative prior"></p>
+<p>As you can see, samples from the NBP prior is much better than non-informative prior as expect. It is well known that variational auto-encoder sampling suffers blurry problem. Dirichlet process mixture model cannot fully solve this problem but the result is much better.</p>
+<h2 id="Future_Work">Future Work</h2><hr>
+<p> While I am working on this project I realized dirichlet process may be not a good choice in the mutual information perspective. It is well known that in the dirichlet process, richer mixture get richer. So it tends to have some large mixtures which contains samples from all classes. This is not good for both mutual information and sampling in reality.</p>
+<p> For alternatives, maybe the repulsive models are a good choice. Depends on the base measure, mixtures in my experiments are too closed to each other. That is the reason that repulsive models may be a good choice.</p>
+<h2 id="code">code</h2><p> The implementation can be found in my <a href="https://github.com/bobchennan/VAE_NBP" target="_blank" rel="external">github repo</a>.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="Non-parametric_Bayesian_Prior_for_Variational_Auto-encoder">Non-parametric Bayesian Prior for Variational Auto-encoder</h1><p>This i]]>
+    </summary>
+    
+      <category term="Bayesian" scheme="http://www.myemacs.com/tags/Bayesian/"/>
+    
+      <category term="VAE" scheme="http://www.myemacs.com/tags/VAE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Variational Auto-encoder with Non-parametric Bayesian Prior I]]></title>
+    <link href="http://www.myemacs.com/2017/05/25/Variational-Auto-encoder-with-Non-parametric-Bayesian-Prior-I/"/>
+    <id>http://www.myemacs.com/2017/05/25/Variational-Auto-encoder-with-Non-parametric-Bayesian-Prior-I/</id>
+    <published>2017-05-25T17:20:00.000Z</published>
+    <updated>2017-05-25T17:22:14.000Z</updated>
+    <content type="html"><![CDATA[<p>This semester I took the Advanced Topics in Bayesian Statistics from <a href="http://www.ams.jhu.edu/˜yxu70/" target="_blank" rel="external">Prof. Yanxun Xu</a>. It is a interesting course and this is my presentation slides in the final term related to variational auto-encoder with non-parametric bayesian prior. Thie is the first part of this seris.</p>
+<a id="more"></a>
+
+
+	<div class="row">
+		<iframe src="https://drive.google.com/file/d/0B23O-6ZU166qLTFXTUVQUzJFS28/preview" style="width:100%; height:550px"></iframe>
+	</div>
+
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>This semester I took the Advanced Topics in Bayesian Statistics from <a href="http://www.ams.jhu.edu/˜yxu70/">Prof. Yanxun Xu</a>. It is a interesting course and this is my presentation slides in the final term related to variational auto-encoder with non-parametric bayesian prior. Thie is the first part of this seris.</p>]]>
+    
+    </summary>
+    
+      <category term="Bayesian" scheme="http://www.myemacs.com/tags/Bayesian/"/>
+    
+      <category term="VAE" scheme="http://www.myemacs.com/tags/VAE/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hierarchical Dirichlet Process]]></title>
@@ -1190,173 +1323,6 @@ I have finished <span class="keyword">my</span> role play, now need unknown life
       <category term="library" scheme="http://www.myemacs.com/tags/library/"/>
     
       <category term="software" scheme="http://www.myemacs.com/tags/software/"/>
-    
-      <category term="转载" scheme="http://www.myemacs.com/tags/%E8%BD%AC%E8%BD%BD/"/>
-    
-      <category term="Research" scheme="http://www.myemacs.com/categories/Research/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[life is an onion and one cries while peeling it.]]></title>
-    <link href="http://www.myemacs.com/2013/11/01/life-is-an-onion-and-one-cries-while-peeling-it/"/>
-    <id>http://www.myemacs.com/2013/11/01/life-is-an-onion-and-one-cries-while-peeling-it/</id>
-    <published>2013-11-01T21:42:31.000Z</published>
-    <updated>2015-10-28T06:49:05.000Z</updated>
-    <content type="html"></content>
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="aphorism" scheme="http://www.myemacs.com/tags/aphorism/"/>
-    
-      <category term="motto not epitaph" scheme="http://www.myemacs.com/tags/motto-not-epitaph/"/>
-    
-      <category term="English" scheme="http://www.myemacs.com/categories/English/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Automatic Speech Recognition]]></title>
-    <link href="http://www.myemacs.com/2013/10/17/automatic-speech-recognition/"/>
-    <id>http://www.myemacs.com/2013/10/17/automatic-speech-recognition/</id>
-    <published>2013-10-17T06:27:57.000Z</published>
-    <updated>2015-10-28T06:47:56.000Z</updated>
-    <content type="html"><![CDATA[<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 研究生期间收集了一些有关语音识别方面的网址，感觉非常有用，保留一下，留到以后用。</p>
-<a id="more"></a>
-<p>国际最顶尖会议：</p>
-<p>ICASSP：International Conference on Acoustics, Speech and Signal Processing </p>
-<p>ICSLP:International Conference on Semiconductor Laser and Photonics </p>
-<p>EUROSPEECH:European Conference on Speech Communication and Technology </p>
-<p>其他</p>
-<p>ICSMC:Int l Conference on Systems, Man &amp; Cybernetics </p>
-<p>NAECON:National Aerospace and Electronics Conference</p>
-<p>ICTTA:International Conference on Telecommunication Technology and Applications </p>
-<p>ISSPA: Information Sciences, Signal Processing and their Applications </p>
-<p>ISPACS:International Symposium on Intelligent Signal Processing and Communications Systems</p>
-<p>SBEC:Southern Biomedical Engineering Conference </p>
-<p>ICAPR:International Conference on Advances in Pattern Recognition </p>
-<p>ICOSP: International Conference on Signal Processing Proceedings</p>
-<p>ICSLP: International Conference on Spoken Language Processing </p>
-<p>ICICIC:International Conference on Innovative Computing, Information and Control </p>
-<p>IEMBS:Institute of Electrical and Electronics Engineers</p>
-<p>NLPKE: Natural Language Processing and Knowledge Engineering </p>
-<p>IECON:Conference of the IEEE Industrial Electronics Society</p>
-<p>ICCT:International Council on Clean Transportation</p>
-<p>ASRU:Automatic Speech Recognition and Understanding </p>
-<p>ISCAS:International Symposium on Circuits and Systems </p>
-<p>ISPACS:International Symposium on Intelligent Signal Processing and Communications Systems</p>
-<p>ICDSP:International Conference on Digital Signal Processing </p>
-<p>SPAWC:signal processing advances in wireless communications</p>
-<p>ICCSIT: International Conference on Computer Science and Information Technology</p>
-<p>ICSE: International Conference on Software Engineering</p>
-<p>ICIAS:International Conference on Intelligent and Advanced Systems </p>
-<p>TENCON:Technical Environmental Consulting</p>
-<p>ICFCC:International Conference on Future Computer and Communication </p>
-<p>WCICA:World Congress on Intelligent Control and Automation </p>
-<p>MMSP:international workshop on multimedia signal processing</p>
-<p>IROS: Intelligent Robots and Systems </p>
-<p>ICSDA: INTERNATIONAL COMBATIVES SELF DEFENSE ASSOCIATION </p>
-<p>ICCCE:International Conference on Computer and Communication Engineering</p>
-<p>其他的会议还有：ISPA，ASPAA，INDICO，NetCom等</p>
-<p>期刊方面：</p>
-<p>国内：信号处理，电子学报、声学学报，应用声学，声学工程</p>
-<p>国外：最著名的：IEEE Signal Processing Magazine (IF：2.655)，一年6期，是双月刊）</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 还有IEEE Transactions on Signal Processing (TSP)– (IF：1.57)</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IEEE Transactions on Circuits and Systems-I: Regular Papers (CAS-I)—(IF：1.139)</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Signal Processing: Image Communication (IF: 1.109)</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IEE Electronics Letters (IF：1.063)</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IEEE Transactions on Circuits and Systems-II: Express Briefs (CAS-II)—(IF：0.922)</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Digital Signal Processing（IF: 0.889）</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IEEE Signal Processing Letters (SPL)—(IF: 0.722)</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Signal Processing (IF: 0.669)</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IET Signal Processing</p>
-<p>其中IF为影响因子</p>
-<p>1.1 国际语音识别技术研究机构</p>
-<p>AT&amp;T&nbsp; <a href="http://www.research.att.com/editions/201304_home.html" target="_blank" rel="external">http://www.research.att.com/editions/201304_home.html</a></p>
-<p>ATR&nbsp;&nbsp;&nbsp; <a href="http://www.slt.atr.co.jp/index.html" target="_blank" rel="external">http://www.slt.atr.co.jp/index.html</a></p>
-<p>BBN&nbsp;&nbsp;&nbsp; <a href="http://www.bbn.com/technology/speech_recognition/" target="_blank" rel="external">http://www.bbn.com/technology/speech_recognition/</a></p>
-<p>Cambridge University Engineering Department (CUED)<br><a href="http://mi.eng.cam.ac.uk/" target="_blank" rel="external">http://mi.eng.cam.ac.uk/</a></p>
-<p>Carnegie Mellon University (CMU) </p>
-<p>HP Labs&nbsp;&nbsp; <a href="http://www.hpl.hp.com/" target="_blank" rel="external">http://www.hpl.hp.com/</a></p>
-<p>Columbia University </p>
-<p>Centre for Speech Technology Research at Edinburgh University </p>
-<p>ESAT - PSI Speech Group at K.U.Leuven </p>
-<p>International Computer Science Institute (ICSI) </p>
-<p>IBM Human Language Technologies&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.research.ibm.com/hlt/" target="_blank" rel="external">http://www.research.ibm.com/hlt/</a></p>
-<p>IDIAP Research Institute </p>
-<p>INESC-ID Lisboa, Spoken Language Systems Lab </p>
-<p>IRST </p>
-<p>ISIP </p>
-<p>Johns Hopkins University (CLSP) </p>
-<p>Speech, Music and Hearing at KTH </p>
-<p>LIMSI </p>
-<p>Alcatel Lucent (Bell Labs)&nbsp; <a href="http://www.alcatel-lucent.com/wps/portal/BellLabs" target="_blank" rel="external">http://www.alcatel-lucent.com/wps/portal/BellLabs</a></p>
-<p>Microsoft&nbsp;&nbsp;&nbsp; <a href="http://research.microsoft.com/en-us/groups/speech/" target="_blank" rel="external">http://research.microsoft.com/en-us/groups/speech/</a></p>
-<p>MIT Spoken Language Systems </p>
-<p>Oregon Graduate Institute (OGI) Center for Spoken Language Understanding </p>
-<p>Speech and Language Processing Laboratory at Rutgers University </p>
-<p>RWTH Aachen </p>
-<p>University of Colorado, Boulder (CLEAR) </p>
-<p>University of Sheffield </p>
-<p>SRI </p>
-<p>Furui Laboratory, Tokyo Institute of Technology </p>
-<p>University of Illinois at Urbana and Champaign </p>
-<p>University of Washington </p>
-<p>Universitaet Erlangen-Nürnberg </p>
-<p>剑桥大学</p>
-<p><a href="http://htk.eng.cam.ac.uk/" target="_blank" rel="external">http://htk.eng.cam.ac.uk/</a></p>
-<p>CMU大学</p>
-<p><a href="http://www.speech.cs.cmu.edu/" target="_blank" rel="external">http://www.speech.cs.cmu.edu/</a></p>
-<p>张智星 语音识别，机器学习</p>
-<p><a href="http://mirlab.org/jang/" target="_blank" rel="external">http://mirlab.org/jang/</a></p>
-<p>安徽科大讯飞</p>
-<p><a href="http://www.iflytek.com/" target="_blank" rel="external">http://www.iflytek.com/</a></p>
-<p>1.2 国际语音识别技术期刊</p>
-<p>（1）Speech Communication</p>
-<p>（2）Computer Speech and Language (CSL)</p>
-<p>（3）IEEE Transactions on Speech and Audio Processing</p>
-<p>1.3 国际语音识别技术会议</p>
-<p>（1）ICASSP（International Conference on Acoustic, Speech and Signal Processing）</p>
-<p>每年一届，10月截稿，次年5月开会。</p>
-<p>（2）ICSLP（International Conference on Spoken Language Processing）</p>
-<p>偶数年举办，4月截稿，9月开会。</p>
-<p>（3）EuroSpeech：奇数年举办，4月截稿，9月开会。</p>
-<p>1.4 国际语音识别技术评测</p>
-<p>&nbsp;NIST Spoken Language Technology Evaluations Benchmark Tests</p>
-<p>(<a href="http://www.nist.gov/speech/tests/index.htm" target="_blank" rel="external">http://www.nist.gov/speech/tests/index.htm</a>)</p>
-<p>1.5 语音识别技术工具包</p>
-<p>&nbsp;AT&amp;T FSM Library</p>
-<p>&nbsp;CMU-Cambridge Statistical LM Toolkit</p>
-<p>&nbsp;CMU Sphinx</p>
-<p>&nbsp;CSLU toolkit</p>
-<p>&nbsp;CUED HTK</p>
-<p>&nbsp;Edinburgh Speech Tools Library</p>
-<p>&nbsp;KTH WaveSurfer</p>
-<p>&nbsp;MSState ASR Toolkit</p>
-<p>&nbsp;NIST Utility Software</p>
-<p>&nbsp;SPRACHcore software package</p>
-<p>&nbsp;SRI Language Modelling Toolkit</p>
-<p>&nbsp;SoX – Sound eXchange</p>
-<p>&nbsp;Transcriber</p>
-<p>&nbsp;UCL Speech Filing System</p>
-<p>&nbsp;FBVIEW multi-channel audio file viewer</p>
-<p>1.6语音识别网站及相关论坛</p>
-<p><a href="http://www.voxforge.org/home/forums/message-boards/acoustic-model-discussions" target="_blank" rel="external">http://www.voxforge.org/home/forums/message-boards/acoustic-model-discussions</a></p>
-<p><a href="http://bbs.matwav.com" target="_blank" rel="external">http://bbs.matwav.com</a></p>
-<p><a href="http://www.yuyinshibie.com/" target="_blank" rel="external">http://www.yuyinshibie.com/</a></p>
-<p><a href="http://www.ctiforum.com/voice.html" target="_blank" rel="external">http://www.ctiforum.com/voice.html</a></p>
-<p><a href="http://liceu.uab.es/~joaquim/phonetics/fon_anal_acus/herram_anal_acus.html" target="_blank" rel="external">http://liceu.uab.es/~joaquim/phonetics/fon_anal_acus/herram_anal_acus.html</a></p>
-<p><a href="http://www.phon.ucl.ac.uk/resource/scribe/" target="_blank" rel="external">http://www.phon.ucl.ac.uk/resource/scribe/</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 研究生期间收集了一些有关语音识别方面的网址，感觉非常有用，保留一下，留到以后用。</p>]]>
-    
-    </summary>
-    
-      <category term="语音识别" scheme="http://www.myemacs.com/tags/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/"/>
-    
-      <category term="资料" scheme="http://www.myemacs.com/tags/%E8%B5%84%E6%96%99/"/>
     
       <category term="转载" scheme="http://www.myemacs.com/tags/%E8%BD%AC%E8%BD%BD/"/>
     

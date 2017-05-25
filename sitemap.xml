@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.myemacs.com/2017/05/25/Variational-Auto-encoder-with-Non-parametric-Bayesian-Prior-II/</loc>
+    <lastmod>2017-05-25T17:23:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.myemacs.com/2017/05/25/Variational-Auto-encoder-with-Non-parametric-Bayesian-Prior-I/</loc>
+    <lastmod>2017-05-25T17:22:14.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.myemacs.com/2017/04/06/Hierarchical-Dirichlet-Process/</loc>
     <lastmod>2017-04-06T19:15:23.000Z</lastmod>
   </url>
